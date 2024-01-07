@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Versailles";
+  src: url("#{$font-path}/Versailles/versailles.ttf") format("truetype");
+}
+
+.versailles {
+  font-family: "Versailles";
+}

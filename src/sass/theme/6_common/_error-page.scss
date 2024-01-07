@@ -1,0 +1,9 @@
+.error-page {
+  .content {
+    padding-top: 160px;
+    h1 {
+      padding-bottom: 30px;
+      @include fluid("font-size", 90, 120);
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.concert-accordions {
+  @include fluid("padding-top", 20, 60);
+  @include fluid("padding-bottom", 20, 60);
+
+  .accordion-item {
+    transition: $transition;
+
+    .concert-date {
+      text-align: end;
+    }
+
+    &:hover {
+      .accordion-button {
+        background-color: black !important;
+        color: white !important;
+
+        &::after {
+          background-image: url("../img/svg/arrow.svg") !important;
+        }
+      }
+    }
+  }
+
+  .post-link {
+    font-weight: 700;
+    display: flex;
+    position: relative;
+    transition: $transition;
+
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border: 5px solid black;
+
+    transform: rotate(-1deg);
+
+    color: $white;
+
+    .img-wrapper {
+      padding-left: 15px;
+      height: 100%;
+
+      .arrow-next {
+        path {
+          stroke: white;
+        }
+      }
+    }
+
+    img {
+      margin: 0;
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      border: 5px solid black;
+      color: black;
+      background-color: white;
+
+      .arrow-next {
+        transition: $transition;
+
+        path {
+          transition: $transition;
+          stroke: black;
+        }
+      }
+    }
+  }
+
+  .accordion-title {
+    .concert-date {
+      padding-right: 20px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .accordion-button {
+    border: 5px solid black !important;
+    border-radius: 0 !important;
+    font-weight: 700 !important;
+    transition: $transition !important;
+
+    &::after {
+      color: black;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
+    &:not(.collapsed) {
+      color: white !important;
+      background-color: black !important;
+
+      &::after {
+        background-image: url("../img/svg/arrow.svg") !important;
+      }
+    }
+  }
+
+  .accordion-body {
+    border: 5px solid black !important;
+    border-top: 0 !important;
+    border-radius: 0 !important;
+
+    a {
+      color: $primary;
+      &:hover {
+        color: $black;
+      }
+    }
+
+    .post-link {
+      color: $white;
+    }
+  }
+
+  .card {
+    // width: 30%;
+    .img-wrapper {
+      height: 184px;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .placeholder-logo {
+        object-fit: contain !important;
+      }
+
+      .video-cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .video-play-modal {
+        background-image: url(../img/png/youtube.png);
+        background-size: contain;
+        display: block;
+        height: 64px;
+        width: 64px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        transition: $transition;
+
+        &:hover {
+          background-image: url(../img/png/youtubeHover.png);
+        }
+      }
+    }
+    &-title {
+      margin: 0;
+      padding: 10px;
+    }
+  }
+}

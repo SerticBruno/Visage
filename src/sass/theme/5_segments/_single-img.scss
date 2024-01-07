@@ -1,0 +1,37 @@
+.single-image {
+    @include fluid('padding-top', 20, 40);
+    
+    img{
+        margin: 0;
+    }
+    
+    &.indent {
+        @include media-breakpoint-up(lg) {
+            margin-top: 30px;
+            margin-bottom: 100px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-top: 70px;
+            margin-bottom: 131px;
+        }
+    }
+    
+    .img-wrapper {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100% !important;
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+        }            
+    }
+
+    .indent {
+        margin: 0 auto;
+        height: 100% !important;
+        width: 80% !important;
+    }
+}

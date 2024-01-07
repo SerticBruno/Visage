@@ -1,0 +1,71 @@
+.features {
+  @include fluid("padding-top", 20, 60);
+  @include fluid("padding-bottom", 20, 60);
+
+  h2{
+    font-weight: 500;
+  }
+
+  .card {
+    padding: 0;
+    outline: 5px solid black;
+    border-radius: 0;
+    transition: $transition;
+    margin-bottom: 15px;
+
+    &:hover {
+      outline-color: $white;
+      background-color: black;
+      color: white;
+      box-shadow: 10px 9px 0 rgb(0, 0, 0) !important;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      // @include fluid('padding-top', 20, 20);
+      // @include fluid('padding-bottom', 20, 20);
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      transition: $transition;
+
+      h3 {
+        @include fluid("padding-right", 10, 20);
+        @include fluid("padding-left", 10, 20);
+        padding-bottom: 0 !important;
+        transition: $transition;
+      }
+
+      p {
+        @include fluid("padding", 10, 20);
+      }
+
+      img {
+        margin-top: 1rem;
+        padding: 10px;
+        width: 64px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: $transition;
+      }
+
+      &:hover {
+        transition: $transition;
+        color: $white;
+
+        h3 {
+          transition: $transition;
+          color: $white;
+        }
+        img {
+          transition: $transition;
+          background-color: white;
+          filter: grayscale(100%) sepia(55%) hue-rotate(200deg);
+        }
+      }
+    }
+  }
+}

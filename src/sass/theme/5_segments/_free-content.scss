@@ -1,0 +1,30 @@
+.free-content {
+  @include fluid("margin-top", 50, 80);
+  @include fluid("margin-bottom", 50, 80);
+
+  p {
+    // @include fluid("font-size", 18, 20);
+    // @include fluid("line-height", 32, 36);
+
+    a {
+      text-decoration: underline;
+      // font-size: 20px;
+      // color: $primary;
+    }
+  }
+
+  .text-wrap {
+    @include fluid("margin-bottom", 16, 40);
+    hyphens: auto;
+    overflow: hidden;
+  }
+
+  a {
+    color: $primary;
+    // transition: $transition;
+    &:hover {
+      // transition: $transition;
+      color: $black;
+    }
+  }
+}

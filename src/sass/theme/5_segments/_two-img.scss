@@ -1,0 +1,95 @@
+.two-img {
+    @include fluid('padding-top', 20, 40);
+
+    img{
+        margin: 0;
+    }
+    
+    .grid-container {
+        display: grid;
+        gap: 32px 0;
+        grid-auto-flow: row;
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
+        @include media-breakpoint-up(lg) {
+            gap: 18px 25px;            
+
+            grid-template-columns: repeat(24, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        @include media-breakpoint-up(xxl) {
+            gap: 30px 42px;            
+        }
+        
+        .img-wrapper{
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid-item-1 {
+            grid-column-start: 1;
+            grid-column-end: 11;
+
+            grid-row-start: 1;
+            grid-row-end: 2;
+            
+            @include media-breakpoint-down(lg) {
+                max-height: 558px;
+                grid-column-end: unset;
+
+                grid-row-end: 7;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: cover;
+
+                aspect-ratio: 312 / 359;
+                    
+                @include media-breakpoint-up(lg) {
+                    aspect-ratio: 296 / 341;
+                }
+                @include media-breakpoint-up(xxl) {
+                    aspect-ratio: 484 / 558;
+                }
+            }
+        }
+
+        .grid-item-2 {
+            grid-column-start: 11;
+            grid-column-end: 25;
+
+            grid-row-start: 1;
+            grid-row-end: 2;            
+
+            @include media-breakpoint-down(lg) {
+                grid-column-start: 1;
+                grid-column-end: unset;
+
+                grid-row-start: 7;
+                grid-row-end: 7;
+            }
+            
+            img {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                object-fit: cover;
+
+                aspect-ratio: 312 / 218;
+                    
+                @include media-breakpoint-up(lg) {
+                    aspect-ratio: 487 / 341;
+                }
+                @include media-breakpoint-up(xxl) {
+                    aspect-ratio: 796 / 558;
+                }
+            }
+        }
+    }
+}

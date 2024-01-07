@@ -1,0 +1,97 @@
+.youtube-cards {
+  background: url(../img/png/video-pattern.png);
+
+  @include fluid("padding-top", 40, 120);
+  @include fluid("padding-bottom", 40, 120);
+
+  h3 {
+    @include fluid("padding-top", 10, 20);
+    @include fluid("padding-bottom", 10, 20);
+    border: 5px solid black;
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 8%;
+    background-color: $white;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    transform: rotate(6deg);
+    // max-width: 400px;
+    // margin-left: 455px;
+    // margin-top: -15px;
+    transition: all 0.3s ease;
+  }
+
+  .link-box {
+    h3 {
+      position: absolute;
+      right: 0;
+      top: -10px;
+      text-align: center;
+      // min-width: 200px;
+    }
+  }
+
+  .card {
+    padding: 0;
+    border: none;
+    background-color: black;
+    border: 5px solid $black;
+    border-radius: 0;
+    // padding-bottom: 80px;
+
+    a {
+      @include fluid("padding-top", 10, 20);
+      @include fluid("padding-bottom", 10, 20);
+      color: $white;
+
+      font-weight: 600;
+      // transition: all 0.3s ease;
+      margin: 0;
+
+      &:hover {
+        h3 {
+          color: $black;
+          font-size: 26px;
+        }
+      }
+    }
+
+    iframe {
+      aspect-ratio: 16/9;
+      height: 100%;
+      border-bottom: 5px solid black;
+    }
+
+    &-wrapper {
+      position: relative;
+      padding-bottom: 40px;
+
+      a {
+        h3 {
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          // transition: all 0.3s ease;
+          color: $primary;
+          background-color: black;
+          // font-size: 20px;
+
+          h3 {
+            transform: scale(1.1);
+            border-color: $white;
+            background-color: $black;
+            color: $white;
+            box-shadow: 10px 9px 0 rgb(0, 0, 0) !important;
+          }
+        }
+      }
+    }
+  }
+
+  .youtube-list {
+    // --bs-gutter-x: 50px;
+    // --bs-gutter-y: 75px;
+  }
+}

@@ -1,0 +1,59 @@
+/// Remove the unit of a length
+/// @param {Number} $number - Number to remove unit from
+/// @return {Number} - Unitless number
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+// only px values !!!
+@mixin fluid($property, $min-size, $max-size, $min-width: $sm, $max-width: $xl) {
+    $pMin: strip-unit($min-size);
+    $pMax: strip-unit($max-size);
+    $wMin: strip-unit($min-width);
+    $wMax: strip-unit($max-width);
+    $x: ($pMax - $pMin)/($wMax - $wMin);
+    $y: $pMax - $wMax * $x;
+    #{$property}: #{$pMin}px;
+//    @media (min-width: #{$wMin}px) { #{$property}: calc(#{100*$x}vw + #{$y}px); }
+    @media (min-width: #{$wMin}px) { #{$property}: fluidCalc($pMin, $pMax, $wMin, $wMax); }
+    @media (min-width: #{$wMax}px) { #{$property}: #{$pMax}px; }
+}
+
+@function fluidCalc($pMin, $pMax, $wMin, $wMax, $c: 1) {
+    $x: ($pMax - $pMin)/($wMax - $wMin);
+    $y: $pMax - $wMax * $x;
+    @return #{calc((#{100*$x}vw + #{$y}px) * #{$c})};
+}
+
+
+/// Truncates text and adds an ellipsis to represent overflow.
+///
+/// @param {Number} $width [100%]
+///   Max-width for the string to respect before being truncated
+///
+/// @example scss - Usage
+///   .element {
+///     @include ellipsis;
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     display: inline-block;
+///     max-width: 100%;
+///     overflow: hidden;
+///     text-overflow: ellipsis;
+///     white-space: nowrap;
+///     word-wrap: normal;
+///   }
+
+@mixin ellipsis($width: 100%) {
+  display: inline-block;
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}

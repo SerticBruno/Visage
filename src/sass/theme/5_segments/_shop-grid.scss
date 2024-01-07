@@ -1,0 +1,104 @@
+.shop-grid {
+  @include fluid("padding-top", 20, 60);
+
+  .item {
+    position: relative;
+    @include fluid("padding-bottom", 20, 60);
+
+    a {
+      &:hover {
+        .item-title {
+          background-color: white;
+          color: black !important;
+          outline-color: black;
+          transform: rotate(-6deg);
+        }
+
+        .item-button-wrapper {
+          p {
+            border-color: $white;
+            background-color: $black;
+            box-shadow: 8px 7px 0 rgb(0, 0, 0) !important;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    &-title {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      position: absolute;
+      right: 30px;
+      top: 40px;
+
+      transform: rotate(17deg);
+      // font-size: 32px;
+      font-weight: 600;
+      background-color: black;
+      color: white !important;
+      outline: 5px solid white;
+      padding: 15px;
+      z-index: 5;
+      transition: $transition;
+
+      h4 {
+        transition: $transition;
+        color: white;
+        font-size: 32px;
+      }
+    }
+
+    &-button-wrapper {
+      width: 70%;
+      justify-content: center;
+      margin: auto;
+      text-align: center;
+
+      p {
+        border: 4px solid black;
+        transition: $transition;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+        background-color: white;
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }
+  .word {
+    position: relative;
+    display: inline-block;
+    font-size: 3em;
+    font-family: "Punk";
+  }
+
+  .word span {
+    position: relative;
+    display: inline-block;
+  }
+
+  //   .word span::before {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background-color: #000;
+  //   }
+  //   .word span:nth-child(1)::before {
+  //     width: 35px;
+  //     height: 40px;
+  //   }
+  //   .word span:nth-child(2)::before {
+  //     width: 43px;
+  //     height: 33px;
+  //   }
+  //   .word span:nth-child(3)::before {
+  //     width: 43px;
+  //     height: 30px;
+  //   }
+}

@@ -1,0 +1,125 @@
+.download-block {
+  @include fluid("padding-top", 10, 10);
+  @include fluid("padding-bottom", 10, 10);
+
+  .block {
+    background-color: black;
+    // background-image: url('../img/png/footer-rip.png');
+    align-items: center;
+    padding: 0;
+    // overflow: hidden;
+    margin-bottom: 23px;
+    // outline: 10px solid black;
+    // border: 13px solid black;
+    transition: $transition;
+    position: relative;
+
+    .info {
+      padding: 70px 0;
+      display: flex;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+
+      p {
+        background-color: black;
+        margin: 0;
+        padding: 10px;
+        font-weight: 700;
+        color: white;
+        outline: 5px solid white;
+        position: relative;
+
+        &::after {
+          display: block;
+          transition: $transition;
+          content: " ";
+          // padding: 16px;
+          background-image: url("../img/png/download.png");
+          border: 5px solid white;
+          position: absolute;
+          background-size: cover;
+          top: -20px;
+          left: -20px;
+          background-color: white;
+          width: 32px;
+          height: 32px;
+          outline: 5px solid black;
+          transform: rotate(-15deg);
+        }
+      }
+
+      .title-rot-1 {
+        transform: rotate(5deg);
+        transition: $transition;
+      }
+      .title-rot-2 {
+        transform: rotate(-5deg);
+        transition: $transition;
+      }
+    }
+
+    h3 {
+      color: white;
+    }
+
+    img {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    &.rot-1 {
+      transform: rotate(-1deg) scale(1);
+    }
+    &.rot-2 {
+      transform: rotate(2deg) scale(1);
+    }
+
+    &:hover {
+      // transform:  rotate(3deg);
+      // outline-width: 25px;
+
+      .info {
+        P {
+          background-color: white;
+          color: black;
+          outline-color: black;
+
+          &::after {
+            // outline: 5px solid white;
+            background-color: black;
+            outline-color: white;
+            border-color: black;
+            background-image: url("../img/png/downloadWhite.png");
+          }
+        }
+      }
+
+      &.rot-1 {
+        transform: rotate(1deg) scale(1.1);
+      }
+      &.rot-2 {
+        transform: rotate(-1deg) scale(1.1);
+      }
+
+      .title-rot-1 {
+        transform: rotate(-5deg) scale(1.1);
+      }
+      .title-rot-2 {
+        transform: rotate(5deg) scale(1.1);
+      }
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      right: -10px;
+      bottom: -10px;
+      background-color: black;
+      z-index: -1;
+    }
+  }
+}

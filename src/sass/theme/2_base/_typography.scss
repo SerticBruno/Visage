@@ -1,0 +1,120 @@
+html {
+  font-size: $font-size;
+}
+
+body {
+  font-family: gildadisplay;
+  font-size: 1rem;
+  line-height: $line-height;
+  color: $black;
+  background-color: $white;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: bold;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+.h1 {
+  @include fluid("font-size", 64, 164);
+  @include fluid("letter-spacing", -1.6, -0.8);
+  line-height: 1;
+}
+
+h2,
+.h2 {
+  @include fluid("font-size", 29, 44);
+  line-height: 1;
+}
+
+h3,
+.h3 {
+  @include fluid("font-size", 17, 24);
+  line-height: 1;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-size: $font-size;
+  line-height: 1;
+  font-weight: semibold;
+}
+
+a {
+  // font-size: 14px;
+  text-decoration: none !important;
+  color: $black;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $primary;
+  }
+}
+
+p {
+  & + p {
+    margin-top: 1rem;
+  }
+
+  &.big {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &.bigger {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+svg {
+  pointer-events: none;
+}
+
+li {
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+
+  &.alignnone {
+  }
+
+  &.alignleft {
+    display: inline-block;
+    float: left;
+    margin-right: 1rem;
+  }
+
+  &.alignright {
+    display: inline-block;
+    float: right;
+    margin-left: 1rem;
+  }
+
+  &.aligncenter {
+    margin: 30px auto;
+  }
+}

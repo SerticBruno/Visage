@@ -1,0 +1,311 @@
+.news {
+  @include fluid("padding-top", 20, 60);
+  @include fluid("padding-bottom", 20, 60);
+
+  &-title {
+    @include fluid("padding-bottom", 20, 60);
+  }
+
+  &-list {
+    justify-content: center;
+    --bs-gutter-y: 15px;
+  }
+
+  &-card {
+    width: 100%;
+    height: 100%;
+    border: 8px solid black;
+    border-radius: 0;
+
+    .author {
+      text-transform: uppercase;
+    }
+
+    time {
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    img {
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 260px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .info {
+      border-top: 8px solid black;
+    }
+  }
+
+  .link-wrapper {
+    a {
+      .img-wrapper {
+        overflow: hidden;
+
+        img {
+          transition: all 0.3s ease;
+        }
+      }
+
+      &:focus,
+      &:active {
+        color: black;
+      }
+
+      &:hover {
+        color: $black;
+
+        img {
+          transition: all 0.3s ease;
+          transform: scale(1.2);
+        }
+
+        .card-title {
+          transition: all 0.3s ease;
+          transform: rotate(var(--hoverRotate)) !important;
+
+          h2 {
+            transition: all 0.3s ease;
+            color: $black;
+            background-color: $white;
+
+            &::after {
+              background-color: $black;
+            }
+
+            &::before {
+              background-color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-title {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: -35px;
+    position: absolute;
+    z-index: 55;
+    transition: all 0.3s ease;
+    // $randomNumber:
+    transform: rotate(var(--hoverRotate));
+
+    h2 {
+      color: $white;
+      background-color: $black;
+      text-align: center;
+      transition: all 0.3s ease;
+
+      &::after {
+        transition: all 0.3s ease;
+        content: " ";
+        position: absolute;
+        top: -5px;
+        bottom: -5px;
+        left: -5px;
+        right: -5px;
+        background-color: $white;
+        z-index: -1;
+      }
+
+      &::before {
+        transition: all 0.3s ease;
+        content: " ";
+        position: absolute;
+        top: -13px;
+        bottom: -13px;
+        left: -13px;
+        right: -13px;
+        background-color: $black;
+        z-index: -1;
+      }
+    }
+
+    &-sign {
+      border: 19px solid $white;
+      border-radius: 5px;
+
+      h2 {
+        color: $black;
+        background-color: rgb(255, 187, 61);
+        text-align: center;
+
+        &::after {
+          background-color: $black;
+          border-radius: 5px;
+        }
+
+        &::before {
+          background-color: rgb(255, 187, 61);
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .search-wrapper {
+    .search-title {
+      .asl_w_container_1 {
+        min-width: unset !important;
+        #ajaxsearchlite1 {
+          background-color: black !important;
+
+          .probox {
+            background-color: black !important;
+            background-image: unset !important;
+          }
+        }
+      }
+    }
+    .wpgb-search-facet {
+      .wpgb-input {
+        border: 3px solid black;
+        border-radius: 0;
+      }
+
+      svg {
+        // fill: black;
+        color: black;
+      }
+    }
+  }
+
+  .wpgb-pagination {
+    li {
+      a {
+        font-size: 20px !important;
+        font-weight: 400 !important;
+        line-height: 32px !important;
+        color: $blue;
+      }
+
+      a[aria-current] {
+        color: $white !important;
+        background-color: $blue;
+        border-radius: 50%;
+      }
+    }
+
+    .dont-border {
+      a[aria-current] {
+        border: 0 !important;
+        background-color: unset;
+        color: $blue !important;
+      }
+    }
+
+    .prev {
+      margin-left: 0 !important;
+
+      a {
+        position: relative;
+        padding-left: 32px;
+
+        @include media-breakpoint-down(md) {
+          font-size: 0px !important;
+          padding-left: 0 !important;
+        }
+
+        &:hover {
+          padding-left: 32px !important;
+        }
+
+        &::before {
+          content: url(../../assets/img/svg/arrowPrev.svg);
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 24px;
+          position: static !important;
+
+          @include media-breakpoint-up(md) {
+            position: absolute !important;
+          }
+        }
+      }
+    }
+
+    .next {
+      margin-right: 0 !important;
+
+      a {
+        position: relative;
+        padding-right: 32px;
+
+        @include media-breakpoint-down(md) {
+          font-size: 0px !important;
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+
+        &::after {
+          content: url(../../assets/img/svg/arrowNext.svg);
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          height: 24px;
+
+          position: static !important;
+
+          @include media-breakpoint-up(md) {
+            position: absolute !important;
+          }
+        }
+
+        &:hover {
+          padding-right: 32px !important;
+        }
+      }
+    }
+  }
+
+  .page-nav-button-prev,
+  .page-nav-button-next {
+    a {
+      pointer-events: none;
+      font-size: 20px !important;
+      font-weight: 400 !important;
+      line-height: 32px !important;
+      color: #707070 !important;
+    }
+  }
+
+  .page-nav-button-prev a::before {
+    content: url(../../assets/img/svg/arrowPrevDisabled.svg) !important;
+  }
+  .page-nav-button-next a::after {
+    content: url(../../assets/img/svg/arrowNextDisabled.svg) !important;
+  }
+
+  .innericon {
+    svg {
+      fill: black !important;
+    }
+  }
+  .proclose {
+    svg {
+      border-radius: unset !important;
+      background-color: black !important;
+    }
+  }
+}
+
+#ajaxsearchliteres1 {
+  background-color: black !important;
+}
+
+.promagnifier {
+  background-image: unset !important;
+  background-color: white !important;
+}
+
+.asl_res_url {
+  color: black !important;
+  font-weight: bold !important;
+}
