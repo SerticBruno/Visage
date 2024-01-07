@@ -1906,6 +1906,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_659add63dd02a",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_659475913871d",
                             "label": "Image",
                             "name": "image",
@@ -2450,5 +2469,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1704228290
+    "modified": 1704648105
 }

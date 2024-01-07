@@ -7,7 +7,7 @@ $logo_scrolled = $header['logo_scrolled']['url'];
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
+    <div class="container d-flex justify-content-center">
         <div class="row w-100">
             <div class="col-12 text-center">
                 <div class="logo-wrapper">
