@@ -1,0 +1,16 @@
+pipelines:
+  default:
+    - step:
+        script:
+          - echo "Run update on server!"
+          - pipe: atlassian/ssh-run:0.2.2
+            variables:
+              SSH_USER: $REMOTE_USER
+              SERVER: $REMOTE_HOST
+              COMMAND: "cd ${REMOTE_GIT}; git fetch --all; git reset --hard origin/master; git pull origin master;"
+              #              MODE: '<string>' # Optional
+              PORT: $REMOTE_PORT # Optional
+              #              SSH_KEY: '<string>' # Optional
+              EXTRA_ARGS: "-P ${REMOTE_PORT}" # Optional
+#              DEBUG: '<string>' # Optional
+
