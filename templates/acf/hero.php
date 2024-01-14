@@ -53,7 +53,7 @@ $button = $post_info['button'];
                                     <div class="scroll-down">
                                         <p><?php _e('Scroll Down', 'visage')?></p>
                                             <div class="img-wrapper ">
-                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-next-empty.png"/>
+                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link.png"/>
                                             </div>
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@ $button = $post_info['button'];
                                     <div class="scroll-down">
                                         <p><?php _e('Scroll Down', 'visage')?></p>
                                         <div class="img-wrapper ">
-                                            <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-next-empty.png"/>
+                                            <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link.png"/>
                                         </div>
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@ $button = $post_info['button'];
                                         <p><?php _e('Scroll Down', 'visage')?></p>
                                         <!-- <div class="scroll-down-body"> -->
                                             <div class="img-wrapper ">
-                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-next-empty.png"/>
+                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link.png"/>
                                             </div>
                                         <!-- </div> -->
                                     </div>
@@ -130,7 +130,7 @@ $button = $post_info['button'];
                                         <p class="strong"><?php _e('Scroll Down', 'visage')?></p>
                                         <!-- <div class="scroll-down-body"> -->
                                             <div class="img-wrapper ">
-                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-next-empty.png"/>
+                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link.png"/>
                                             </div>
                                         <!-- </div> -->
                                     </div>
@@ -192,7 +192,7 @@ $button = $post_info['button'];
                                         <div class="scroll-down">
                                             <p><?php _e('Scroll Down', 'visage')?></p>
                                             <div class="img-wrapper ">
-                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-next-empty.png"/>
+                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link.png"/>
                                             </div>
                                         </div>
                                     </div>
@@ -240,7 +240,7 @@ $button = $post_info['button'];
                                         <div class="scroll-down">
                                             <p><?php _e('Scroll Down', 'visage')?></p>
                                             <div class="img-wrapper ">
-                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-next-empty.png"/>
+                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link.png"/>
                                             </div>
                                         </div>
                                     </div>
@@ -266,7 +266,7 @@ $button = $post_info['button'];
                                         <div class="scroll-down">
                                             <p><?php _e('Scroll Down', 'visage')?></p>
                                             <div class="img-wrapper ">
-                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-next-empty.png"/>
+                                                <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link.png"/>
                                             </div>
                                         </div>
                                     </div>

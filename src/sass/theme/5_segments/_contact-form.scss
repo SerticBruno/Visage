@@ -6,9 +6,11 @@
     padding-bottom: 16px;
   }
   a {
-    color: $primary;
+    // color: $primary;
+    text-decoration: underline !important;
     &:hover {
       color: $black;
+      text-decoration: none !important;
     }
   }
 
@@ -26,7 +28,7 @@
         input,
         textarea {
           background-color: white !important;
-          border: 3px solid black !important;
+          border: 1px solid black !important;
           border-radius: 0 !important;
           resize: none !important;
         }
@@ -79,10 +81,11 @@
     }
 
     .forminator-button-submit {
-      outline: 3px solid black !important;
+      outline: 1px solid black !important;
       background-color: white !important;
       color: black !important;
       font-size: 20px !important;
+      font-family: versailles;
       font-weight: 700 !important;
       padding: 15px 40px !important;
       // transform: rotate(3deg) !important;
@@ -94,7 +97,7 @@
         outline-color: white !important;
         background-color: black !important;
         color: white !important;
-        box-shadow: 10px 9px 0 rgb(0, 0, 0) !important;
+        // box-shadow: 10px 9px 0 rgb(0, 0, 0) !important;
       }
     }
     // #wpforms-418-field_0-container, #wpforms-418-field_1-container, #wpforms-418-field_2-container{
@@ -140,6 +143,6 @@
     display: none;
   }
   .wpgmza_map{
-    border: 3px solid $black;
+    border: 1px solid $black;
   }
 }
