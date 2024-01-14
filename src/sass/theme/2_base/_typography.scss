@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: gildadisplay;
+  font-family: notoserifdisplay;
   font-size: 1rem;
   line-height: $line-height;
   color: $black;
@@ -30,14 +30,14 @@ h6,
 
 h1,
 .h1 {
-  @include fluid("font-size", 64, 164);
+  @include fluid("font-size", 60, 140);
   @include fluid("letter-spacing", -1.6, -0.8);
   line-height: 1;
 }
 
 h2,
 .h2 {
-  @include fluid("font-size", 29, 44);
+  @include fluid("font-size", 24, 38);
   line-height: 1;
 }
 

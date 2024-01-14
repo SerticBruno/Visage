@@ -137,27 +137,28 @@
     transition: $transition;
     align-items: center; 
     height: 100%;
-    @include fluid("padding-top", 12, 24);
-    @include fluid("padding-bottom", 12, 24);
+    @include fluid("padding-top", 8, 18);
+    @include fluid("padding-bottom", 8, 18);
   }
 
   &-brand {
     padding: 0;
     margin-right: 0;
     transition: $transition;
-    @include fluid("margin-left", 30, 100);
 
     h1{
       color: $black !important;
       transition: $transition;
       font-weight: 500;
+      @include fluid("margin-left", 30, 100);
       @include fluid("letter-spacing", 30, 100);
     }
 
     h2 {
       color: $black !important;
       transition: $transition;
-      font-weight: 500;
+      font-weight: 400;
+      @include fluid("margin-left", 6, 16);
       @include fluid("letter-spacing", 6, 16);
     }
 
