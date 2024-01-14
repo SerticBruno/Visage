@@ -41,7 +41,7 @@
         &:hover {
           img {
             transition: all 0.3s ease;
-            border-color: $primary;
+            // border-color: $primary;
             // filter: grayscale(100%) sepia(100%) hue-rotate(90deg);
           }
         }
@@ -55,7 +55,7 @@
     a {
       font-weight: 700;
       text-decoration: none;
-      color: $primary;
+      // color: $primary;
       transition: all 0.2s ease;
 
       &:hover {
@@ -82,7 +82,7 @@
     a {
       color: $white;
       &:hover {
-        color: $primary;
+        // color: $primary;
       }
     }
   }

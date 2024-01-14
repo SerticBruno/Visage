@@ -41,7 +41,7 @@
 				</div>
 			</div>
 			<div id="copyright" class="text-center">
-				&copy; <a href="<?php echo home_url()?>"> <?php echo esc_html( date_i18n( __( 'Y', 'visage' ) ) ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?> </a>
+				<a href="<?php echo home_url()?>">&copy; <?php echo esc_html( date_i18n( __( 'Y', 'visage' ) ) ); ?> VISAGE Studio</a>
 			</div>
 		</footer>
 		</div>
