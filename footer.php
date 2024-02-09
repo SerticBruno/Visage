@@ -4,7 +4,9 @@
 			//myErr($footer);
 		?>
 
-		<footer class="footer py-4" role="contentinfo">
+		<footer class="footer py-2" role="contentinfo">
+
+			<hr>
 
 			<div class="modal fade" id="modal" tabindex="-1">
 				<div class="modal-dialog modal-dialog-centered">
@@ -18,7 +20,7 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-6 col-md-2 info-text order-md-first">
+					<div class="col-12 col-md-2 info-text order-md-first">
 						<?php echo $footer['description'] ?>
 					</div>
 					<div class="col-12 col-md-8 order-last">

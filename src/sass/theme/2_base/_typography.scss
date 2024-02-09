@@ -30,14 +30,14 @@ h6,
 
 h1,
 .h1 {
-  @include fluid("font-size", 60, 140);
+  @include fluid("font-size", 44, 66);
   @include fluid("letter-spacing", -1.6, -0.8);
   line-height: 1;
 }
 
 h2,
 .h2 {
-  @include fluid("font-size", 24, 38);
+  @include fluid("font-size", 18, 26);
   line-height: 1;
 }
 
@@ -71,6 +71,7 @@ a {
 }
 
 p {
+  font-size: 0.8rem;
   & + p {
     margin-top: 1rem;
   }

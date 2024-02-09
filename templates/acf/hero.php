@@ -82,7 +82,13 @@ $button = $post_info['button'];
 
                 <div class="swiper-slide hero-slide">
                     <div class="hero-slide-bg">
-                        <?php echo $image; ?>
+                        <?php
+                            $scale = $params['image_scale'];
+                            $imageMargin = $params['image_margin'];
+                        ?>
+                        <div class="wrap-img" <?php if($scale != 0 && $imageMargin != 0) { ?> style="scale: <?php echo $scale ?>; margin-top: <?php echo $imageMargin ?>px"<?php } ?>>
+                            <?php echo $image; ?>
+                        </div>
 
                         <div class="hero-slide-bg-overlay"></div>
                     </div>

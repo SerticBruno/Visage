@@ -8,14 +8,14 @@
   padding: 0;
   transition: $transition;
 
-  h1{
+  h1 {
     transition: $transition;
   }
-  h2{
+  h2 {
     transition: $transition;
   }
 
-  .menu-primary-menu-container{
+  .menu-primary-menu-container {
     width: 100%;
   }
 
@@ -27,9 +27,8 @@
     padding: 15px 0;
   }
 
-  &-nav{
+  &-nav {
     width: 100%;
-
   }
 
   ul {
@@ -48,10 +47,12 @@
         width: 100%;
         color: $black;
         transition: all 0.2s ease;
-        font-size: 22px;
+        font-size: 18px;
         // todo font-size: 22px;
         display: inline-block;
-        padding: 15px 0;
+        // padding: 15px 0;
+
+        padding: 5px 10px;
         font-weight: 500;
         font-family: versailles;
         text-transform: uppercase;
@@ -61,7 +62,8 @@
           color: gray;
         }
         @include media-breakpoint-down(md) {
-          padding: 15px 0;
+          padding: 5px 10px;
+          // padding: 15px 0;
           font-size: 18px;
         }
       }
@@ -135,7 +137,7 @@
     display: flex;
     justify-content: center;
     transition: $transition;
-    align-items: center; 
+    align-items: center;
     height: 100%;
     @include fluid("padding-top", 8, 18);
     @include fluid("padding-bottom", 8, 18);
@@ -146,7 +148,7 @@
     margin-right: 0;
     transition: $transition;
 
-    h1{
+    h1 {
       color: $black !important;
       transition: $transition;
       font-weight: 500;
@@ -168,7 +170,7 @@
       opacity: 1;
     }
 
-    &.scrolled{
+    &.scrolled {
       transition: $transition;
     }
   }
@@ -176,7 +178,7 @@
   &.scrolled {
     transition: $transition;
 
-    .navbar-toggler{
+    .navbar-toggler {
       @include fluid("padding-top", 16, 24);
       @include fluid("padding-bottom", 4, 8);
     }
@@ -186,14 +188,16 @@
       @include fluid("padding-bottom", 4, 12);
     }
 
-    .text-center{
-      h1{
+    .text-center {
+      h1 {
         transition: $transition;
-        @include fluid("font-size", 44, 66);
+        // @include fluid("font-size", 44, 66);
+        font-size: 0px;
       }
-      h2{
+      h2 {
         transition: $transition;
-        @include fluid("font-size", 18, 26);
+        // @include fluid("font-size", 18, 26);
+        font-size: 0px;
       }
     }
 
@@ -216,7 +220,6 @@
   }
 
   &-toggler {
-    
     @include fluid("padding-top", 24, 48);
     @include fluid("padding-bottom", 12, 24);
     // width: 32px;

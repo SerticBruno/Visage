@@ -16,6 +16,7 @@
 		<meta name="twitter:widgets:link-color" content="blue" />
 		<meta name="twitter:widgets:border-color" content="#fff" />
 		<link rel="canonical" href="https://<?php echo $_SERVER["HTTP_HOST"]; ?><?php echo parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ); ?>" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<script type="application/ld+json">
 		{
 		"@context": "https://www.schema.org/",

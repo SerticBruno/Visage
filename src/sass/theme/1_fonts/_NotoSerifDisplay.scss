@@ -1,8 +1,9 @@
 @font-face {
-    font-family: "NotoSerifDisplay";
-    src: url("#{$font-path}/NotoSerifDisplay/NotoSerifDisplay.ttf") format("truetype");
-  }
-  
-  .notoserifdisplay {
-    font-family: "NotoSerifDisplay";
-  }
+  font-family: "NotoSerifDisplay";
+  src: url("#{$font-path}/NotoSerifDisplay/NotoSerifDisplay.ttf")
+    format("truetype");
+}
+
+.notoserifdisplay {
+  font-family: "NotoSerifDisplay";
+}
