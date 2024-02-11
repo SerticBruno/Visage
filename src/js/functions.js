@@ -413,10 +413,6 @@ img2svg(".replaceSvg");
 
 var swiperfeatures = new Swiper(".swiper-features", {
   loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   pagination: {
     el: ".swiper-features-pagination",
     clickable: true,

@@ -11,9 +11,6 @@ $content = $params['content'];
                 <div>
                     <h2>Cjenik</h2>
                 </div>
-                <div class="img-wrapper">
-                    <img src="<?php echo $params['image']['url'] ?>"></img>
-                </div>
             </div>
             <div class="col-12 col-lg-10">
                 <div class="row">
