@@ -1,0 +1,25 @@
+.price-list{
+  .img-wrapper{
+    img{
+      height: 149px;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+  }
+  .col-12 {
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+  .col-lg-10 .row {
+    border-bottom: 1px solid #eee;
+  }
+  .col-6 {
+    padding: 10px 15px;
+  }
+  .col-6:last-child {
+    text-align: right;
+  }
+  .col-lg-10 .row:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for odd rows */
+}
+}
