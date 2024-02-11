@@ -141,6 +141,7 @@
     height: 100%;
     @include fluid("padding-top", 8, 18);
     @include fluid("padding-bottom", 8, 18);
+    border-bottom: 1px solid $primary;
   }
 
   &-brand {
@@ -180,12 +181,12 @@
 
     .navbar-toggler {
       @include fluid("padding-top", 16, 24);
-      @include fluid("padding-bottom", 4, 8);
+      @include fluid("padding-bottom", 16, 24);
     }
 
     .logo-wrapper {
-      @include fluid("padding-top", 4, 12);
-      @include fluid("padding-bottom", 4, 12);
+      border-bottom: 0px;
+      padding: 0;
     }
 
     .text-center {
@@ -290,12 +291,13 @@
   }
 
   &-collapse {
+    @include media-breakpoint-down(lg) {
+      max-height: 100vh; /* Adjust as needed */
+      overflow-y: scroll;
+    }
+
     .menu-main-menu-container {
       @include media-breakpoint-down(lg) {
-        height: 100vh;
-        padding-bottom: 130px;
-        overflow-y: scroll;
-
         a {
           padding: 15px 0;
         }

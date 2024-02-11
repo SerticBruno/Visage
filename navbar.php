@@ -19,8 +19,6 @@ $logo_scrolled = $header['logo_scrolled']['url'];
                     </a>
                 </div>
             </div>
-            <hr>
-
                 
             <div class="col-12 d-flex justify-content-end">
                 <div class="collapse navbar-collapse w-100 py-1" id="navbarSupportedContent">
