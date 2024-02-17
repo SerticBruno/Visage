@@ -11,6 +11,20 @@
     height: 100vh;
   }
 
+  .swiper-button::after{
+    transition: $transition;
+    color:white;
+  }
+
+  .swiper-button:hover{
+    transition: $transition;
+    &::after{
+      color: black;
+    }
+  }
+
+
+
   h1,
   .h1 {
     color: $blue;
@@ -129,8 +143,8 @@
     &-button {
       position: absolute;
       top: 50%;
-      width: 48px;
-      height: 48px;
+      width: 56px;
+      height: 56px;
       background-color: black;
       // border-radius: 50%;
       z-index: 10;
@@ -150,8 +164,13 @@
       @include media-breakpoint-down(lg) {
         position: relative;
         top: unset;
-        width: 32px;
-        height: 32px;
+        width: 52px;
+        height: 62px;
+      }
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        top: unset;
       }
 
       svg {
@@ -166,15 +185,13 @@
       }
 
       &-prev {
-        left: 48px;
         @include media-breakpoint-down(lg) {
           left: unset;
         }
       }
 
       &-next {
-        right: 48px;
-        transform: scaleX(-1);
+        // transform: scaleX(-1);
         @include media-breakpoint-down(lg) {
           right: unset;
         }
@@ -197,7 +214,6 @@
         justify-content: flex-end;
         width: fit-content;
         margin-left: auto;
-        gap: 16px;
       }
 
       .swiper-pagination-mobile {

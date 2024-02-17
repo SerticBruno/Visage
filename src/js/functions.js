@@ -398,7 +398,7 @@ var heroswiper = new Swiper(".hero-slider", {
   loop: true,
   slidesPerView: 1,
   speed: 1000,
-  autplaySpeed: 2500,
+  autoplaySpeed: 2500,
   watchOverflow: true,
   pagination: {
     el: ".swiper-pagination-mobile",
@@ -409,9 +409,14 @@ var heroswiper = new Swiper(".hero-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
 img2svg(".replaceSvg");
 
 var swiperfeatures = new Swiper(".swiper-features", {
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   loop: true,
   pagination: {
     el: ".swiper-features-pagination",
@@ -421,21 +426,25 @@ var swiperfeatures = new Swiper(".swiper-features", {
     // when window width is <= 499px
     425: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
         spaceBetweenSlides: 50
     },
     // when window width is <= 999px
     768: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetweenSlides: 30
     },
     // when window width is <= 999px
     1000: {
         slidesPerView: 3,
+        slidesPerGroup: 3,
         spaceBetweenSlides: 50
     },
     // when window width is <= 999px
     2560: {
-        slidesPerView: 3,
+        slidesPerView: 5,
+        slidesPerGroup: 5,
         spaceBetweenSlides: 50
     }
   }

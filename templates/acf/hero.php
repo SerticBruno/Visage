@@ -305,21 +305,21 @@ $button = $post_info['button'];
 
         <?php if($style == 'slider') { ?>
             <div class="swiper-navigation d-none d-lg-block">
-                <div class="swiper-button swiper-button-next" style="transform: scaleX(-1)">
-                    <img class="replaceSvg" style="opacity: 0;"  src="<?php echo THEME_URL; ?>/assets/img/svg/angle.svg" alt="">
+                <div class="swiper-button swiper-button-next">
+                    <img style="opacity: 0;"  alt="">
                 </div>
                 <div class="swiper-button swiper-button-prev"  >
-                    <img class="replaceSvg" style="opacity: 0;"  src="<?php echo THEME_URL; ?>/assets/img/svg/angle.svg" alt="">
+                    <img style="opacity: 0;"  alt="">
                 </div>
             </div>
             <div class="swiper-navigation-mobile d-lg-none">
                 <div class="swiper-navigation-mobile-wrap">
                     <div class="swiper-button swiper-button-prev">
-                        <img class="replaceSvg" style="opacity: 0;" src="<?php echo THEME_URL; ?>/assets/img/svg/angle.svg" alt="">
+                        <img style="opacity: 0;" alt="">
                     </div>
                     <div class="swiper-pagination-mobile"></div>
-                    <div class="swiper-button swiper-button-next" style="transform: scaleX(-1)">
-                        <img class="replaceSvg" style="opacity: 0;" src="<?php echo THEME_URL; ?>/assets/img/svg/angle.svg" alt="">
+                    <div class="swiper-button swiper-button-next">
+                        <img style="opacity: 0;" alt="">
                     </div>
                 </div>
             </div>

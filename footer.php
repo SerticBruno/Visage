@@ -1,7 +1,9 @@
 </div>
+
+		<?php include THEME_DIR . '/templates/acf/footer_contact_form.php';  ?>
+
 		<?php
 			$footer = get_field('footer', 'option');
-			//myErr($footer);
 		?>
 
 		<footer class="footer py-2" role="contentinfo">
