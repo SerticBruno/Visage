@@ -2,7 +2,7 @@
     $footer = get_field('footer', 'option');
 ?>
 
-<section class="contact-form pb-0">
+<section class="footer-contact-form pb-0">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">

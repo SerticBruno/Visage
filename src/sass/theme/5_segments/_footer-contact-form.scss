@@ -1,0 +1,149 @@
+.footer-contact-form {
+  background-color: #c2c2c2;
+  @include fluid("padding-top", 20, 60);
+  @include fluid("padding-bottom", 20, 60);
+
+  .form-title {
+    padding-bottom: 16px;
+  }
+  a {
+    // color: $primary;
+    text-decoration: underline !important;
+    &:hover {
+      color: $black;
+      text-decoration: none !important;
+    }
+  }
+
+  &-visage {
+    #name-1,
+    #email-1,
+    #textarea-1,
+    #phone-1 {
+      .forminator-field {
+        label {
+          font-size: 16px !important;
+          color: black !important;
+          font-weight: 700 !important;
+        }
+        input,
+        textarea {
+          background-color: white !important;
+          border: 1px solid black !important;
+          border-radius: 0 !important;
+          resize: none !important;
+        }
+      }
+    }
+    // #name-1{
+    //     transform: rotate(-1deg) !important;
+    // }
+    // #email-1{
+    //     transform: rotate(2deg) !important;
+    // }
+    // #phone-1{
+    //     transform: rotate(-1deg) !important;
+    // }
+    // #textarea-1{
+    //     transform: rotate(-1deg) !important;
+    // }
+
+    .forminator-row {
+      margin-bottom: 15px !important;
+    }
+
+    .forminator-response-message {
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: white !important;
+      box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      display: flex !important;
+
+      p {
+        // transform: rotate(4deg) !important;
+        border: 5px solid black !important;
+        font-size: 18px !important;
+        color: $black !important;
+        font-weight: 700 !important;
+        padding: 15px !important;
+      }
+    }
+
+    // .forminator-required{
+    //     color: black !important;
+    //     font-weight: 700 !important;
+    // }
+
+    .forminator-description,
+    .forminator-edit-module,
+    .forminator-required {
+      display: none !important;
+    }
+
+    .forminator-button-submit {
+      outline: 1px solid black !important;
+      background-color: white !important;
+      color: black !important;
+      font-size: 20px !important;
+      font-family: versailles;
+      font-weight: 700 !important;
+      padding: 15px 40px !important;
+      // transform: rotate(3deg) !important;
+      border-radius: 0 !important;
+      transition: $transition !important;
+
+      &:hover {
+        // transform: rotate(-1deg) !important;
+        outline-color: white !important;
+        background-color: black !important;
+        color: white !important;
+        // box-shadow: 10px 9px 0 rgb(0, 0, 0) !important;
+      }
+    }
+    // #wpforms-418-field_0-container, #wpforms-418-field_1-container, #wpforms-418-field_2-container{
+    //     input, textarea{
+    //         border: 5px solid black;
+    //         border-radius: 0;
+    //         padding: 16px 8px;
+    //         font-weight: 700;
+    //     }
+    // }
+
+    // #wpforms-submit-418{
+    //     outline: 5px solid black;
+    //     transform: rotate(3deg);
+    //     font-weight: 700;
+    //     padding: 10px 45px;
+    //     background-color: white;
+    //     transition: $transition;
+
+    //     &:hover{
+    //         color: $white;
+    //         background-color: black;
+    //         transform: rotate(-3deg);
+    //         outline-color: white;
+    //     }
+    // }
+
+    // .wpforms-error{
+    //     font-weight: 700;
+    // }
+
+    // #wpforms-confirmation-418{
+    //     background-color: white !important;
+    //     outline: 5px solid black;
+    //     p{
+    //         color: black;
+    //         font-weight: 700;
+    //     }
+    // }
+  }
+  
+  .ol-attribution.ol-unselectable.ol-control.ol-uncollapsible, .ol-zoom.ol-unselectable.ol-control, .ol-full-screen.ol-unselectable.ol-control {
+    display: none;
+  }
+  .wpgmza_map{
+    border: 1px solid $black;
+  }
+}

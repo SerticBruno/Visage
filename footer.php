@@ -6,9 +6,7 @@
 			$footer = get_field('footer', 'option');
 		?>
 
-		<footer class="footer py-2" role="contentinfo">
-
-			<hr>
+		<footer class="footer py-4" role="contentinfo">
 
 			<div class="modal fade" id="modal" tabindex="-1">
 				<div class="modal-dialog modal-dialog-centered">
