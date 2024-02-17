@@ -6,15 +6,20 @@
       object-fit: contain;
     }
   }
-  .col-12 {
-    padding: 0 15px;
-    margin-bottom: 10px;
+  .category-title{
+    padding: 15px 10px;
   }
+
+  .category-row{
+    background-color: #c2c2c2;
+  }
+
+  .product-row{
+    padding: 10px 10px;
+  }
+
   .col-lg-10 .row {
     border-bottom: 1px solid #eee;
-  }
-  .col-6 {
-    padding: 10px 15px;
   }
   .col-6:last-child {
     text-align: right;

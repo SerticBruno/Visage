@@ -2171,8 +2171,8 @@
                         },
                         {
                             "key": "field_65c8f29eedfda",
-                            "label": "Items",
-                            "name": "items",
+                            "label": "Categories",
+                            "name": "categories",
                             "type": "repeater",
                             "instructions": "",
                             "required": 0,
@@ -2186,13 +2186,13 @@
                             "collapsed": "",
                             "min": 0,
                             "max": 0,
-                            "layout": "table",
+                            "layout": "block",
                             "button_label": "",
                             "sub_fields": [
                                 {
-                                    "key": "field_65c8f2b8edfdb",
-                                    "label": "Product",
-                                    "name": "product",
+                                    "key": "field_65d0860ff1485",
+                                    "label": "Title",
+                                    "name": "title",
                                     "type": "text",
                                     "instructions": "",
                                     "required": 0,
@@ -2209,10 +2209,10 @@
                                     "maxlength": ""
                                 },
                                 {
-                                    "key": "field_65c8f2c4edfdc",
-                                    "label": "Price",
-                                    "name": "price",
-                                    "type": "text",
+                                    "key": "field_65d085b21ba22",
+                                    "label": "Products",
+                                    "name": "products",
+                                    "type": "repeater",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -2221,11 +2221,52 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "acfe_repeater_stylised_button": 0,
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "table",
+                                    "button_label": "",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_65c8f2b8edfdb",
+                                            "label": "Title",
+                                            "name": "title",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_65c8f2c4edfdc",
+                                            "label": "Price",
+                                            "name": "price",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -2762,5 +2803,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1707670178
+    "modified": 1708164744
 }
