@@ -4,30 +4,32 @@ $content = $params['content'];
 
 ?>
 
-<section class="price-list">
+<section class="price-list py-4">
     <div class="container py-3 versailles">
         <div class="row">
-            <div class="col-12 col-lg-2">
-                <div>
-                    <h2>Cjenik</h2>
-                </div>
+            <div class="col-12 col-lg-2 pb-4">
+                <h2>Cjenik</h2>
             </div>
             <div class="col-12 col-lg-10">
-                <div class="row">
-                    <div class="col-12 strong">
-                        Tretmani
-                    </div>
-                </div>
-                <?php foreach($params['items'] as $k => $v) { ?>
-                    <div class="row">
-                        <div class="col-6">
-                            <?php echo $v['product'] ?>
+                <?php foreach($params['categories'] as $category): ?>
+                    <div class="category-section">
+                        <div class="category-row row">
+                            <div class="category-title col-12 strong">
+                                <?php echo htmlspecialchars($category['title']); ?>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <?php echo $v['price'] ?> EUR
-                        </div>
+                        <?php foreach($category['products'] as $product): ?>
+                            <div class="product-row row">
+                                <div class="col-6 product-title">
+                                    <?php echo htmlspecialchars($product['title']); ?>
+                                </div>
+                                <div class="col-6 product-price">
+                                    <?php echo htmlspecialchars($product['price']); ?> EUR
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
                     </div>
-                <?php } ?>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
