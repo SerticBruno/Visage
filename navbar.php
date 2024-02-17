@@ -21,7 +21,7 @@ $logo_scrolled = $header['logo_scrolled']['url'];
             </div>
                 
             <div class="col-12 d-flex justify-content-end">
-                <div class="collapse navbar-collapse w-100 py-1" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
                     <?php wp_nav_menu( array( 
                         'theme_location' => 'primary', 
                         'depth' => 2,

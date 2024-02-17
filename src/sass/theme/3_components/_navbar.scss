@@ -16,13 +16,14 @@
   }
 
   .menu-primary-menu-container {
+    transition: $transition;
     width: 100%;
   }
 
   .navbar-nav{
     li{
       a{
-        padding: 5px 60px;
+        padding: 14px 60px;
         
         @include media-breakpoint-down(lg) {
           padding: 5px;
@@ -209,20 +210,20 @@
     }
 
     .logo-wrapper {
-      border-bottom: 0px;
-      padding: 0;
+      @include fluid("padding-bottom", 12, 18);
     }
 
     .text-center {
       h1 {
         transition: $transition;
-        // @include fluid("font-size", 44, 66);
-        font-size: 0px;
+        @include fluid("font-size", 22, 44);
+        @include fluid("letter-spacing", 22, 66);
+
       }
       h2 {
         transition: $transition;
-        // @include fluid("font-size", 18, 26);
-        font-size: 0px;
+        @include fluid("font-size", 12, 18);
+        @include fluid("letter-spacing", 4, 12);
       }
     }
 
@@ -233,12 +234,17 @@
       }
     }
 
+    .menu-primary-menu-container{
+      transition: $transition;
+      padding: 5px 0px;
+    }
+
     ul {
       li {
         a {
           transition: all 0.3s ease;
           font-size: 18px;
-          padding: 5px 10px;
+          padding: 0px 60px;
         }
       }
     }
