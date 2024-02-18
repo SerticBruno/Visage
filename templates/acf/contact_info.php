@@ -13,7 +13,7 @@
             </div>
             <div class="col-12 col-md-6 p-0">
                 <?php echo do_shortcode('[wpgmza id="1"]'); ?>
-                <!-- test1 -->
+                <!-- test3 -->
             </div>
         </div>
     </div>
