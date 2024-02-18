@@ -5,6 +5,9 @@
 
   color: $black;
 
+  box-shadow: 0 1px 10px 0px $black;
+  border-top: 1px solid $black;
+
   ul {
     li {
       list-style-type: none;

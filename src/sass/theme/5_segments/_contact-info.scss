@@ -1,19 +1,10 @@
-.info-contact {
+.contact-info {
   @include fluid("margin-top", 20, 60);
   @include fluid("margin-bottom", 20, 60);
-  color: white;
-  background-color: black;
+  background-color: $gray;
 
   .container-fluid{
     max-width: 1320px;
-  }
-
-  h2{
-    color: white;
-  }
-
-  a{
-    color:white;
   }
 
   .form-title {

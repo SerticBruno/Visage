@@ -37,8 +37,16 @@ $button = $post_info['button'];
                             <div class="row">
                                 <div class="col-12 col-lg-9">
                                     <div class="hero-slide-title">
-                                        <h1 class="basis"><?php echo $title ?></h1>
-                                        <h2 class="basis"><?php echo $subtitle ?></h2>
+                                        <?php if(!empty($title)){ ?>
+                                            <?php if($k == 0) { ?>
+                                                <h1 class="basis"><?php echo $title ?></h1>
+                                            <?php } else { ?>
+                                                <h2 class="h1 basis"><?php echo $title ?></h2>
+                                            <?php }  ?>
+                                        <?php } ?>
+                                        <?php if(!empty($subtitle)){ ?>
+                                            <h2 class="basis" ><?php echo $subtitle ?></h2>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +105,13 @@ $button = $post_info['button'];
                             <div class="row">
                                 <div class="col-12 col-lg-9">
                                     <div class="hero-slide-title">
-                                        <h1 class="basis"><?php echo $title ?></h1>
+                                        <?php if(!empty($title)){ ?>
+                                            <?php if($k == 0) { ?>
+                                                <h1 class="basis"><?php echo $title ?></h1>
+                                            <?php } else { ?>
+                                                <h2 class="h1 basis"><?php echo $title ?></h2>
+                                            <?php }  ?>
+                                        <?php } ?>
                                         <?php if(!empty($subtitle)){ ?>
                                             <h2 class="basis" ><?php echo $subtitle ?></h2>
                                         <?php } ?>
@@ -125,7 +139,13 @@ $button = $post_info['button'];
                             <div class="row align-items-end">
                                 <div class="col-12 col-lg-9">
                                     <div class="hero-slide-title">
-                                        <h1 class="mb-0 basis "><?php echo $title ?></h1>
+                                        <?php if(!empty($title)){ ?>
+                                            <?php if($k == 0) { ?>
+                                                <h1 class="basis"><?php echo $title ?></h1>
+                                            <?php } else { ?>
+                                                <h2 class="h1 basis"><?php echo $title ?></h2>
+                                            <?php }  ?>
+                                        <?php } ?>
                                         <?php if(!empty($subtitle)){ ?>
                                             <h2 class="basis" ><?php echo $subtitle ?></h2>
                                         <?php } ?>
@@ -175,12 +195,15 @@ $button = $post_info['button'];
                                     </div>
                                     <div class="col-12 col-lg-9">
                                         <div class="hero-slide-title">
-                                            <?php if($k == 0) { ?>
-                                                <h1><span class="basis  "><?php echo $title ?></span></h1>
-                                                <h2 class="basis"><?php echo $subtitle ?></h2>
-                                            <?php } else { ?>
-                                                <h2 class="h1 "><span class="basis"><?php echo $title ?></span></h2>
-                                                <h2 class="basis"><?php echo $subtitle ?></h2>
+                                            <?php if(!empty($title)){ ?>
+                                                <?php if($k == 0) { ?>
+                                                    <h1 class="basis"><?php echo $title ?></h1>
+                                                <?php } else { ?>
+                                                    <h2 class="h1 basis"><?php echo $title ?></h2>
+                                                <?php }  ?>
+                                            <?php } ?>
+                                            <?php if(!empty($subtitle)){ ?>
+                                                <h2 class="basis" ><?php echo $subtitle ?></h2>
                                             <?php } ?>
                                         </div>
                                     </div>
@@ -230,8 +253,16 @@ $button = $post_info['button'];
                                     </div>
                                     <div class="col-12 col-lg-9">
                                         <div class="hero-slide-title">
-                                            <h1 class="basis "><?php echo $v['title'] ?></h1>
-                                            <h2 class="basis"><?php echo $v['subtitle'] ?></h2>
+                                            <?php if(!empty($title)){ ?>
+                                                <?php if($k == 0) { ?>
+                                                    <h1 class="basis"><?php echo $title ?></h1>
+                                                <?php } else { ?>
+                                                    <h2 class="h1 basis"><?php echo $title ?></h2>
+                                                <?php }  ?>
+                                            <?php } ?>
+                                            <?php if(!empty($subtitle)){ ?>
+                                                <h2 class="basis" ><?php echo $subtitle ?></h2>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 </div>
@@ -264,8 +295,16 @@ $button = $post_info['button'];
                                     </div>
                                     <div class="col-12 col-lg-9">
                                         <div class="hero-slide-title">
-                                            <h1 class="mb-0 "><span class="basis"><?php echo $v['title'] ?></span></h1>
-                                            <h2 class="basis"><?php echo $v['subtitle'] ?></h2>
+                                            <?php if(!empty($title)){ ?>
+                                                <?php if($k == 0) { ?>
+                                                    <h1 class="basis"><?php echo $title ?></h1>
+                                                <?php } else { ?>
+                                                    <h2 class="h1 basis"><?php echo $title ?></h2>
+                                                <?php }  ?>
+                                            <?php } ?>
+                                            <?php if(!empty($subtitle)){ ?>
+                                                <h2 class="basis" ><?php echo $subtitle ?></h2>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                     <div class="col-3 ms-auto d-none d-lg-block">

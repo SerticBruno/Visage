@@ -395,7 +395,7 @@ var swiper4 = new Swiper(".mySwi2per", {
 /******************************************** */
 
 var heroswiper = new Swiper(".hero-slider", {
-  loop: true,
+  // loop: true,
   slidesPerView: 1,
   speed: 1000,
   autoplaySpeed: 2500,
@@ -409,6 +409,7 @@ var heroswiper = new Swiper(".hero-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
 
 img2svg(".replaceSvg");
 

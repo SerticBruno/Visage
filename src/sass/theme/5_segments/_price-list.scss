@@ -11,7 +11,7 @@
   }
 
   .category-row{
-    background-color: #c2c2c2;
+    background-color: $gray;
   }
 
   .product-row{
@@ -19,12 +19,12 @@
   }
 
   .col-lg-10 .row {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $grayBorder;
   }
   .col-6:last-child {
     text-align: right;
   }
   .col-lg-10 .row:nth-child(even) {
-    background-color: #f9f9f9; /* Light gray background for odd rows */
+    background-color: $grayLight; /* Light gray background for odd rows */
 }
 }

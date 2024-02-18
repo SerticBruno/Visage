@@ -14,6 +14,9 @@
   .swiper-button::after{
     transition: $transition;
     color:white;
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+    }
   }
 
   .swiper-button:hover{
@@ -165,7 +168,7 @@
         position: relative;
         top: unset;
         width: 52px;
-        height: 62px;
+        height: 52px;
       }
 
       @include media-breakpoint-down(md) {
@@ -376,6 +379,7 @@
   .basis {
     transition: all 1.5s ease;
     background-color: $white;
+    color: $black;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -388,7 +392,6 @@
     background-size: 100% 200%;
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
     background-position: 0% 0%;
     &.active {
       background-position: 0 -100%;
