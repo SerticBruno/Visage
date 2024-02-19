@@ -10,9 +10,18 @@
 
   h1 {
     transition: $transition;
+    opacity: 1;
   }
   h2 {
     transition: $transition;
+    opacity: 1;
+  }
+
+  .logo-img-wrapper{
+    img{
+      height: 0px;
+      // height: 64px;
+    }
   }
 
   .menu-primary-menu-container {
@@ -164,7 +173,7 @@
     transition: $transition;
     align-items: center;
     height: 100%;
-    @include fluid("padding-top", 8, 18);
+    // @include fluid("padding-top", 8, 18);
     @include fluid("padding-bottom", 8, 18);
     border-bottom: 1px solid $primary;
   }
@@ -205,32 +214,40 @@
     transition: $transition;
 
     .navbar-toggler {
-      @include fluid("padding-top", 16, 24);
-      @include fluid("padding-bottom", 16, 24);
+      transition: $transition;
+      @include fluid("padding-top", 24, 32);
+      @include fluid("padding-bottom", 8, 12);
     }
 
     .logo-wrapper {
-      @include fluid("padding-bottom", 12, 18);
+      @include fluid("padding-top", 0, 0);
+      @include fluid("padding-bottom", 0, 0);
     }
 
     .text-center {
       h1 {
         transition: $transition;
-        @include fluid("font-size", 22, 44);
-        @include fluid("letter-spacing", 22, 66);
+        opacity: 0;
+        @include fluid("font-size", 0, 0);
+        @include fluid("letter-spacing", 0, 0);
 
       }
       h2 {
         transition: $transition;
-        @include fluid("font-size", 12, 18);
-        @include fluid("letter-spacing", 4, 12);
+        opacity: 0;
+        @include fluid("font-size", 0, 0);
+        @include fluid("letter-spacing", 0, 0);
       }
     }
 
     .navbar-brand {
-      img {
-        transition: all 0.3s ease;
-        height: 60px;
+      .logo-img-wrapper{
+
+        img {
+          padding: 0;
+          transition: all 0.3s ease;
+          height: 60px;
+        }
       }
     }
 
@@ -251,6 +268,7 @@
   }
 
   &-toggler {
+    transition: $transition;
     @include fluid("padding-top", 24, 48);
     @include fluid("padding-bottom", 12, 24);
     // width: 32px;

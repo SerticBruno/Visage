@@ -13,9 +13,13 @@ $logo_scrolled = $header['logo_scrolled']['url'];
                 <div class="logo-wrapper">
                     <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
                         <!-- <img src="<?php echo $logo ?>" alt="Visage Logo"> -->
-                        <!-- <img src="<?php echo $logo_scrolled ?>" class="second-image" alt="Visage Logo" style="background: transparent; scale: 1.5;"> -->
-                        <h1 class="versailles">VISAGE</h1>
-                        <h2 class="notoserifdisplay pt-2">studio</h2>
+                        <div class="logo-img-wrapper p-2 d-flex justify-content-center align-items-center">
+                            <img src="<?php echo $logo_scrolled ?>" alt="Visage Logo">
+                        </div>
+                        <div class="info">
+                            <h1 class="versailles">VISAGE</h1>
+                            <h2 class="notoserifdisplay pt-2">studio</h2>
+                        </div>
                     </a>
                 </div>
             </div>
