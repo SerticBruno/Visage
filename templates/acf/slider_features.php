@@ -5,7 +5,7 @@ $features = $params['features'];
 ?>
 
 <section class="slider-features">
-    <div class="container py-3">
+    <div class="container-fluid py-3">
         <div class="row justify-content-around">
             <div class="swiper swiper-features">
                 <div class="swiper-wrapper">

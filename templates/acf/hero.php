@@ -184,15 +184,6 @@ $button = $post_info['button'];
                             </div>
                             <div class="container hero-slide-content">
                                 <div class="row">
-                                    <div class="col-12">
-                                        <div class="slide-pagination d-none d-lg-block">     
-                                            <div class="swiper-pagination pb-5">
-                                                <span class="swiper-pagination-current"></span>
-                                                /
-                                                <span class="swiper-pagination-total"></span>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="col-12 col-lg-9">
                                         <div class="hero-slide-title">
                                             <?php if(!empty($title)){ ?>
@@ -242,15 +233,6 @@ $button = $post_info['button'];
                         <div class="container hero-slide-content">
                             <?php if($showButton == 1) {?>
                                 <div class="row">
-                                    <div class="col-12">
-                                        <div class="slide-pagination d-none d-lg-block">     
-                                            <div class="swiper-pagination pb-5">
-                                                <span class="swiper-pagination-current"></span>
-                                                /
-                                                <span class="swiper-pagination-total"></span>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="col-12 col-lg-9">
                                         <div class="hero-slide-title">
                                             <?php if(!empty($title)){ ?>
@@ -284,15 +266,6 @@ $button = $post_info['button'];
                                 </div>
                             <?php } else { ?>
                                 <div class="row align-items-end">
-                                    <div class="col-12">
-                                        <div class="slide-pagination d-none d-lg-block">     
-                                            <div class="swiper-pagination pb-5">
-                                                <span class="swiper-pagination-current"></span>
-                                                /
-                                                <span class="swiper-pagination-total"></span>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="col-12 col-lg-9">
                                         <div class="hero-slide-title">
                                             <?php if(!empty($title)){ ?>
@@ -356,7 +329,6 @@ $button = $post_info['button'];
                     <div class="swiper-button swiper-button-prev">
                         <img style="opacity: 0;" alt="">
                     </div>
-                    <div class="swiper-pagination-mobile"></div>
                     <div class="swiper-button swiper-button-next">
                         <img style="opacity: 0;" alt="">
                     </div>
