@@ -3,7 +3,7 @@
 $title = $params['title'];
 ?>
 
-<section class="static-slider py-3">
+<section class="static-slider">
     <div class="container">
         <div class="col-12">
             <div class="static-slider-row row">
