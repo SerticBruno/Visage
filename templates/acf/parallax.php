@@ -3,7 +3,7 @@
 $title = $params['title'];
 ?>
 
-<section class="parallax py-3">
+<section class="parallax">
     <div class="container">
         <div class="col-12">
 

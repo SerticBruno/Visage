@@ -1,8 +1,7 @@
 .footer-contact-form {
   // background-color: #c2c2c2;
   background-color: $gray;
-  @include fluid("padding-top", 20, 60);
-  @include fluid("padding-bottom", 20, 60);
+  @include fluid("padding-top", 20, 40);
 
   .form-title {
     padding-bottom: 16px;

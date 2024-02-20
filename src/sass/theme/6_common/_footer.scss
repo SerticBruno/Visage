@@ -1,12 +1,18 @@
 .footer {
   background-color: $white;
-  padding: 0 0 30px 0;
+  // padding: 0 0 30px 0;
+
+  @include fluid("padding-top", 10, 30);
+  @include fluid("padding-bottom", 10, 30);
+
   height: 30%;
 
   color: $black;
 
-  box-shadow: 0 1px 10px 0px $black;
-  border-top: 1px solid $black;
+  .footer-container{
+    box-shadow: 0 1px 10px 0px $black;
+    border-top: 1px solid $black;
+  }
 
   ul {
     li {

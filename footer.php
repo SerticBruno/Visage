@@ -1,12 +1,9 @@
 </div>
+	<?php $footer = get_field('footer', 'option'); ?>
 
-		<?php include THEME_DIR . '/templates/acf/footer_contact_form.php';  ?>
+		<footer class="footer" role="contentinfo">
 
-		<?php
-			$footer = get_field('footer', 'option');
-		?>
-
-		<footer class="footer py-4" role="contentinfo">
+			<?php include THEME_DIR . '/templates/acf/footer_contact_form.php';  ?>
 
 			<div class="modal fade" id="modal" tabindex="-1">
 				<div class="modal-dialog modal-dialog-centered">
@@ -19,7 +16,7 @@
 			</div>
 
 			<div class="container">
-				<div class="row">
+				<div class="row pt-4">
 					<div class="col-12 col-md-2 info-text order-md-first">
 						<?php echo $footer['description'] ?>
 					</div>

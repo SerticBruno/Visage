@@ -1,4 +1,6 @@
 .parallax{
+  @include fluid("padding-top", 20, 40);
+  @include fluid("padding-bottom", 20, 40);
 
     h2{
         background-color: black;
