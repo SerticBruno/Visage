@@ -1,72 +1,12 @@
-// Custom JS here.
-
-// const jquery = require("jquery");
-
 /**************************************************************************************************/
 jQuery(document).ready(function () {
   img2svg(".replaceSvg");
 
-  /*
-   * Applying img2svg to grid builder filter events so icons won't lose
-   *
-   *
-   * */
-
-  // console.log(slideUpObs);
-
-  // if(jQuery('.wpgb-inline-list').length){
-  //     var wpgb = WP_Grid_Builder.instances[1].facets;
-  // }
-  // console.dir( wpgb ); // Holds all instances.
-
-  // wpgb.on('change', function(args) {
-  //     // img2svg('.replaceSvg');
-  //     animatePropertyCards = gsap.utils.toArray('.card-property:not(.animated)');
-  //     animatePostCards = gsap.utils.toArray('.card-post:not(.animated)');
-
-  //     animatePropertyCards.forEach(card => {
-
-  //         slideUpObs.observe(card);
-
-  //     });
-
-  //     animatePostCards.forEach(card => {
-  //         slideUpObs.observe(card);
-  //     });
-  // });
-
-  // wpgb.on('appended', function(args) {
-
-  //     // img2svg('.replaceSvg');
-  //     animatePropertyCards.forEach(card => {
-
-  //         slideUpObs.observe(card);
-
-  //     });
-
-  //     animatePostCards.forEach(card => {
-  //         slideUpObs.observe(card);
-  //     });
-
-  // });
 
   var scrollbarWidth = getScrollbarWidth();
-  // console.log(scrollbarWidth);
 
   var $body = jQuery(window.document.body);
   var disableScroll = false;
-
-  // function bodyFreezeScroll() {
-  //     var bodyWidth = $body.innerWidth();
-  //     $body.css('overflow', 'hidden');
-  //     $body.css('paddingRight', )
-  // }
-
-  // function bodyUnfreezeScroll() {
-  //     var bodyWidth = $body.innerWidth();
-  //     $body.css('paddingRight', '-=' + (bodyWidth - $body.innerWidth()))
-  //     $body.css('overflow', 'auto');
-  // }
 
   jQuery(".navbar-toggler").click(function () {
     jQuery(".navbar").toggleClass("open");
@@ -82,7 +22,6 @@ jQuery(document).ready(function () {
       jQuery("body").css("paddingRight", "0px");
       disableScroll = false;
     }
-    // console.log(disableScroll)
   });
 
   gallerySlider();
@@ -132,20 +71,6 @@ jQuery(document).ready(function () {
   jQuery(".single-img a").simpleLightbox();
   jQuery(".two-img a").simpleLightbox();
   jQuery(".five-img a").simpleLightbox();
-  // jQuery(".five-img a").simpleLightbox();
-  // jQuery('.video-play').on('click', function() {
-  //     // console.log('a');
-  //     // console.log(this);
-  //     if (jQuery(this).data('from') == 'lf') {
-  //         jQuery(this).prev().find('video > source').attr('src', jQuery(this).data('src'));
-  //         jQuery(this).prev().find('video')[0].load();
-  //     } else {
-  //         // jQuery(this).prev().find('iframe').attr('src', jQuery(this).data('src'));
-  //         jQuery(this).prev().attr('src', jQuery(this).data('src'));
-  //     }
-  //     jQuery(this).prev().addClass('show');
-  //     jQuery(this).fadeOut();
-  // });
 
   jQuery(".video-play-card").on("click", function (e) {
     var data = jQuery(this).data();
@@ -194,11 +119,3 @@ jQuery(window).resize(function () {
 jQuery(window).scroll(function () {
   navbarScroll();
 });
-
-// jQuery(window).scroll(function() {
-//   if (jQuery(this).scrollTop() > 0) {
-//     jQuery('.navbar-brand').addClass('scrolled');
-//   } else {
-//     jQuery('.navbar-brand').removeClass('scrolled');
-//   }
-// });

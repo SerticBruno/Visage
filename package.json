@@ -1,13 +1,13 @@
 {
   "name": "wp_theme",
   "version": "1.2.0",
-  "description": "brkovi",
+  "description": "visage",
   "main": "Gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Brkovi",
-  "homepage": "https://brkovi.com/",
+  "author": "Visage",
+  "homepage": "https://visagestudio.hr/",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",
