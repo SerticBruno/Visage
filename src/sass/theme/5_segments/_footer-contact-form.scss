@@ -1,21 +1,23 @@
 .footer-contact-form {
-  // background-color: #c2c2c2;
-  background-color: $gray;
+  background-color: $dark;
   @include fluid("padding-top", 20, 40);
+
+  color: $white;
 
   .form-title {
     padding-bottom: 16px;
   }
   a {
-    // color: $primary;
+    color: $white;
     text-decoration: underline !important;
     &:hover {
-      color: $black;
+      color: $gray;
       text-decoration: none !important;
     }
   }
 
   &-visage {
+
     #name-1,
     #email-1,
     #textarea-1,
@@ -23,12 +25,12 @@
       .forminator-field {
         label {
           font-size: 16px !important;
-          color: black !important;
+          color: $white !important;
           font-weight: 700 !important;
         }
         input,
         textarea {
-          background-color: white !important;
+          background-color: $white !important;
           border: 1px solid black !important;
           border-radius: 0 !important;
           resize: none !important;
@@ -55,7 +57,7 @@
     .forminator-response-message {
       margin: 0 !important;
       padding: 0 !important;
-      background-color: white !important;
+      background-color: $white !important;
       box-shadow: none !important;
       -webkit-box-shadow: none !important;
       display: flex !important;

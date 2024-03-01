@@ -3,7 +3,10 @@
 
 		<footer class="footer" role="contentinfo">
 
-			<?php include THEME_DIR . '/templates/acf/footer_contact_form.php';  ?>
+			<?php
+				if(!is_page('kontakt'))
+					include THEME_DIR . '/templates/acf/footer_contact_form.php';  
+			?>
 
 			<div class="modal fade" id="modal" tabindex="-1">
 				<div class="modal-dialog modal-dialog-centered">
@@ -15,27 +18,29 @@
 				</div>
 			</div>
 
-			<div class="container">
-				<div class="row pt-4">
-					<div class="col-12 col-md-2 info-text order-md-first">
-						<?php echo $footer['description'] ?>
-					</div>
-					<div class="col-12 col-md-8 order-last">
-						<ul class="footer-socials d-flex justify-content-around">
-							<?php
-								foreach ($footer['social_icons'] as $k => $v) { 
-									
-									$logo = $v['logo']['url']
-									
+			<div class="footer-border">
+				<div class="container">
+					<div class="row pt-4">
+						<div class="col-12 col-md-2 info-text order-md-first">
+							<?php echo $footer['description'] ?>
+						</div>
+						<div class="col-12 col-md-8 order-last">
+							<ul class="footer-socials d-flex justify-content-around">
+								<?php
+									foreach ($footer['social_icons'] as $k => $v) { 
+										
+										$logo = $v['logo']['url']
+										
+									?>
+										<li class="d-inline">
+											<a class="d-inline-block" target="_blank" href="<?php echo $v['url'] ?>">
+												<img src="<?php echo $logo ?>"/>
+											</a>
+										</li>
+									<?php }
 								?>
-									<li class="d-inline">
-										<a class="d-inline-block" target="_blank" href="<?php echo $v['url'] ?>">
-											<img src="<?php echo $logo ?>"/>
-										</a>
-									</li>
-								<?php }
-							?>
-						</ul>						
+							</ul>						
+						</div>
 					</div>
 				</div>
 			</div>

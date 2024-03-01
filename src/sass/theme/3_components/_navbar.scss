@@ -17,10 +17,21 @@
     opacity: 1;
   }
 
+  .menu-primary-menu-container > ul > li > a{
+    color: $grayDark;
+    font-weight: 700;
+  }
+
   .logo-img-wrapper{
     img{
       height: 0px;
       // height: 64px;
+    }
+  }
+
+  .menu-item-has-children{
+    a:first{
+      border-bottom: 1px solid black;
     }
   }
 
@@ -32,7 +43,10 @@
   .navbar-nav{
     li{
       a{
-        padding: 14px 60px;
+        @include fluid("padding-left", 40, 60);
+        @include fluid("padding-right", 40, 60);
+        @include fluid("padding-top", 14, 14);
+        @include fluid("padding-bottom", 14, 14);
         
         @include media-breakpoint-down(lg) {
           padding: 5px;
@@ -44,10 +58,12 @@
   .current-menu-parent{
     a {
       font-weight: 600;
+      color: $black !important;
     }
     .sub-menu{
       a{
         font-weight: 500;
+        color: $black !important;
       }
     }
   }
@@ -100,6 +116,7 @@
       &.current-menu-item {
         a {
           font-weight: 600;
+          color: $black;
         }
 
         .sub-menu{
@@ -160,6 +177,7 @@
           &.current-menu-item {
             a {
               font-weight: 600;
+              color: $black;
             }
           }
         }
@@ -215,8 +233,8 @@
 
     .navbar-toggler {
       transition: $transition;
-      @include fluid("padding-top", 24, 32);
-      @include fluid("padding-bottom", 8, 12);
+      @include fluid("padding-top", 15, 32);
+      @include fluid("padding-bottom", 0, 12);
     }
 
     .logo-wrapper {
@@ -269,8 +287,8 @@
 
   &-toggler {
     transition: $transition;
-    @include fluid("padding-top", 24, 48);
-    @include fluid("padding-bottom", 12, 24);
+    @include fluid("padding-top", 20, 48);
+    @include fluid("padding-bottom", 5, 24);
     // width: 32px;
     // height: 32px;
     border: 0;
@@ -339,6 +357,8 @@
   }
 
   &-collapse {
+    scrollbar-width: none;
+
     @include media-breakpoint-down(lg) {
       max-height: calc(100vh - 160px); /* Adjust as needed */
       overflow-y: scroll;

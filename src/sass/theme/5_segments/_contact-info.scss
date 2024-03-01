@@ -1,7 +1,8 @@
 .contact-info {
   @include fluid("margin-top", 20, 40);
   @include fluid("margin-bottom", 20, 40);
-  background-color: $gray;
+  background-color: $dark;
+  color: $white;
 
   .container-fluid{
     max-width: 1320px;
@@ -10,12 +11,14 @@
   .form-title {
     @include fluid("padding-top", 26, 36);
     @include fluid("padding-bottom", 26, 36);
+    color: $white;
+
   }
   a {
-    // color: $primary;
+    color: $white;
     text-decoration: underline !important;
     &:hover {
-      color: $black;
+      color: $gray;
       text-decoration: none !important;
     }
   }
@@ -136,7 +139,12 @@
   .ol-attribution.ol-unselectable.ol-control.ol-uncollapsible, .ol-zoom.ol-unselectable.ol-control, .ol-full-screen.ol-unselectable.ol-control {
     display: none;
   }
-  .wpgmza_map{
+
+  .border-map{
     border: 1px solid $black;
+    iframe{
+      width: 100% !important;
+      height: 100% !important;
+    }
   }
 }

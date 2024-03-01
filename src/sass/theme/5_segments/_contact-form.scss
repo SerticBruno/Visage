@@ -1,6 +1,7 @@
 .contact-form {
   @include fluid("padding-top", 20, 60);
-  @include fluid("padding-bottom", 20, 60);
+
+  padding-bottom: 0;
 
   .form-title {
     padding-bottom: 16px;
@@ -142,7 +143,17 @@
   .ol-attribution.ol-unselectable.ol-control.ol-uncollapsible, .ol-zoom.ol-unselectable.ol-control, .ol-full-screen.ol-unselectable.ol-control {
     display: none;
   }
-  .wpgmza_map{
+
+  .gmnoprint{
+    display: none !important;
+  }
+
+  .border-map{
     border: 1px solid $black;
+    height: 400px;
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
   }
 }
