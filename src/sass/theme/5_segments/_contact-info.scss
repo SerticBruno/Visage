@@ -1,7 +1,7 @@
 .contact-info {
   @include fluid("margin-top", 20, 40);
   @include fluid("margin-bottom", 20, 40);
-  background-color: $dark;
+  background-color: $grayCatalog;
   color: $white;
 
   .container-fluid{
