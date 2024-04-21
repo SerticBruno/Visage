@@ -661,8 +661,8 @@
                             "sub_fields": [
                                 {
                                     "key": "field_62bea8f2d7f8c",
-                                    "label": "Icon",
-                                    "name": "icon",
+                                    "label": "Image",
+                                    "name": "image",
                                     "type": "image",
                                     "instructions": "",
                                     "required": 0,
@@ -725,31 +725,6 @@
                                     "acfe_textarea_code": 0
                                 },
                                 {
-                                    "key": "field_63c6761def49c",
-                                    "label": "Link",
-                                    "name": "link",
-                                    "type": "select",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "choices": {
-                                        "internal": "Internal",
-                                        "external": "External"
-                                    },
-                                    "default_value": false,
-                                    "allow_null": 0,
-                                    "multiple": 0,
-                                    "ui": 0,
-                                    "return_format": "value",
-                                    "ajax": 0,
-                                    "placeholder": ""
-                                },
-                                {
                                     "key": "field_63c6769bef49e",
                                     "label": "Internal",
                                     "name": "internal",
@@ -799,6 +774,25 @@
                                     },
                                     "default_value": "",
                                     "placeholder": ""
+                                },
+                                {
+                                    "key": "field_6624093a3cb6a",
+                                    "label": "Url",
+                                    "name": "url",
+                                    "type": "page_link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": "",
+                                    "taxonomy": "",
+                                    "allow_null": 0,
+                                    "allow_archives": 1,
+                                    "multiple": 0
                                 }
                             ]
                         }
@@ -2265,6 +2259,44 @@
                                     "maxlength": ""
                                 },
                                 {
+                                    "key": "field_6622d9d8708c5",
+                                    "label": "Category Link",
+                                    "name": "category_link",
+                                    "type": "page_link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": "",
+                                    "taxonomy": "",
+                                    "allow_null": 0,
+                                    "allow_archives": 1,
+                                    "multiple": 0
+                                },
+                                {
+                                    "key": "field_6622da00708c6",
+                                    "label": "Link Anchor",
+                                    "name": "link_anchor",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
                                     "key": "field_65d085b21ba22",
                                     "label": "Products",
                                     "name": "products",
@@ -2281,7 +2313,7 @@
                                     "collapsed": "",
                                     "min": 0,
                                     "max": 0,
-                                    "layout": "table",
+                                    "layout": "block",
                                     "button_label": "",
                                     "sub_fields": [
                                         {
@@ -2302,6 +2334,26 @@
                                             "prepend": "",
                                             "append": "",
                                             "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_6622d2879bc9c",
+                                            "label": "Description",
+                                            "name": "description",
+                                            "type": "textarea",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "maxlength": "",
+                                            "rows": "",
+                                            "new_lines": "",
+                                            "acfe_textarea_code": 0
                                         },
                                         {
                                             "key": "field_65c8f2c4edfdc",
@@ -2859,5 +2911,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1708252806
+    "modified": 1713638725
 }

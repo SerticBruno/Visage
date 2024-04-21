@@ -1,20 +1,21 @@
-.price-list{
-  .img-wrapper{
-    img{
+.price-list {
+  .img-wrapper {
+    img {
       height: 149px;
       border-radius: 50%;
       object-fit: contain;
     }
   }
-  .category-title{
+  .category-title {
     padding: 15px 10px;
+    font-size: 1.5rem;
   }
 
-  .category-row{
+  .category-row {
     background-color: $gray;
   }
 
-  .product-row{
+  .product-row {
     padding: 10px 10px;
   }
 
@@ -25,6 +26,12 @@
     text-align: right;
   }
   .col-lg-10 .row:nth-child(even) {
-    background-color: $grayLight; /* Light gray background for odd rows */
-}
+    background-color: $grayLight;
+  }
+  .product-title {
+    font-size: 1.3rem;
+  }
+  .product-description {
+    font-size: 1rem;
+  }
 }
