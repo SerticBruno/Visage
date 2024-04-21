@@ -38,25 +38,64 @@
   // }
 
   &-card {
+    position: relative;
     transition: $transition;
     overflow: hidden;
 
-    .info {
-      bottom: 20px;
-      left: 20px;
+    &:hover{
+      color: black;
+    }
+    
+    .title {
       position: absolute;
+      bottom: 30%; /* Position it above the info, adjust as needed */
+      left: 0;
+      right: 0;
+      padding: 10px; /* Padding for aesthetics */
+      background: rgba(255, 255, 255, 0.9); /* Optional for better visibility */
+    }
+
+    .info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.9); /* Same background for consistency */
+        transition: all 0.3s ease; /* Smooth transition for opacity and visibility */
+        opacity: 0;
+        visibility: hidden; /* Hide initially */
+    }
+
+    &:hover {
+        .img-wrapper img {
+            transform: scale(1.1); /* Scale image on hover */
+        }
+
+        .info {
+            opacity: 1;
+            visibility: visible; /* Make description visible on hover */
+        }
     }
 
     img {
       transition: $transition;
       width: 100%;
-      height: 300px;
       object-fit: cover;
       object-position: center;
       margin: 0;
 
+      height: 300px;
+
+      @include media-breakpoint-down(lg) {
+        height: 250px;
+      }
+      @include media-breakpoint-down(md) {
+        height: 200px;
+      }
+
       &:hover {
-        scale: 1.3;
+        scale: 1.1;
       }
     }
   }
