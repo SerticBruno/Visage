@@ -14,10 +14,8 @@ $description = $params['description'];
             <div class="img-wrapper">
                 <img src="<?php echo $image ?>"></img>
             </div>
-            <div class="title">
-                <h4><?php echo $title ?></h4>
-            </div>
             <div class="info">
+                <h4><?php echo $title ?></h4>
                 <p><?php echo $description ?></p>
             </div>
         </div>

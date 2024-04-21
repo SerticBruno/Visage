@@ -46,37 +46,29 @@
       color: black;
     }
     
-    .title {
+    .info {
       position: absolute;
-      bottom: 30%; /* Position it above the info, adjust as needed */
+      bottom: 0; /* Adjust starting position as needed */
       left: 0;
       right: 0;
+      background: rgba(255, 255, 255, 0.9); /* Optional: Background to enhance readability */
       padding: 10px; /* Padding for aesthetics */
-      background: rgba(255, 255, 255, 0.9); /* Optional for better visibility */
-    }
+      transition: all 0.3s ease; /* Smooth transition for moving and fading */
+      opacity: 0;
+      visibility: hidden; /* Hide the element initially */
+  }
 
-    .info {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 10px;
-        background: rgba(255, 255, 255, 0.9); /* Same background for consistency */
-        transition: all 0.3s ease; /* Smooth transition for opacity and visibility */
-        opacity: 0;
-        visibility: hidden; /* Hide initially */
-    }
+  &:hover {
+      .img-wrapper img {
+          transform: scale(1.1); /* Scale image on hover */
+      }
 
-    &:hover {
-        .img-wrapper img {
-            transform: scale(1.1); /* Scale image on hover */
-        }
-
-        .info {
-            opacity: 1;
-            visibility: visible; /* Make description visible on hover */
-        }
-    }
+      .info {
+          bottom: 10%; /* Move up on hover */
+          opacity: 1;
+          visibility: visible; /* Show element on hover */
+      }
+  }
 
     img {
       transition: $transition;
