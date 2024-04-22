@@ -1,4 +1,14 @@
 .full-width-image {
+  @include fluid("padding-top", 20, 60);
+  @include fluid("padding-bottom", 20, 60);
+  background-size: cover;
+  background-position: center;
+
   .img-row {
+    min-height: 350px;
+
+    img{
+      object-fit: contain;
+    }
   }
 }
