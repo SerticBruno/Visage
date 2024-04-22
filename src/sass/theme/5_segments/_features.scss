@@ -14,8 +14,7 @@
 //   }
 // }
 .features {
-  @include fluid("padding-top", 20, 60);
-  @include fluid("padding-bottom", 20, 60);
+  @include fluid("padding-top", 35, 50);
 
   .position-relative {
     position: relative;
@@ -51,12 +50,11 @@
       bottom: 0; /* Adjust starting position as needed */
       left: 0;
       right: 0;
-      background: rgba(255, 255, 255, 0.9); /* Optional: Background to enhance readability */
+      background: rgba(255, 255, 255, 0.7); /* Optional: Background to enhance readability */
       padding: 10px; /* Padding for aesthetics */
       transition: all 0.3s ease; /* Smooth transition for moving and fading */
-      opacity: 0;
-      visibility: hidden; /* Hide the element initially */
-  }
+      opacity: 1;
+    }
 
   &:hover {
       .img-wrapper img {

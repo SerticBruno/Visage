@@ -7,7 +7,7 @@ $content = $params['content'];
 <section class="price-list py-4">
     <div class="container py-3 versailles">
         <div class="row">
-            <div class="col-12 col-lg-2 p-0 pb-4">
+            <div class="col-12 col-lg-2 pb-4">
                 <h2>Cjenik</h2>
             </div>
             <div class="col-12 col-lg-10">
