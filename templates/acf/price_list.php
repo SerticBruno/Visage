@@ -1,6 +1,7 @@
 <?php
 
 $title = $params['title'];
+$button = $params['button'];
 
 ?>
 
@@ -9,8 +10,12 @@ $title = $params['title'];
         <?php if(!empty($title)) { ?>
             <div class="row">
                 <div class="col-12 pb-4 d-flex">
-                    <span class="h2">----------</span>
-                    <h2 class="line">Cjenik</h2>
+                    <span class="h2 pt-2">----------</span>
+                    <h2 class="line pt-2">Cjenik</h2>
+                        
+                    <div class="button-wrapper ms-auto">
+                        <?php include THEME_DIR . '/templates/acf/button-show.php'; ?>
+                    </div>
                 </div>
             </div>
         <?php } ?>
