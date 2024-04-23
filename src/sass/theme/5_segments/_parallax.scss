@@ -2,12 +2,10 @@
   @include fluid("padding-top", 20, 40);
   @include fluid("padding-bottom", 20, 40);
 
-    h2{
-        background-color: black;
-        color: white;
-        font-weight: 500;
-    }
 
+  .line{
+    @include fluid("padding-left", 15, 25);
+  }
     .swiper {
       width: 100%;
       height: 100%;

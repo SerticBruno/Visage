@@ -2,6 +2,7 @@
 
 $image = $params['image']['url'];
 $description = $params['description'];
+$title = $params['title'];
 $content = $params['content'];
 $button = $params['button'];
 $backgroundImage = $params['background_image']['url'];
@@ -13,12 +14,11 @@ $backgroundImage = $params['background_image']['url'];
         <div class="row">
             <div class="col-12 col-lg-8 d-flex justify-content-around mx-auto">
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 col-12 d-flex justify-content-center align-items-center">
+                    <div class="col-lg-5 col-12 d-flex justify-content-center align-items-center">
                         <div class="text-wrap">
-                            <!-- //Vas content -->
+                            <h2 class="pb-2 versailles"><?php echo $title ?></h2>
                             <?php echo $description ?>
-                            
-                            <div class="button-wrapper">
+                            <div class="button-wrapper pt-2">
                                 <?php include THEME_DIR . '/templates/acf/button-show.php'; ?>
                             </div>
                         </div>

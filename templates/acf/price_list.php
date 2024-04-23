@@ -1,15 +1,20 @@
 <?php
 
-$content = $params['content'];
+$title = $params['title'];
 
 ?>
 
 <section class="price-list py-4">
     <div class="container py-3 versailles">
-        <div class="row">
-            <div class="col-12 col-lg-2 pb-4">
-                <h2>Cjenik</h2>
+        <?php if(!empty($title)) { ?>
+            <div class="row">
+                <div class="col-12 pb-4 d-flex">
+                    <span class="h2">----------</span>
+                    <h2 class="line">Cjenik</h2>
+                </div>
             </div>
+        <?php } ?>
+        <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
                 <?php foreach($params['categories'] as $category): ?>
                     <div class="category-section">

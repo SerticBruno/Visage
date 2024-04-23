@@ -989,6 +989,25 @@
                     "display": "row",
                     "sub_fields": [
                         {
+                            "key": "field_662805b4b0bdb",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62bea8fed7f8d",
                             "label": "Feature",
                             "name": "feature",
@@ -1381,7 +1400,7 @@
                             "key": "field_61ee90e119622",
                             "label": "Image",
                             "name": "image",
-                            "type": "image",
+                            "type": "focal_point",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
@@ -1398,18 +1417,9 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "uploader": "",
-                            "acfe_thumbnail": 0,
-                            "return_format": "id",
-                            "preview_size": "medium",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": "",
-                            "library": "all"
+                            "save_format": "tag",
+                            "image_size": "medium",
+                            "preview_size": "medium"
                         },
                         {
                             "key": "field_62cbd320f5fcc",
@@ -3260,5 +3270,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1713742912
+    "modified": 1713899140
 }

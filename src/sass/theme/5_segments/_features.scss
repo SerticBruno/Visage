@@ -20,6 +20,10 @@
     position: relative;
   }
 
+  .line{
+    @include fluid("padding-left", 15, 25);
+  }
+
   // kasnije
   // .card-overlay {
   //   position: absolute;

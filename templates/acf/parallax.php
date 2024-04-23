@@ -9,8 +9,9 @@ $title = $params['title'];
 
             <?php if(!empty($title)) { ?>
                 <div class="row py-4">
-                    <div class="div d-flex">
-                        <h2 class="versailles p-1"><?php echo $title ?></h2>
+                    <div class="div d-flex versailles">
+                        <span class="h2">----------</span>
+                        <h2 class="line"><?php echo $title ?></h2>
                     </div>
                 </div>
             <?php } ?>
@@ -24,12 +25,9 @@ $title = $params['title'];
                         <div class="swiper-wrapper">
                             <?php foreach($params['items'] as $k => $v) { ?>
                                 <div class="swiper-slide">
-                                    <div class="title" data-swiper-parallax="-300"><?php echo $v['title'] ?></div>
-                                    <!-- <div class="subtitle" data-swiper-parallax="-200"></div> -->
-                                    <div class="text" data-swiper-parallax="-100">
-                                    <p>
+                                    <div class="title pb-3" data-swiper-parallax="-300"><?php echo $v['title'] ?></div>
+                                    <div class="text" data-swiper-parallax="-300">
                                         <?php echo $v['description'] ?>
-                                    </p>
                                     </div>
                                 </div>
                             <?php } ?>

@@ -18,14 +18,17 @@ $title = $params['title'];
                                     <div class="title pb-2">
                                         <?php echo $v['title'] ?>
                                     </div>
-                                    <div class="subtitle pb-2">
-                                        <?php echo $v['subtitle'] ?>
-                                    </div>
-                                    <div class="text">
-                                        <p>
-                                            <?php echo $v['description'] ?>
-                                        </p>
-                                    </div>
+                                    <?php if(!empty($v['subtitle'])) { ?>
+                                        <div class="subtitle pb-2">
+                                            <?php echo $v['subtitle'] ?>
+                                        </div>
+                                    <?php } ?>
+                                    
+                                    <?php if(!empty($v['description'])) { ?>
+                                        <div class="text">
+                                            <p><?php echo $v['description'] ?></p>
+                                        </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                         <?php } ?>
