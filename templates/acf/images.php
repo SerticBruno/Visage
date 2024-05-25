@@ -7,7 +7,7 @@ $style = $params['style'];
     <section class="two-img">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 p-0">
                     <div class="grid-container gallery">
 
                         <?php foreach($params['images'] as $k => $v) { ?>
@@ -33,7 +33,7 @@ $style = $params['style'];
     <section class="five-img">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 p-0">
                     <div class="grid-container gallery">
                         <?php foreach($params['images'] as $k => $v) { ?>
                                 <?php 
@@ -57,7 +57,7 @@ $style = $params['style'];
 <section class="single-image">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 p-0">
                 <div class="img-wrapper gallery">
                     <?php 
                     // myErr($params);

@@ -1,5 +1,5 @@
 .five-img {
-    @include fluid('padding-top', 20, 40);
+    @include fluid('padding-top', 10, 20);
     
     img{
         margin: 0;

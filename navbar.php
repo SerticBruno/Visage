@@ -12,8 +12,7 @@ $logo_scrolled = $header['logo_scrolled']['url'];
             <div class="col-12 text-center">
                 <div class="logo-wrapper">
                     <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-                        <!-- <img src="<?php echo $logo ?>" alt="Visage Logo"> -->
-                        <div class="logo-img-wrapper p-2 d-flex justify-content-center align-items-center">
+                        <div class="logo-img-wrapper pt-2 d-flex justify-content-center align-items-center">
                             <img src="<?php echo $logo_scrolled ?>" alt="Visage Logo">
                         </div>
                         <div class="info">

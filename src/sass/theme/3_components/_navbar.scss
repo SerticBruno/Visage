@@ -69,7 +69,7 @@
   }
 
   @include media-breakpoint-down(lg) {
-    padding: 15px 0;
+    padding: 0 0;
   }
 
   &-nav {
@@ -233,8 +233,6 @@
 
     .navbar-toggler {
       transition: $transition;
-      @include fluid("padding-top", 15, 32);
-      @include fluid("padding-bottom", 0, 12);
     }
 
     .logo-wrapper {
@@ -264,7 +262,7 @@
         img {
           padding: 0;
           transition: all 0.3s ease;
-          height: 60px;
+          @include fluid("height", 36, 48);
         }
       }
     }
@@ -279,7 +277,7 @@
         a {
           transition: all 0.3s ease;
           font-size: 18px;
-          padding: 0px 60px;
+          padding: 0px 50px;
         }
       }
     }
@@ -287,8 +285,8 @@
 
   &-toggler {
     transition: $transition;
-    @include fluid("padding-top", 20, 48);
-    @include fluid("padding-bottom", 5, 24);
+    @include fluid("padding-top", 15, 48);
+    @include fluid("padding-bottom", 15, 24);
     // width: 32px;
     // height: 32px;
     border: 0;
@@ -309,8 +307,8 @@
     &-icon {
       background-image: none !important;
 
-      height: 26px;
-      width: 26px;
+      height: 18px;
+      width: 18px;
       display: flex;
       flex-direction: column;
       position: relative;

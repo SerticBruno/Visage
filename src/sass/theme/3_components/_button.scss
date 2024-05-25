@@ -11,33 +11,14 @@
   color: $white;
 }
 
-// .green-button-wrapper {
-//   a {
-//     padding: 15px 50px;
-//     border-radius: 0;
-
-//     border: 5px solid $white;
-//     background-color: $primary;
-//     color: $white;
-//     font-weight: 700;
-
-//     &:hover,
-//     &:active,
-//     &:focus {
-//       border-color: $primary;
-//       background-color: $white;
-//       color: $primary !important;
-//     }
-//   }
-// }
 .button-wrapper {
   a {
-    padding: 15px 50px;
+    padding: 10px 25px;
     border-radius: 0;
     border: 0;
     transition: $transition;
 
-    outline: 5px solid $white;
+    outline: 2px solid $white;
     background-color: $black;
     color: $white;
     font-weight: 700;

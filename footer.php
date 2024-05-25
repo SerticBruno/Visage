@@ -34,11 +34,16 @@
 									?>
 										<li class="d-inline">
 											<a class="d-inline-block" target="_blank" href="<?php echo $v['url'] ?>">
-												<img src="<?php echo $logo ?>"/>
+												<img src="<?php echo $logo ?>" alt="<?php echo $v['logo']['alt']?>"/>
 											</a>
 										</li>
 									<?php }
 								?>
+								<li class="d-inline">
+									<a class="d-inline-block" href="tel:<?php echo $footer['telephone'] ?>">
+										<img src="<?php echo $footer['whatsapp_logo']['url'] ?>"/>
+									</a>
+								</li>
 							</ul>						
 						</div>
 					</div>

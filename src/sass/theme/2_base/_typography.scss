@@ -38,7 +38,7 @@ h1,
 
 h2,
 .h2 {
-  @include fluid("font-size", 18, 26);
+  @include fluid("font-size", 20, 30);
   line-height: 1;
 }
 

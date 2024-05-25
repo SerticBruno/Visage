@@ -1,0 +1,17 @@
+.about-us{
+  background-color: $gray;
+
+  .text-wrap{
+    @include fluid("padding", 25, 35);
+  }
+  .img-wrapper{
+    height: 100%;
+
+    img{
+
+      object-fit: cover;
+      height: 100%;
+      margin: 0;
+    }
+  }
+}
