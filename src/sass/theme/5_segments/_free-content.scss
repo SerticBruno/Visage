@@ -1,6 +1,6 @@
 .free-content {
-  @include fluid("margin-top", 50, 80);
-  @include fluid("margin-bottom", 50, 80);
+  @include fluid("margin-top", 20, 40);
+  @include fluid("margin-bottom", 20, 20);
 
   p {
     // @include fluid("font-size", 18, 20);
@@ -14,7 +14,6 @@
   }
 
   .text-wrap {
-    @include fluid("margin-bottom", 16, 40);
     hyphens: auto;
     overflow: hidden;
   }

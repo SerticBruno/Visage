@@ -1400,7 +1400,7 @@
                             "key": "field_61ee90e119622",
                             "label": "Image",
                             "name": "image",
-                            "type": "focal_point",
+                            "type": "image",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
@@ -1417,9 +1417,18 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "save_format": "tag",
-                            "image_size": "medium",
-                            "preview_size": "medium"
+                            "uploader": "",
+                            "acfe_thumbnail": 0,
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "library": "all"
                         },
                         {
                             "key": "field_62cbd320f5fcc",
@@ -3511,5 +3520,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1713901822
+    "modified": 1714075963
 }

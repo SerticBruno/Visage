@@ -94,7 +94,7 @@ $button = $post_info['button'];
                             $scale = $params['image_scale'];
                             $imageMargin = $params['image_margin'];
                         ?>
-                        <div class="wrap-img" <?php if($scale != 0 && $imageMargin != 0) { ?> style="scale: <?php echo $scale ?>; margin-top: <?php echo $imageMargin ?>px"<?php } ?>>
+                        <div class="wrap-img">
                             <?php echo $image; ?>
                         </div>
 

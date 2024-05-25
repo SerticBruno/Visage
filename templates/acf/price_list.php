@@ -9,9 +9,9 @@ $button = $params['button'];
     <div class="container py-3 versailles">
         <?php if(!empty($title)) { ?>
             <div class="row">
-                <div class="col-12 pb-4 d-flex">
-                    <span class="h2 pt-2">----------</span>
-                    <h2 class="line pt-2">Cjenik</h2>
+                <div class="col-12 pb-4 d-flex align-items-center">
+                    <span class="span-line"></span>
+                    <h2>Cjenik</h2>
                         
                     <div class="button-wrapper ms-auto">
                         <?php include THEME_DIR . '/templates/acf/button-show.php'; ?>
@@ -45,7 +45,10 @@ $button = $params['button'];
                         <?php foreach($category['products'] as $product): ?>
                             <div class="product-row row">
                                 <div class="col-6 product-title">
-                                    <?php echo htmlspecialchars($product['title']); ?><br>
+                                    <?php echo htmlspecialchars($product['title']); ?>
+                                    <?php if (!empty($product['title'])) {?>
+                                    <br>
+                                    <?php } ?>
                                     <span class="product-description notoserifdisplay">
                                         <?php echo htmlspecialchars($product['description']); ?>
                                     </span>

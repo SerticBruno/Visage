@@ -6,9 +6,9 @@ $title = $params['title'];
     <div class="container">
         <?php if(!empty($title)) { ?>
             <div class="row">
-                <div class="col-12 pb-4 versailles d-flex">
-                    <span class="h2">----------</span>
-                    <h2 class="line"><?php echo $title ?></h2>
+                <div class="col-12 pb-4 versailles d-flex align-items-center">
+                    <span class="span-line"></span>
+                    <h2><?php echo $title ?></h2>
                 </div>
             </div>
         <?php } ?>

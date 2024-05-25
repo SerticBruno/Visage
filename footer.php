@@ -34,7 +34,7 @@
 									?>
 										<li class="d-inline">
 											<a class="d-inline-block" target="_blank" href="<?php echo $v['url'] ?>">
-												<img src="<?php echo $logo ?>"/>
+												<img src="<?php echo $logo ?>" alt="<?php echo $v['logo']['alt']?>"/>
 											</a>
 										</li>
 									<?php }

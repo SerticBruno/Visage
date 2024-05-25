@@ -1,6 +1,7 @@
 <?php
 
 $image = $params['image']['url'];
+$alt = $params['image']['alt'];
 $description = $params['description'];
 $title = $params['title'];
 $content = $params['content'];
@@ -25,7 +26,7 @@ $backgroundImage = $params['background_image']['url'];
                     </div>
                     <div class="col-lg-7 col-12">
                         <div class="img-wrapper">
-                            <img src="<?php echo $image ?>">
+                            <img src="<?php echo $image ?>" alt="<?php echo $alt ?>">
                         </div>
                     </div>
                 </div>
