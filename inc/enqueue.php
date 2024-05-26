@@ -5,7 +5,7 @@ add_action( 'wp_enqueue_scripts', 'visage_theme_enqueue_styles' );
 function visage_theme_enqueue_styles() {
     // Get the theme data
     $the_theme = wp_get_theme();
-    wp_enqueue_style( 'theme-styles', THEME_URL . '/assets/css/style.min.css', array() );
+    wp_enqueue_style( 'theme-styles', THEME_URL . '/assets/css/style.min.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', THEME_URL . '/assets/js/script.min.js', array(), $the_theme->get( 'Version' ), true );
 
