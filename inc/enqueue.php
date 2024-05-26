@@ -5,14 +5,15 @@ add_action( 'wp_enqueue_scripts', 'visage_theme_enqueue_styles' );
 function visage_theme_enqueue_styles() {
     // Get the theme data
     $the_theme = wp_get_theme();
-    wp_enqueue_style( 'theme-styles', THEME_URL . '/assets/css/style.min.css', array(), rand(111,9999), 'all' );
+    wp_enqueue_style( 'theme-styles', THEME_URL . '/assets/css/style.min.css', array(), $the_theme->get( 'Version' ) );
     wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'theme-scripts', THEME_URL . '/assets/js/script.min.js', array(), rand(111,9999), true );
+	wp_enqueue_script( 'theme-scripts', THEME_URL . '/assets/js/script.min.js', array(), $the_theme->get( 'Version' ), true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
 }
+
 
 //Disable emojis in WordPress
 add_action( 'init', 'visage_smartwp_disable_emojis' );
