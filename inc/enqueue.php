@@ -5,9 +5,9 @@ add_action( 'wp_enqueue_scripts', 'visage_theme_enqueue_styles' );
 function visage_theme_enqueue_styles() {
     // Get the theme data
     $the_theme = wp_get_theme();
-    wp_enqueue_style( 'theme-styles', THEME_URL . '/assets/css/style.min.css', array(), $the_theme->get( 'Version' ) );
+    wp_enqueue_style( 'theme-styles', THEME_URL . '/assets/css/style.min.css', array(), '1.0.0' );
     wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'theme-scripts', THEME_URL . '/assets/js/script.min.js', array(), $the_theme->get( 'Version' ), true );
+	wp_enqueue_script( 'theme-scripts', THEME_URL . '/assets/js/script.min.js', array(), '1.0.0', true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
