@@ -2,6 +2,10 @@
   @include fluid("margin-top", 20, 40);
   @include fluid("margin-bottom", 20, 20);
 
+  h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6{
+    @include fluid("padding-bottom", 15, 20);
+  }
+
   p {
     // @include fluid("font-size", 18, 20);
     // @include fluid("line-height", 32, 36);

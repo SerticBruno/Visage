@@ -40,7 +40,7 @@
 									<?php }
 								?>
 								<li class="d-inline">
-									<a class="d-inline-block" href="tel:<?php echo $footer['telephone'] ?>">
+									<a class="d-inline-block" href="https://wa.me/<?php echo urlencode($footer['telephone']); ?>">
 										<img src="<?php echo $footer['whatsapp_logo']['url'] ?>"/>
 									</a>
 								</li>

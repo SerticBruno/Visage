@@ -3,6 +3,11 @@
 
   padding-bottom: 0;
 
+  .row-form{
+    background-color: $gray;
+    @include fluid("padding", 10, 20);
+  }
+
   .form-title {
     padding-bottom: 16px;
   }

@@ -25,6 +25,7 @@ $button = $params['button'];
                     <div class="category-section">
                         <div class="category-row row">
                             <div class="category-title col-12 strong">
+                            <?php if (!empty($category['category_link'])) { ?>
                                 <?php 
                                     // Check if a link anchor is provided and not empty
                                     if (!empty($category['link_anchor'])) {
@@ -35,10 +36,24 @@ $button = $params['button'];
                                         $urlLink = $category['category_link'];
                                     }
                                 ?>
+                                
                                 <!-- Create the anchor tag with the URL -->
                                 <a href="<?php echo htmlspecialchars($urlLink); ?>">
                                     <?php echo htmlspecialchars($category['title']); ?>
                                 </a>
+                            <?php } else { ?>
+                            <?php 
+                                // Check if a link anchor is provided and not empty
+                                if (!empty($category['link_anchor'])) {
+                                    // Append the anchor to the URL
+                                    $urlLink = $category['category_link'] . '#' . $category['link_anchor'];
+                                } else {
+                                    // Use the basic URL without an anchor
+                                    $urlLink = $category['category_link'];
+                                }
+                            ?>
+                            <?php echo htmlspecialchars($category['title']); ?>
+                            <?php } ?>
 
                             </div>
                         </div>
@@ -49,7 +64,7 @@ $button = $params['button'];
                                     <?php if (!empty($product['title'])) {?>
                                     <br>
                                     <?php } ?>
-                                    <span class="product-description notoserifdisplay">
+                                    <span class="product-description montserrat">
                                         <?php echo htmlspecialchars($product['description']); ?>
                                     </span>
                                 </div>

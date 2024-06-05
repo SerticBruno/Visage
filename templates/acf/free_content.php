@@ -1,10 +1,10 @@
 <?php
 
 $content = $params['content'];
-
+$anchor = $params['anchor'];
 ?>
 
-<section class="free-content" id="free-content">
+<section class="free-content" id="<?php echo $anchor ?>">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10 col-xl-8 mx-auto">

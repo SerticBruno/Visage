@@ -79,6 +79,7 @@
   ul {
     width: 100%;
     justify-content: space-around;
+
     li {
       list-style-type: none;
       position: relative;
@@ -277,7 +278,6 @@
         a {
           transition: all 0.3s ease;
           font-size: 18px;
-          padding: 0px 50px;
         }
       }
     }

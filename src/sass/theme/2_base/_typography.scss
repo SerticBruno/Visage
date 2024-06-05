@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: notoserifdisplay;
+  font-family: montserrat;
   font-size: 1rem;
   line-height: $line-height;
   color: $black;
@@ -28,6 +28,7 @@ h6,
   margin: 0;
   padding: 0;
 }
+
 
 h1,
 .h1 {
@@ -59,6 +60,10 @@ h6,
   font-weight: semibold;
 }
 
+.h2, h2, .h3, h3, .h4, h4{
+  font-family: montserrat;
+}
+
 a {
   // font-size: 14px;
   text-decoration: none !important;
@@ -72,7 +77,7 @@ a {
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   & + p {
     margin-top: 1rem;
   }
@@ -93,6 +98,7 @@ svg {
 }
 
 li {
+  font-size: 0.9rem;
 }
 
 img {
