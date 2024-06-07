@@ -1,8 +1,31 @@
 .about-us{
   background-color: $gray;
 
+  .button-wrapper{
+    a{
+      text-decoration: none !important;
+      // outline: 2px solid $white !important;
+      outline: 2px solid $white !important;
+      // background-color: $black !important;
+      background-color: $gray !important;
+      color: $white !important;
+      font-weight: 700 !important;
+  
+      &:hover,
+      &:active,
+      &:focus {
+        outline-color: $black !important;
+        border: 0 !important;
+        background-color: $white !important;
+        color: $black !important;
+        // box-shadow: 9px 8px 0 white !important;
+      }
+    }
+  }
+
   .text-wrap{
-    @include fluid("padding", 25, 35);
+    @include fluid("padding-top", 25, 35);
+    @include fluid("padding-bottom", 25, 35);
   }
   .img-wrapper{
     height: 100%;

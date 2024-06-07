@@ -15,6 +15,11 @@ $features = $params['features'];
                                 <div class="img-wrap">
                                     <img src="<?php echo $v['image']['url'] ?>"></img>
                                 </div>
+                                <?php if (!empty($v['title'])) { ?>
+                                    <div class="col-12">
+                                        <?php echo $v['title'] ?>
+                                    </div>
+                                <?php } ?>
                             </div>
                         </div>
                     <?php } ?>

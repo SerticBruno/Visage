@@ -1,6 +1,6 @@
 .contact-info {
   @include fluid("margin-top", 20, 40);
-  @include fluid("margin-bottom", 20, 40);
+  @include fluid("margin-bottom", 40, 80);
   background-color: $grayCatalog;
   color: $white;
 
@@ -20,6 +20,28 @@
     &:hover {
       color: $gray;
       text-decoration: none !important;
+    }
+  }
+
+  .button-wrapper{
+    a{
+      text-decoration: none !important;
+      // outline: 2px solid $white !important;
+      outline: 2px solid $white !important;
+      // background-color: $black !important;
+      background-color: $grayCatalog !important;
+      color: $white !important;
+      font-weight: 700 !important;
+  
+      &:hover,
+      &:active,
+      &:focus {
+        outline-color: $grayCatalog !important;
+        border: 0 !important;
+        background-color: $white !important;
+        color: $grayCatalog !important;
+        // box-shadow: 9px 8px 0 white !important;
+      }
     }
   }
 
@@ -57,7 +79,6 @@
       display: flex !important;
 
       p {
-        // transform: rotate(4deg) !important;
         border: 5px solid black !important;
         font-size: 18px !important;
         color: $black !important;
@@ -65,12 +86,6 @@
         padding: 15px !important;
       }
     }
-
-    // .forminator-required{
-    //     color: black !important;
-    //     font-weight: 700 !important;
-    // }
-
     .forminator-description,
     .forminator-edit-module,
     .forminator-required {
@@ -97,43 +112,6 @@
         // box-shadow: 10px 9px 0 rgb(0, 0, 0) !important;
       }
     }
-    // #wpforms-418-field_0-container, #wpforms-418-field_1-container, #wpforms-418-field_2-container{
-    //     input, textarea{
-    //         border: 5px solid black;
-    //         border-radius: 0;
-    //         padding: 16px 8px;
-    //         font-weight: 700;
-    //     }
-    // }
-
-    // #wpforms-submit-418{
-    //     outline: 5px solid black;
-    //     transform: rotate(3deg);
-    //     font-weight: 700;
-    //     padding: 10px 45px;
-    //     background-color: white;
-    //     transition: $transition;
-
-    //     &:hover{
-    //         color: $white;
-    //         background-color: black;
-    //         transform: rotate(-3deg);
-    //         outline-color: white;
-    //     }
-    // }
-
-    // .wpforms-error{
-    //     font-weight: 700;
-    // }
-
-    // #wpforms-confirmation-418{
-    //     background-color: white !important;
-    //     outline: 5px solid black;
-    //     p{
-    //         color: black;
-    //         font-weight: 700;
-    //     }
-    // }
   }
   
   .ol-attribution.ol-unselectable.ol-control.ol-uncollapsible, .ol-zoom.ol-unselectable.ol-control, .ol-full-screen.ol-unselectable.ol-control {

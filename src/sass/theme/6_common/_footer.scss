@@ -62,14 +62,13 @@
     font-weight: 500;
 
     a {
-      font-weight: 700;
       text-decoration: none;
       // color: $primary;
       transition: all 0.2s ease;
 
       &:hover {
         transition: all 0.2s ease;
-        color: $white;
+        color: $gray;
       }
     }
   }
