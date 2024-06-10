@@ -17,18 +17,18 @@
     }
   }
 
-  .w-80{
+  .w-80 {
     width: 80%;
   }
 
-  .w-90{
+  .w-90 {
     width: 90%;
   }
 
-  .form-map{
+  .form-map {
     @include fluid("height", 350, 410);
 
-    iframe{
+    iframe {
       width: 100% !important;
       height: 100% !important;
       border: 1px solid $black;
@@ -36,7 +36,6 @@
   }
 
   &-visage {
-
     #name-1,
     #email-1,
     #textarea-1,
@@ -84,7 +83,7 @@
 
       p {
         // transform: rotate(4deg) !important;
-        border: 5px solid black !important;
+        border: 2px solid black !important;
         font-size: 18px !important;
         color: $black !important;
         font-weight: 700 !important;
@@ -161,11 +160,13 @@
     //     }
     // }
   }
-  
-  .ol-attribution.ol-unselectable.ol-control.ol-uncollapsible, .ol-zoom.ol-unselectable.ol-control, .ol-full-screen.ol-unselectable.ol-control {
+
+  .ol-attribution.ol-unselectable.ol-control.ol-uncollapsible,
+  .ol-zoom.ol-unselectable.ol-control,
+  .ol-full-screen.ol-unselectable.ol-control {
     display: none;
   }
-  .wpgmza_map{
+  .wpgmza_map {
     border: 1px solid $black;
   }
 }
