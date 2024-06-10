@@ -49,7 +49,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="copyright" class="text-center">
+			<div id="copyright" class="text-center pt-3 pb-2">
 				<a href="<?php echo home_url()?>">&copy; <?php echo esc_html( date_i18n( __( 'Y', 'visage' ) ) ); ?> VISAGE Studio</a>
 			</div>
 		</footer>
