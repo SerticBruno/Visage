@@ -1,8 +1,8 @@
-.about-us{
+.about-us {
   background-color: $gray;
 
-  .button-wrapper{
-    a{
+  .button-wrapper {
+    a {
       text-decoration: none !important;
       // outline: 2px solid $white !important;
       outline: 2px solid $white !important;
@@ -10,7 +10,7 @@
       background-color: $gray !important;
       color: $white !important;
       font-weight: 700 !important;
-  
+
       &:hover,
       &:active,
       &:focus {
@@ -23,16 +23,17 @@
     }
   }
 
-  .text-wrap{
+  .text-wrap {
     @include fluid("padding-top", 25, 35);
     @include fluid("padding-bottom", 25, 35);
   }
-  .img-wrapper{
-
-    img{
+  .img-wrapper {
+    img {
       object-fit: cover;
       @include fluid("height", 340, 400);
-      @include fluid("padding-bottom", 25, 35);
+      @include media-breakpoint-down(md) {
+        padding-bottom: 25;
+      }
       margin: 0;
     }
   }

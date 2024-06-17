@@ -11,27 +11,23 @@
     height: 100vh;
   }
 
-  .swiper-button::after{
+  .swiper-button::after {
     transition: $transition;
-    color:white;
+    color: white;
     @include media-breakpoint-down(md) {
       font-size: 20px;
     }
   }
 
-  .swiper-button:hover{
+  .swiper-button:hover {
     transition: $transition;
-    &::after{
+    &::after {
       color: black;
     }
   }
 
-
-
   h1,
   .h1 {
-    color: $blue;
-    left: -10px;
     // font-size: 164px !important;
     font-family: versailles;
     line-height: 1.1;
@@ -82,9 +78,9 @@
       object-position: center;
       z-index: -1;
 
-      .wrap-img{
+      .wrap-img {
         height: 100%;
-        img{
+        img {
           object-fit: cover;
         }
       }
@@ -391,8 +387,8 @@
 
   .basis {
     transition: all 1.5s ease;
-    background-color: $white;
-    color: $black;
+    background-color: $black;
+    color: $white;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -402,7 +398,7 @@
       rgb(255, 255, 255) 50% 100%,
       rgba(255, 255, 255, 0) 100%
     );
-    background-size: 100% 200%;
+    background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
     background-position: 0% 0%;
