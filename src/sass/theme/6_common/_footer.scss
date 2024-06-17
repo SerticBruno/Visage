@@ -3,7 +3,7 @@
   // padding: 0 0 30px 0;
 
   @include fluid("padding-top", 10, 30);
-  @include fluid("padding-bottom", 10, 30);
+  @include fluid("padding-bottom", 10, 22);
 
   height: 30%;
 
@@ -53,6 +53,36 @@
             // border-color: $primary;
             // filter: grayscale(100%) sepia(100%) hue-rotate(90deg);
           }
+        }
+      }
+    }
+  }
+
+  &-payments{
+    padding-left: 0;
+    margin: 0;
+
+    li {
+      padding-right: 1rem;
+
+      @include media-breakpoint-down(md) {
+        padding-right: 1rem;
+      }
+      
+      img {
+        margin: 0;
+        background-color: white;
+        // border-radius: 50px;
+        width: 32px;
+        transition: all 0.3s ease;
+        // filter: grayscale(0%) sepia(0%) hue-rotate(0deg);
+      }
+
+      &:hover {
+        img {
+          transition: all 0.3s ease;
+          // border-color: $primary;
+          // filter: grayscale(100%) sepia(100%) hue-rotate(90deg);
         }
       }
     }

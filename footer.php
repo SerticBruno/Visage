@@ -21,10 +21,10 @@
 			<div class="footer-border">
 				<div class="container">
 					<div class="row pt-4">
-						<div class="col-12 col-md-2 info-text order-md-first">
+						<div class="col-12 col-md-2 info-text">
 							<?php echo $footer['description'] ?>
 						</div>
-						<div class="col-12 col-md-8 order-last">
+						<div class="col-12 col-md-8">
 							<ul class="footer-socials d-flex justify-content-around">
 								<?php
 									foreach ($footer['social_icons'] as $k => $v) { 
@@ -45,6 +45,22 @@
 									</a>
 								</li>
 							</ul>						
+						</div>
+						<div class="col-12 col-md-2">
+							<?php echo $footer['payment_description'] ?>
+							<ul class="footer-payments d-flex d-md-inline d-lg-flex">
+								<?php
+									foreach ($footer['payment_options'] as $k => $v) { 
+										
+										$logo = $v['logo']['url']
+										
+									?>
+										<li>
+											<img src="<?php echo $logo ?>" alt="<?php echo $v['logo']['alt']?>"/>
+										</li>
+									<?php }
+								?>
+							</ul>
 						</div>
 					</div>
 				</div>

@@ -1,20 +1,6 @@
-// .features {
-//   .feature {
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     height: 300px;
-//     background-size: 100%;
-//     transition: all;
-//     overflow: hidden;
-
-//     &:hover {
-//       transition: all;
-//       background-size: 115%;
-//     }
-//   }
-// }
 .features {
-  @include fluid("padding-top", 35, 50);
+  @include fluid("padding-top", 40, 50);
+  @include fluid("padding-bottom", 24, 34);
 
   .position-relative {
     position: relative;

@@ -1,0 +1,35 @@
+.image-text{
+
+  .content{
+    max-width: 1320px;
+    @include media-breakpoint-down(md) {
+      max-width: 420px;
+    }
+  }
+
+  .dark-gray{
+    background-color: $gray;
+    // color: white;
+    // h2{
+    //   color: white;
+    // }
+  }
+
+  .gray{
+    // background-color: $gray;
+    // color: white;
+    h2{
+      // color: white;
+    }
+  }
+
+  .img-wrapper{
+    @include fluid("height", 320, 400);
+    img{
+      margin: 0;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+}

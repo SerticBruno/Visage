@@ -13,9 +13,11 @@ $button = $params['button'];
                     <span class="span-line"></span>
                     <h2>Cjenik</h2>
                         
-                    <div class="button-wrapper ms-auto">
-                        <?php include THEME_DIR . '/templates/acf/button-show.php'; ?>
-                    </div>
+                    <?php if(!empty($button['label'])){ ?>
+                        <div class="button-wrapper ms-auto">
+                            <?php include THEME_DIR . '/templates/acf/button-show.php'; ?>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         <?php } ?>
