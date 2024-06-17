@@ -2,7 +2,7 @@
     
 $feature = $params;
 $link = $feature['url'];
-$title = $params['title'];
+$title = $params['feature_title'];
 $image = $params['image']['url'];
 $alt = $params['image']['alt'];
 $description = $params['description'];
