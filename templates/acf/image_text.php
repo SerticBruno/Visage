@@ -14,8 +14,8 @@
 
             ?>
 
-            <div class="row justify-content-center px-0 m-0 py-4 py-lg-5 <?php echo $k % 2 == 0 ? 'dark-gray' : 'gray'; ?>">
-                <div class="row content px-1 px-md-4 px-lg-5 <?php echo $k % 2 == 1 ? 'flex-row-reverse' : ''; ?>">
+            <div class="row justify-content-center px-1 m-0 py-4 py-lg-5 <?php echo $k % 2 == 0 ? 'dark-gray' : 'gray'; ?>">
+                <div class="row content px-1 px-md-4 px-lg-3 <?php echo $k % 2 == 1 ? 'flex-row-reverse' : ''; ?>">
                     <div class="col-lg-8 col-12">
                         <div class="text">
                             <?php echo $description ?>

@@ -18,12 +18,7 @@
       list-style-type: none;
 
       a {
-        text-decoration: none;
-        color: $white;
-        // transition: all 0.2s ease;
-
         &:hover {
-          // transition: all 0.2s ease;
           color: $gray;
         }
       }
@@ -88,16 +83,31 @@
     }
   }
 
+  &-right-menu {
+    padding-left: 0;
+
+    a{
+      text-decoration: underline !important;
+      transition: $transition;
+
+      &:hover{
+        transition: $transition;
+      }
+    }
+
+  }
+
   .info-text {
     font-weight: 500;
 
     a {
-      text-decoration: none;
+      text-decoration: underline !important;
+      
       // color: $primary;
-      transition: all 0.2s ease;
+      transition: $transition;
 
       &:hover {
-        transition: all 0.2s ease;
+        transition: $transition;
         color: $gray;
       }
     }

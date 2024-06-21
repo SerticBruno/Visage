@@ -1,7 +1,12 @@
 .slider-features{
     overflow: hidden;
 
-
+    .span-line {
+        @include fluid("width", 40, 80);
+        background: black; /* Line color */
+        height: 2px; /* Line thickness */
+        margin-right: 10px; /* Spacing between the line and the title */
+    }
 
     .swiper {
         width: 100%;

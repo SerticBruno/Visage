@@ -8,6 +8,7 @@
 
   .span-line {
     @include fluid("width", 40, 80);
+    font-family: "Versailles";
     background: black; /* Line color */
     height: 2px; /* Line thickness */
     margin-right: 10px; /* Spacing between the line and the title */

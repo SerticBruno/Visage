@@ -11,7 +11,7 @@ $button = $params['button'];
             <div class="row">
                 <div class="col-12 pb-4 versailles d-flex align-items-center">
                     <span class="span-line"></span>
-                    <h2><?php echo $title ?></h2>
+                    <h2 class="versailles"><?php echo $title ?></h2>
 
                     <?php if(!empty($button['label'])){ ?>
                         <div class="button-wrapper ms-auto">
@@ -27,5 +27,15 @@ $button = $params['button'];
                 <?php get_component_template('cards/feature-card', $v); ?>
             <?php } ?>
         </div>
+
+        <?php if(!empty($params['text_url'])) { ?>
+            <div class="row see-more pt-2">
+                <div class="button-wrapper d-flex justify-content-end">
+                    <a href="<?php echo $params['link']; ?>" class="btn btn-primary">
+                        <?php echo $params['text_url']; ?>
+                    </a>
+                </div>
+            </div>
+        <?php }?>
     </div>
 </section>

@@ -1302,6 +1302,31 @@
                             "placeholder": ""
                         },
                         {
+                            "key": "field_66754f73213b7",
+                            "label": "Mobile Style",
+                            "name": "mobile_style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "one-in-row": "1 in row",
+                                "two-in-row": "2 in row"
+                            },
+                            "default_value": false,
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 0,
+                            "return_format": "value",
+                            "ajax": 0,
+                            "placeholder": ""
+                        },
+                        {
                             "key": "field_62bea8fed7f8d",
                             "label": "Feature",
                             "name": "feature",
@@ -1698,6 +1723,44 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_66707d09ab7ca",
+                            "label": "Text Url",
+                            "name": "text_url",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_66707cddab7c9",
+                            "label": "Link",
+                            "name": "link",
+                            "type": "page_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": "",
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "allow_archives": 1,
+                            "multiple": 0
                         }
                     ],
                     "min": "",
@@ -4132,6 +4195,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_66754c6f6edb9",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_63ecb42c03db2",
                             "label": "Features",
                             "name": "features",
@@ -4199,7 +4281,7 @@
                                 {
                                     "key": "field_66703e18163d4",
                                     "label": "Url",
-                                    "name": "link",
+                                    "name": "url",
                                     "type": "url",
                                     "instructions": "",
                                     "required": 0,
@@ -4445,5 +4527,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1718633485
+    "modified": 1718964149
 }

@@ -47,6 +47,11 @@
 							</ul>						
 						</div>
 						<div class="col-12 col-md-2">
+							<ul class="footer-right-menu">
+								<li>
+									<a href="<?php echo $footer['privacy_policy_url'] ?>"><?php echo $footer['privacy_policy_text'] ?></a>
+								</li>
+							</ul>
 							<?php echo $footer['payment_description'] ?>
 							<ul class="footer-payments d-flex d-md-inline d-lg-flex">
 								<?php
