@@ -25,9 +25,9 @@ $button = $params['button'];
                 <div class="col-3">
                     <!-- <?php echo $description ?> -->
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-2 px-0">
                     <!-- Search Input -->
-                    <input type="text" id="categorySearch" class="form-control" placeholder="Pretrazi usluge">
+                    <input type="text" id="categorySearch" class="form-control" placeholder="Pretraži">
                 </div>
             </div>
             
