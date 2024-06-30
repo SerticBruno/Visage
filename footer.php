@@ -18,14 +18,14 @@
 				</div>
 			</div>
 
-			<div class="footer-border">
+			<div class="footer-border py-3">
 				<div class="container">
 					<div class="row pt-4">
 						<div class="col-12 col-md-2 info-text">
 							<?php echo $footer['description'] ?>
 						</div>
 						<div class="col-12 col-md-8">
-							<ul class="footer-socials d-flex justify-content-around">
+							<ul class="footer-socials d-flex justify-content-center">
 								<?php
 									foreach ($footer['social_icons'] as $k => $v) { 
 										
@@ -70,7 +70,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="copyright" class="text-center pt-3 pb-2">
+			<div id="copyright" class="text-center py-3">
 				<a href="<?php echo home_url()?>">&copy; <?php echo esc_html( date_i18n( __( 'Y', 'visage' ) ) ); ?> VISAGE Studio</a>
 			</div>
 		</footer>

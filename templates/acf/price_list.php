@@ -92,7 +92,12 @@ $button = $params['button'];
                                 ?>
                                 
                                 <a href="<?php echo htmlspecialchars($urlLink); ?>">
-                                    <?php echo htmlspecialchars($category['title']); ?>
+                                    <div class="category-title-text p-0">
+                                        <?php echo htmlspecialchars($category['title']); ?>
+                                    </div>
+                                    <div class="category-description-text p-0">
+                                        <?php echo $category['description']; ?>
+                                    </div>
                                 </a>
                             <?php } else { ?>
                             <?php echo htmlspecialchars($category['title']); ?>

@@ -451,4 +451,34 @@ var swiperfeatures = new Swiper(".swiper-features", {
   }
 });
 
+
+// Scroll to top
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Create scroll to top button
+  let scrollToTopBtn = document.createElement('button');
+  scrollToTopBtn.id = 'scrollToTopBtn';
+  scrollToTopBtn.innerText = '⬆';
+  document.body.appendChild(scrollToTopBtn);
+
+  // Handle scroll events to show/hide button smoothly
+  window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 300) {
+          scrollToTopBtn.classList.add('visible');
+      } else {
+          scrollToTopBtn.classList.remove('visible');
+      }
+  });
+
+  // Scroll to top on button click
+  scrollToTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+
+
+
+//
+
 /**************************************** */

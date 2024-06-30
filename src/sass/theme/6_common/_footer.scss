@@ -2,8 +2,7 @@
   background-color: $white;
   // padding: 0 0 30px 0;
 
-  @include fluid("padding-top", 10, 30);
-  @include fluid("padding-bottom", 10, 22);
+  @include fluid("margin-top", 10, 30);
 
   height: 30%;
 
@@ -31,11 +30,12 @@
     margin: 0;
 
     li {
+      @include fluid("padding-left", 10, 20);
+      @include fluid("padding-right", 10, 20);
+      
       a {
         img {
           margin: 0;
-          border: 3px solid white;
-          background-color: white;
           // border-radius: 50px;
           width: 32px;
           transition: all 0.3s ease;
@@ -66,7 +66,6 @@
       
       img {
         margin: 0;
-        background-color: white;
         // border-radius: 50px;
         width: 32px;
         transition: all 0.3s ease;
