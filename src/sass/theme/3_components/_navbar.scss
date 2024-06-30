@@ -193,7 +193,7 @@
     align-items: center;
     height: 100%;
     // @include fluid("padding-top", 8, 18);
-    @include fluid("padding-bottom", 25, 18);
+    @include fluid("padding-bottom", 8, 18);
     border-bottom: 1px solid $primary;
   }
 
@@ -356,6 +356,11 @@
 
   &-collapse {
     scrollbar-width: none;
+
+
+    @include media-breakpoint-down(md) {
+      padding-bottom: 45px;
+    }
 
     @include media-breakpoint-down(lg) {
       max-height: calc(100vh - 160px); /* Adjust as needed */

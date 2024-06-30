@@ -53,25 +53,6 @@ $button = $params['button'];
                         <?php endforeach; ?>
                     </div>
                 </div>
-                <div class="row">
-                    <h3 class="mb-3">Paketi</h3>
-
-                    <div class="col-12 mb-5">
-                        <?php foreach($params['categories'] as $index => $category): ?>
-
-                            <?php 
-                                $categoryTitle = htmlspecialchars($category['title']);
-                                $categoryTags = htmlspecialchars($category['tags']); // Store tags as a space-delimited string
-                                $categoryId = 'category-' . $index; // Unique ID for each category
-                            ?>
-
-                            <div class="category-checkbox me-3">
-                                <input type="checkbox" id="<?php echo $categoryId; ?>" name="category-filter" class="category-filter" value="<?php echo $categoryId; ?>" />
-                                <label for="<?php echo $categoryId; ?>"><?php echo $categoryTitle; ?></label>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                </div>
             </div>
             <div class="col-12 col-lg-9">
                 <?php foreach($params['categories'] as $index => $category): ?>

@@ -126,18 +126,22 @@ img {
     margin: 30px auto;
   }
 }
-
 #scrollToTopBtn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: $gray;
-  width: 48px;
-  height: 48px;
-  color: #ffffff;
-  border: none;
+  width: 40px; /* Adjust width to accommodate padding */
+  height: 40px; /* Adjust height to accommodate padding */
+  padding: 10px;
+
+  rotate: -90deg;
+  background-image: url("../img/png/arrow-right-white.png") !important;
+  background-size: 50%; /* Ensure the image covers the button */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $grayDark;
+  border: 3px solid white;
   border-radius: 50%;
-  padding: 10px 15px;
   cursor: pointer;
   z-index: 1000;
   opacity: 0; /* Start invisible */
@@ -146,14 +150,27 @@ img {
   transition: $transition;
 
   &:hover{
-    background-color: $grayDark;
+    background-color: $gray;
     transition: $transition;
   }
 }
-
 
 #scrollToTopBtn.visible {
   opacity: 1; /* Fully visible */
   transform: translateY(0); /* Move into position */
   pointer-events: auto; /* Enable interactions */
+}
+
+/* CSS to define the transition */
+.cky-consent-container  {
+  transition: opacity 0.5s ease, transform 0.5s ease !important;
+}
+
+.cky-banner-bottom.cky-hide{
+  opacity: 0 !important;
+  transform: translateY(100%) !important;
+}
+
+.cky-revisit-bottom-left{
+  display: none !important;
 }

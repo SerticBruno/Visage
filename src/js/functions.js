@@ -458,7 +458,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Create scroll to top button
   let scrollToTopBtn = document.createElement('button');
   scrollToTopBtn.id = 'scrollToTopBtn';
-  scrollToTopBtn.innerText = '⬆';
   document.body.appendChild(scrollToTopBtn);
 
   // Handle scroll events to show/hide button smoothly
@@ -476,9 +475,24 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// JavaScript to add the transition effect
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the CookieYes banner and the accept button
+  var cookieBanner = document.getElementsByClassName('cky-consent-container ');
+  var acceptButton = document.querySelector('cky-consent-container .cky-btn-accept'); // Adjust the selector to match the actual button in your banner
 
+  // Add an event listener to the accept button
+  acceptButton.addEventListener('click', function () {
+      // Add the class that triggers the transition
+      cookieBanner.classList.add('cookieyes-hidden');
 
-
+      // Optional: Remove the banner from the DOM after the transition ends
+      setTimeout(function () {
+          cookieBanner.style.display = 'none';
+      }, 500); // Matches the CSS transition duration
+  });
+});
+  
 //
 
 /**************************************** */
