@@ -2,6 +2,8 @@
   @include fluid("margin-top", 20, 40);
   @include fluid("margin-bottom", 20, 20);
 
+  scroll-margin-top: 150px; /* Adjust this value to match your navbar height */
+
   h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6{
     @include fluid("padding-bottom", 15, 20);
   }

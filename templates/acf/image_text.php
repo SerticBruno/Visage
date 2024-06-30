@@ -1,8 +1,7 @@
 <?php
-
 ?>
 
-<section class="image-text" id="image-text">
+<section class="image-text" id="<?php echo $anchor ?>">
     <div class="container-fluid p-0 m-0">
         <?php foreach($params['rows'] as $k => $v) { ?>
             <?php
@@ -11,12 +10,13 @@
                 $description = $v['description'];
                 $title = $v['title'];
                 $button = $v['button'];
+                $anchor = $v['anchor'];
 
             ?>
 
-            <div class="row justify-content-center px-1 m-0 py-4 py-lg-5 <?php echo $k % 2 == 0 ? 'dark-gray' : 'gray'; ?>">
+            <div class="row justify-content-center px-1 m-0 py-4 py-lg-5 anchor-target <?php echo $k % 2 == 0 ? 'dark-gray' : 'gray'; ?>" id="<?php echo $anchor ?>">
                 <div class="row content px-1 px-md-4 px-lg-3 <?php echo $k % 2 == 1 ? 'flex-row-reverse' : ''; ?>">
-                    <div class="col-lg-8 col-12">
+                    <div class="col-lg-8 col-12 ">
                         <div class="text">
                             <?php echo $description ?>
 

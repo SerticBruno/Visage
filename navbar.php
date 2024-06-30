@@ -9,7 +9,7 @@ $logo_scrolled = $header['logo_scrolled']['url'];
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container d-flex justify-content-center">
         <div class="row w-100">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center p-0">
                 <div class="logo-wrapper">
                     <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
                         <div class="logo-img-wrapper pt-2 d-flex justify-content-center align-items-center">

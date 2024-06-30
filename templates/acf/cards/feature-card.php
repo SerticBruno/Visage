@@ -24,10 +24,21 @@ else if($params['mobile_style'] == "two-in-row"){
     $mobileColumnClass = "col-6";
 }
 
+
+if(!empty($feature['anchor'])){
+    
+    $featureUrl = substr_replace($feature['url'], '', -1);
+    $linkUrl = $featureUrl . "#" . $feature['anchor'];
+}
+else{
+    $linkUrl = $feature['url'];
+}
+
+
 ?>
 
 <div class="<?php echo $columnClass; ?> <?php echo $mobileColumnClass; ?> pb-3 link-wrapper">
-    <a href="<?php echo $feature['url']; ?>" class="position-relative">
+    <a href="<?php echo $linkUrl; ?>" class="position-relative">
         <div class="features-card">
             <div class="img-wrapper">
                 <img src="<?php echo $image ?>" alt="<?php echo $alt ?>"/>

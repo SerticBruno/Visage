@@ -6,6 +6,17 @@
       object-fit: contain;
     }
   }
+
+  .category-column {
+    @include media-breakpoint-up(md){
+      position: -webkit-sticky; /* For Safari */
+      position: sticky;
+      top: 200px; /* Adjust the top offset to your preference */
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+
   .category-title {
     padding: 15px 10px;
     font-size: 1.5rem;
@@ -26,13 +37,13 @@
     padding: 10px 10px;
   }
 
-  .col-lg-10 .row {
+  .col-lg-9 .row {
     border-bottom: 1px solid $grayBorder;
   }
   .col-6:last-child {
     text-align: right;
   }
-  .col-lg-10 .row:nth-child(even) {
+  .col-lg-9 .row:nth-child(even) {
     background-color: $grayLight;
   }
   .product-title {

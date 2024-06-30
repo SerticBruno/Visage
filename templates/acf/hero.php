@@ -11,6 +11,7 @@ if(!is_null($post_info)){
 $style = $post_info['style'];
 $image = wp_get_attachment_image($post_info['image'], 'full', false, ['class' => 'hero-slide-bg-img']);
 $image = ( $style == 'image' ? $image : '<img src="' . get_the_post_thumbnail_url($post->ID) . '" alt="'. $alt . '" class="hero-slide-bg-img" />' );
+$mobileImage = wp_get_attachment_image($post_info['mobile_image'], 'full', false, ['class' => 'hero-slide-bg-img']);
 
 $video = $post_info['video'];
 $slides = $post_info['slides'];
@@ -94,9 +95,25 @@ $button = $post_info['button'];
                             $scale = $params['image_scale'];
                             $imageMargin = $params['image_margin'];
                         ?>
-                        <div class="wrap-img">
-                            <?php echo $image; ?>
-                        </div>
+
+                        <?php if(!empty($mobileImage)) {  ?>
+
+                            <div class="wrap-img">
+                                <div class="d-none d-lg-block h-100">
+                                    <?php echo $image; ?>
+                                </div>
+                                <div class="d-block d-lg-none h-100" style="object-fit: cover;">
+                                    <?php echo $mobileImage; ?>
+                                </div>
+                            </div>
+
+                        <?php } else { ?>
+                            
+                            <div class="wrap-img">
+                                    <?php echo $image; ?>
+                            </div>
+
+                        <?php } ?>
 
                         <div class="hero-slide-bg-overlay"></div>
                     </div>

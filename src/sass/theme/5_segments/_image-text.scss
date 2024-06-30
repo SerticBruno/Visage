@@ -1,13 +1,22 @@
-.image-text{
-
-  .content{
+.image-text {
+  .content {
     max-width: 1320px;
+    @include media-breakpoint-down(xl) {
+      max-width: 960px;
+    }
+    @include media-breakpoint-down(lg) {
+      max-width: 720px;
+    }
     @include media-breakpoint-down(md) {
       max-width: 420px;
     }
   }
 
-  .dark-gray{
+  .anchor-target {
+    scroll-margin-top: 130px; /* Adjust this value to match your navbar height */
+  }
+
+  .dark-gray {
     background-color: $gray;
     // color: white;
     // h2{
@@ -15,21 +24,20 @@
     // }
   }
 
-  .gray{
+  .gray {
     // background-color: $gray;
     // color: white;
-    h2{
+    h2 {
       // color: white;
     }
   }
 
-  .img-wrapper{
+  .img-wrapper {
     @include fluid("height", 320, 400);
-    img{
+    img {
       margin: 0;
       object-fit: cover;
       height: 100%;
     }
   }
-
 }
