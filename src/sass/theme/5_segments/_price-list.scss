@@ -9,6 +9,19 @@
   .category-title {
     padding: 15px 10px;
     font-size: 1.5rem;
+
+    a{
+      transition: $transition;
+      &:hover{
+        transition: $transition;
+      }
+    }
+  }
+
+  .category-description-text{
+    p {
+      margin: 0;
+    }
   }
 
   .span-line {
@@ -25,6 +38,7 @@
   .product-row {
     padding: 10px 10px;
   }
+
 
   .col-lg-10 .row {
     border-bottom: 1px solid $grayBorder;

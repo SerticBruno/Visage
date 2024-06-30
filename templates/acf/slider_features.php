@@ -42,7 +42,9 @@ $features = $params['features'];
                         ?>
                         <div class="swiper-slide">
                             <div class="col-12 text-center">
-                                <a href="<?php echo $v['url']; ?>" target="<?php echo $external; ?>">
+                                <?php if(!empty($v['url'])) { ?>
+                                    <a href="<?php echo $v['url']; ?>" target="<?php echo $external; ?>">
+                                <?php } ?>
                                     <div class="img-wrap">
                                         <img src="<?php echo $v['image']['url'] ?>"></img>
                                     </div>
@@ -51,7 +53,10 @@ $features = $params['features'];
                                             <?php echo $v['title'] ?>
                                         </div>
                                     <?php } ?>
-                                </a>
+                                    
+                                <?php if(!empty($v['url'])) { ?>
+                                    </a>
+                                <?php } ?>
                             </div>
                         </div>
                     <?php } ?>
