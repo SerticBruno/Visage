@@ -46,7 +46,7 @@ $features = $params['features'];
                                     <a href="<?php echo $v['url']; ?>" target="<?php echo $external; ?>">
                                 <?php } ?>
                                     <div class="img-wrap">
-                                        <img src="<?php echo $v['image']['url'] ?>"></img>
+                                        <img src="<?php echo $v['image']['url']; ?>" alt="feature-icon-<?php echo $k + 1; ?>"></img>
                                     </div>
                                     <?php if (!empty($v['title'])) { ?>
                                         <div class="col-12">

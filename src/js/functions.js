@@ -474,25 +474,60 @@ document.addEventListener('DOMContentLoaded', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  // Select the accept and customize buttons
+  var acceptButton = document.querySelector('.cky-btn-accept'); // Assuming this is the Accept button
+  var customizeButton = document.querySelector('.cky-btn-customize'); // Assuming this is the Customize button
 
-// JavaScript to add the transition effect
-document.addEventListener('DOMContentLoaded', function () {
-  // Get the CookieYes banner and the accept button
-  var cookieBanner = document.getElementsByClassName('cky-consent-container ');
-  var acceptButton = document.querySelector('cky-consent-container .cky-btn-accept'); // Adjust the selector to match the actual button in your banner
+  // Select the banner element
+  var banner = document.querySelector('.cky-consent-container');
 
-  // Add an event listener to the accept button
-  acceptButton.addEventListener('click', function () {
-      // Add the class that triggers the transition
-      cookieBanner.classList.add('cookieyes-hidden');
+  // Function to handle banner fade-out
+  function fadeOutBanner() {
+      banner.classList.add('fade-out'); // Add the fade-out class
+      setTimeout(function() {
+          banner.style.display = 'none'; // Hide the banner after animation completes
+      }, 500); // Adjust the time to match your CSS animation duration
+  }
 
-      // Optional: Remove the banner from the DOM after the transition ends
-      setTimeout(function () {
-          cookieBanner.style.display = 'none';
-      }, 500); // Matches the CSS transition duration
+  // Function to handle auto accept on scroll with offset
+  function handleAutoAccept() {
+    // Calculate the scroll offset (150px)
+    var scrollOffset = 300;
+
+    // Check if the accept button exists and has not been clicked already
+    if (acceptButton && !acceptButton.hasAttribute('data-auto-accepted')) {
+        // Get the current scroll position of the window
+        var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Check if the scroll position is greater than or equal to the offset
+        if (scrollPosition >= scrollOffset) {
+          // Simulate a click on the accept button
+          acceptButton.click();
+          acceptButton.setAttribute('data-auto-accepted', 'true'); // Mark as auto-accepted
+        }
+    }
+  }
+
+  // Attach click event listeners to the buttons
+  if (acceptButton) {
+      acceptButton.addEventListener('click', function() {
+          fadeOutBanner();
+      });
+  }
+
+  if (customizeButton) {
+      customizeButton.addEventListener('click', function() {
+          fadeOutBanner();
+      });
+  }
+
+  // Add scroll event listener to window
+  window.addEventListener('scroll', function() {
+      handleAutoAccept();
   });
 });
-  
+
 //
 
 /**************************************** */

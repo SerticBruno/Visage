@@ -174,3 +174,29 @@ img {
 .cky-revisit-bottom-left{
   display: none !important;
 }
+
+.cky-banner-btn-close{
+  padding: 10px !important;
+}
+
+.cky-consent-container {
+  transition: opacity 0.5s ease;
+}
+
+.cky-consent-container.cky-hide {
+  display: block !important;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+a:focus {
+  box-shadow: none !important; /* Example of a custom box shadow */
+  /* Add any other styles as needed */
+}
+
+/* Custom checkbox when checked */
+input[type="checkbox"]:checked {
+  accent-color: black;
+}

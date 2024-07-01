@@ -10,30 +10,36 @@ $button = $params['button'];
     <div class="container py-3 versailles">
         <?php if(!empty($title)) { ?>
             <div class="row">
-                <div class="col-12 pb-4 d-flex align-items-center">
+                <div class="col-12 pb-4 d-flex align-items-center px-md-0">
                     <span class="span-line"></span>
                     <h2>Cjenik</h2>
+                    <div class="d-none d-lg-flex ms-auto">
+                        <input type="text" id="categorySearch" class="form-control" placeholder="Pretraži">
+                    </div>
                         
                     <?php if(!empty($button['label'])){ ?>
-                        <div class="button-wrapper ms-auto">
+                        <div class="d-flex d-lg-none button-wrapper ms-auto">
                             <?php include THEME_DIR . '/templates/acf/button-show.php'; ?>
                         </div>
                     <?php } ?>
                 </div>
             </div>
-            <div class="row mb-3 justify-content-between">
-                <div class="col-3">
-                    <!-- <?php echo $description ?> -->
-                </div>
-                <div class="col-6 col-md-2 px-0">
-                    <!-- Search Input -->
-                    <input type="text" id="categorySearch" class="form-control" placeholder="Pretraži">
+            <div class="row mb-3 button-row">
+                <div class="col-6 col-md-2 px-2 px-md-0">
+                    <div class="d-flex d-lg-none ms-auto pb-3">
+                        <input type="text" id="categorySearch" class="form-control" placeholder="Pretraži">
+                    </div>
+                    <?php if(!empty($button['label'])){ ?>
+                        <div class="d-none d-lg-flex button-wrapper ms-auto">
+                            <?php include THEME_DIR . '/templates/acf/button-show.php'; ?>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
             
         <?php } ?>
         <div class="row justify-content-between">
-            <div class="col-12 col-lg-3 category-column">
+            <div class="col-12 col-md-3 category-column ps-md-0">
                 <div class="row">
                     <h3 class="mb-3">Kategorije</h3>
 
@@ -52,9 +58,10 @@ $button = $params['button'];
                             </div>
                         <?php endforeach; ?>
                     </div>
+
                 </div>
             </div>
-            <div class="col-12 col-lg-9">
+            <div class="col-12 col-md-9">
                 <?php foreach($params['categories'] as $index => $category): ?>
                     <?php 
                         $categoryId = 'category-' . $index; // Match this ID with the checkbox value

@@ -17,6 +17,14 @@
     }
   }
 
+  .button-row{
+    justify-content: end;
+
+    @include media-breakpoint-down(md){
+      justify-content: start;
+    }
+  }
+  
   #categorySearch{
     font-family: montserrat;
   }
