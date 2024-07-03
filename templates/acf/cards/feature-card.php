@@ -44,7 +44,7 @@ else{
                 <img src="<?php echo $image ?>" alt="<?php echo $alt ?>"/>
             </div>
             <div class="info">
-                <h4><?php echo $title ?></h4>
+                <h3 class="h4"><?php echo $title ?></h3>
                 <p><?php echo $description ?></p>
             </div>
         </div>

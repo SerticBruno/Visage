@@ -33,7 +33,7 @@
 										
 									?>
 										<li class="d-inline">
-											<a class="d-inline-block" target="_blank" href="<?php echo $v['url'] ?>">
+											<a class="d-inline-block" target="_blank" href="<?php echo $v['url'] ?>" aria-labe="Read more about <?php echo $v['logo']['alt'] ?>">
 												<img src="<?php echo $logo ?>" alt="<?php echo $v['logo']['alt']?>"/>
 											</a>
 										</li>
@@ -41,7 +41,7 @@
 								?>
 								<li class="d-inline">
 									<a class="d-inline-block" href="https://wa.me/<?php echo urlencode($footer['telephone']); ?>">
-										<img src="<?php echo $footer['whatsapp_logo']['url'] ?>"/>
+										<img src="<?php echo $footer['whatsapp_logo']['url'] ?>" alt="whatsapp-icon"/>
 									</a>
 								</li>
 							</ul>						
