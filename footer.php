@@ -33,7 +33,7 @@
 										
 									?>
 										<li class="d-inline">
-											<a class="d-inline-block" target="_blank" href="<?php echo $v['url'] ?>" aria-labe="Read more about <?php echo $v['logo']['alt'] ?>">
+											<a class="d-inline-block" target="_blank" href="<?php echo $v['url'] ?>" aria-label="Follow us on <?php echo $v['logo']['alt'] ?>">
 												<img src="<?php echo $logo ?>" alt="<?php echo $v['logo']['alt']?>"/>
 											</a>
 										</li>
