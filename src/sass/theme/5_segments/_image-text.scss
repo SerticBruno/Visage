@@ -1,4 +1,9 @@
 .image-text {
+
+  h2{
+    @include fluid("padding-bottom", 20, 34);
+  }
+
   .content {
     max-width: 1320px;
     @include media-breakpoint-down(xl) {
@@ -13,14 +18,14 @@
   }
 
   .anchor-target {
-    scroll-margin-top: 130px; /* Adjust this value to match your navbar height */
+    scroll-margin-top: 145px; /* Adjust this value to match your navbar height */
     
     @include media-breakpoint-down(lg) {
-      scroll-margin-top: 108px; /* Adjust this value to match your navbar height */
+      scroll-margin-top: 115px; /* Adjust this value to match your navbar height */
     }
   
     @include media-breakpoint-down(md) {
-      scroll-margin-top: 91px; /* Adjust this value to match your navbar height */
+      scroll-margin-top: 95px; /* Adjust this value to match your navbar height */
     }
   }
 

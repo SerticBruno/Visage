@@ -6,7 +6,7 @@ $features = $params['features'];
 ?>
 
 <section class="slider-features">
-    <div class="container-fluid py-3">
+    <div class="container-fluid py-3 pt-5">
         <?php if(!empty($title)) { ?>
             <div class="container">
 

@@ -12,7 +12,7 @@ $button = $params['button'];
             <div class="row">
                 <div class="col-12 pb-4 d-flex align-items-center px-md-0">
                     <span class="span-line"></span>
-                    <h2>Cjenik</h2>
+                    <h2 class="pe-3">Cjenik</h2>
                     <div class="d-none d-lg-flex ms-auto">
                         <input type="text" id="categorySearch" class="form-control" placeholder="Pretraži">
                     </div>

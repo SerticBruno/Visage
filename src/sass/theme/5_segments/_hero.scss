@@ -443,10 +443,8 @@
 
 .hero-slide-title {
   h1 {
-    margin-left: 0px !important;
-    @include media-breakpoint-up(sm) {
-      margin-left: 1rem;
-    }
+    // margin-left: 0px !important;
+      margin-left: 1rem !important;
   }
 }
 

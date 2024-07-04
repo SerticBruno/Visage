@@ -18,7 +18,7 @@ else if($params['style'] == "two-in-row"){
 }
 
 if($params['mobile_style'] == "one-in-row") {
-    $mobileColumnClass = "col-12";
+    $mobileColumnClass = "col-9";
 }
 else if($params['mobile_style'] == "two-in-row"){
     $mobileColumnClass = "col-6";
