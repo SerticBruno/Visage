@@ -1499,6 +1499,32 @@
                                     "prepend": "",
                                     "append": "",
                                     "maxlength": ""
+                                },
+                                {
+                                    "key": "field_6689acb026c60",
+                                    "label": "Same Page",
+                                    "name": "same_page",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_667dcbd6e8530",
+                                                "operator": "!=empty"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
                                 }
                             ]
                         },
@@ -3387,8 +3413,65 @@
                                     "prepend": "",
                                     "append": "",
                                     "maxlength": ""
+                                },
+                                {
+                                    "key": "field_6689ad38b48d3",
+                                    "label": "Anchor",
+                                    "name": "anchor",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_668a650fe2e97",
+                                    "label": "Category",
+                                    "name": "category",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_6689c5a9473ba",
+                            "label": "Is Search",
+                            "name": "is_search",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         }
                     ],
                     "min": "",
@@ -4774,5 +4857,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1719790180
+    "modified": 1720345978
 }

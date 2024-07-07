@@ -54,4 +54,10 @@
       width: 100%;
     }
   }
+
+  input:focus{
+    outline: none; /* Remove the default outline */
+    border: none; /* Remove border if present */
+    box-shadow: none; /* Remove any additional focus shadow */
+  }
 }

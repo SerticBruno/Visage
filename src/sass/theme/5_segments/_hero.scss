@@ -42,7 +42,6 @@
     margin-top: 1rem;
     @include media-breakpoint-down(md) {
       padding-bottom: 20px;
-      padding-left: 20px;
       a {
         padding: 15px 25px;
       }
@@ -444,7 +443,10 @@
 .hero-slide-title {
   h1 {
     // margin-left: 0px !important;
-      margin-left: 1rem !important;
+      
+      @include media-breakpoint-down(lg) {
+        margin-left: 0rem !important;
+      }
   }
 }
 
