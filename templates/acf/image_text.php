@@ -78,7 +78,7 @@ $uniqueTags = array_unique($uniqueTags);
             $title = $v['title'];
             $button = $v['button'];
             $anchor = $v['anchor'];
-            $productTags = $v['tags'];
+            $productTags = $v['category'];
             ?>
 
             <div class="row py-5 justify-content-center anchor-target <?php echo $k % 2 == 0 ? 'dark-gray' : 'gray'; ?>" id="<?php echo $anchor ?>" data-title="<?php echo htmlspecialchars($title); ?>" data-tags="<?php echo htmlspecialchars($v['category']); ?>">
@@ -89,7 +89,7 @@ $uniqueTags = array_unique($uniqueTags);
                                 <h2><?php echo $title ?></h2>
                                 <?php echo $description ?>
 
-                                <strong><?php echo $productTags ?></strong>
+                                <strong><?php echo $v['tags'] ?></strong>
                                 
                                 <?php if (!empty($button['label'])): ?>
                                     <div class="button-wrapper pt-3 pb-4 pb-lg-0">
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         rows.forEach(row => {
             // Get the tags from data attribute and convert to lower case
-            const tags = row.getAttribute("data-tags").toLowerCase();
+            const tags = row.getAttribute("data-tags");
 
             // Check if the row matches selected categories
             const matchesCategory = selectedCategories.length === 0 || selectedCategories.some(category => tags.includes(category));

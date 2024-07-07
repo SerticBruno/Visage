@@ -37,7 +37,6 @@
       grid-row-end: 2;
 
       @include media-breakpoint-down(lg) {
-        max-height: 558px;
         grid-column-end: unset;
 
         grid-row-end: 7;

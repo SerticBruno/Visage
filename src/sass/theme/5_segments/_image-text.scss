@@ -1,4 +1,15 @@
 .image-text {
+  
+
+  .category-column {
+    @include media-breakpoint-up(md){
+      position: -webkit-sticky; /* For Safari */
+      position: sticky;
+      top: 200px; /* Adjust the top offset to your preference */
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
 
   h2{
     @include fluid("padding-bottom", 20, 34);
