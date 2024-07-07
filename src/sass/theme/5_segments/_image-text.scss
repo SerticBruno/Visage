@@ -28,6 +28,19 @@
     }
   }
 
+  .price{
+    p{
+      color: white;
+      background-color: $black;
+      @include fluid("padding-top", 6, 8);
+      @include fluid("padding-bottom", 6, 8);
+      @include fluid("padding-left", 10, 16);
+      @include fluid("padding-right", 10, 16);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+  }
+
   .anchor-target {
     scroll-margin-top: 145px; /* Adjust this value to match your navbar height */
     

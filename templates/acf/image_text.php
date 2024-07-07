@@ -89,7 +89,12 @@ $uniqueTags = array_unique($uniqueTags);
                                 <h2><?php echo $title ?></h2>
                                 <?php echo $description ?>
 
-                                <strong><?php echo $v['tags'] ?></strong>
+                                <p class="pb-3"><strong><?php echo $v['tags'] ?></strong></p>
+                                <?php if(!empty($v['price'])) { ?>
+                                    <div class="price d-flex">
+                                        <p><?php echo $v['price'] ?> €</p>
+                                    </div>
+                                <?php } ?>
                                 
                                 <?php if (!empty($button['label'])): ?>
                                     <div class="button-wrapper pt-3 pb-4 pb-lg-0">
