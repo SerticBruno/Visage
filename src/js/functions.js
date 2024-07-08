@@ -412,8 +412,9 @@ var heroswiper = new Swiper(".hero-slider", {
 
 
 img2svg(".replaceSvg");
-
+  
 var swiperfeatures = new Swiper(".swiper-features", {
+
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,

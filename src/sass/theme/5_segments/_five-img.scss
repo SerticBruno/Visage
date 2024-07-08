@@ -7,7 +7,7 @@
 
     .grid-container {
         display: grid;
-        gap: 32px 0;
+        gap: 16px 0;
         grid-auto-flow: row;
 
         grid-template-columns: repeat(1, 1fr);
@@ -41,9 +41,6 @@
                 grid-row-end: 3;
             }
 
-            @include media-breakpoint-up(lg) {
-                max-height: 558px;
-            }
 
             img {
                 width: 100%;
@@ -61,8 +58,7 @@
                 object-position: center;
                 object-fit: cover;
             }
-
-            max-height: 440px;
+            
 
             @include media-breakpoint-down(lg) {
                 grid-row-start: 3;
@@ -78,7 +74,7 @@
                 object-fit: cover;
             }
 
-            max-height: 440px;
+            
 
             @include media-breakpoint-down(lg) {
                 grid-row-start: 4;
@@ -93,7 +89,7 @@
                 object-fit: cover;
             }
             
-            max-height: 440px;
+            
 
             @include media-breakpoint-down(lg) {
                 grid-row-start: 5;
@@ -108,7 +104,7 @@
                 object-fit: cover;
             }
             
-            max-height: 440px;
+            
 
             @include media-breakpoint-down(lg) {
                 grid-row-start: 6;

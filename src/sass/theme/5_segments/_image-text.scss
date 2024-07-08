@@ -1,4 +1,20 @@
 .image-text {
+  
+
+  .category-column {
+    @include media-breakpoint-up(md){
+      position: -webkit-sticky; /* For Safari */
+      position: sticky;
+      top: 200px; /* Adjust the top offset to your preference */
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+
+  h2{
+    @include fluid("padding-bottom", 20, 34);
+  }
+
   .content {
     max-width: 1320px;
     @include media-breakpoint-down(xl) {
@@ -12,15 +28,28 @@
     }
   }
 
+  .price{
+    p{
+      color: white;
+      background-color: $black;
+      @include fluid("padding-top", 6, 8);
+      @include fluid("padding-bottom", 6, 8);
+      @include fluid("padding-left", 10, 16);
+      @include fluid("padding-right", 10, 16);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+  }
+
   .anchor-target {
-    scroll-margin-top: 130px; /* Adjust this value to match your navbar height */
+    scroll-margin-top: 145px; /* Adjust this value to match your navbar height */
     
     @include media-breakpoint-down(lg) {
-      scroll-margin-top: 108px; /* Adjust this value to match your navbar height */
+      scroll-margin-top: 115px; /* Adjust this value to match your navbar height */
     }
   
     @include media-breakpoint-down(md) {
-      scroll-margin-top: 91px; /* Adjust this value to match your navbar height */
+      scroll-margin-top: 95px; /* Adjust this value to match your navbar height */
     }
   }
 
@@ -46,6 +75,13 @@
       margin: 0;
       object-fit: cover;
       height: 100%;
+      width: 100%;
     }
+  }
+
+  input:focus{
+    outline: none; /* Remove the default outline */
+    border: none; /* Remove border if present */
+    box-shadow: none; /* Remove any additional focus shadow */
   }
 }

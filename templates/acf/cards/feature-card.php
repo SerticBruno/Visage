@@ -18,7 +18,7 @@ else if($params['style'] == "two-in-row"){
 }
 
 if($params['mobile_style'] == "one-in-row") {
-    $mobileColumnClass = "col-12";
+    $mobileColumnClass = "col-9";
 }
 else if($params['mobile_style'] == "two-in-row"){
     $mobileColumnClass = "col-6";
@@ -26,9 +26,12 @@ else if($params['mobile_style'] == "two-in-row"){
 
 
 if(!empty($feature['anchor'])){
-    
-    $featureUrl = substr_replace($feature['url'], '', -1);
-    $linkUrl = $featureUrl . "#" . $feature['anchor'];
+    if($feature['same_page']){
+        $linkUrl = "#" . $feature['anchor'];
+    }else{
+        $featureUrl = substr_replace($feature['url'], '', -1);
+        $linkUrl = $featureUrl . "#" . $feature['anchor'];
+    }
 }
 else{
     $linkUrl = $feature['url'];

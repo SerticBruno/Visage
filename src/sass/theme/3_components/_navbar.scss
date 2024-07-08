@@ -193,6 +193,7 @@
     align-items: center;
     height: 100%;
     // @include fluid("padding-top", 8, 18);
+    @include fluid("padding-top", 4, 10);
     @include fluid("padding-bottom", 8, 18);
     border-bottom: 1px solid $primary;
   }
