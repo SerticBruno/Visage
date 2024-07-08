@@ -1,6 +1,6 @@
 .free-content {
-  @include fluid("margin-top", 20, 40);
-  @include fluid("margin-bottom", 20, 20);
+  @include fluid("margin-top", 30, 40);
+  @include fluid("margin-bottom", 30, 35);
 
   scroll-margin-top: 145px; /* Adjust this value to match your navbar height */
     
@@ -13,7 +13,7 @@
   }
 
   h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6{
-    @include fluid("padding-bottom", 15, 20);
+    @include fluid("padding-bottom", 20, 34);
   }
 
   p {

@@ -3098,6 +3098,25 @@
                                     "library": "all"
                                 },
                                 {
+                                    "key": "field_668bf0cbcce24",
+                                    "label": "Image Contain",
+                                    "name": "image_contain",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
                                     "key": "field_667fd0edaf8c5",
                                     "label": "Title",
                                     "name": "title",
@@ -4876,5 +4895,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1720366013
+    "modified": 1720447207
 }

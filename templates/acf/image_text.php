@@ -32,7 +32,7 @@ $uniqueTags = array_unique($uniqueTags);
     <div class="container-fluid">
         <?php if ($params['is_search']) { ?>
             <div class="row justify-content-center dark-gray py-3">
-                <div class="col-8 col-lg-8 col-md-10">
+                <div class="col-10 col-lg-8">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-5">
                             <div class="accordion pb-3" id="categoryAccordion">
@@ -79,6 +79,11 @@ $uniqueTags = array_unique($uniqueTags);
             $button = $v['button'];
             $anchor = $v['anchor'];
             $productTags = $v['category'];
+            if($v['image_contain']) {
+                $imgContain = " img-contain";
+            }else{
+                $imgContain = "";
+            };
             ?>
 
             <div class="row py-5 justify-content-center anchor-target <?php echo $k % 2 == 0 ? 'dark-gray' : 'gray'; ?>" id="<?php echo $anchor ?>" data-title="<?php echo htmlspecialchars($title); ?>" data-tags="<?php echo htmlspecialchars($v['category']); ?>">
@@ -104,7 +109,7 @@ $uniqueTags = array_unique($uniqueTags);
                             </div>
                         </div>
                         <div class="col-md-4 col-12">
-                            <div class="img-wrapper">
+                            <div class="img-wrapper<?php echo $imgContain ?>">
                                 <img src="<?php echo $image ?>" alt="<?php echo $alt ?>">
                             </div>
                         </div>

@@ -11,9 +11,16 @@
     }
   }
 
-  h2{
+  h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6{
     @include fluid("padding-bottom", 20, 34);
   }
+
+  .accordion-item{
+    h3{
+      padding-bottom: 0;
+    }
+  }
+
 
   .content {
     max-width: 1320px;
@@ -76,6 +83,12 @@
       object-fit: cover;
       height: 100%;
       width: 100%;
+    }
+  }
+
+  .img-contain {
+    img{
+      object-fit: contain !important;
     }
   }
 

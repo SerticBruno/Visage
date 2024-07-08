@@ -1,5 +1,5 @@
 .contact-form {
-  @include fluid("padding-top", 20, 60);
+  @include fluid("padding-top", 0, 60);
 
   padding-bottom: 0;
 
@@ -9,6 +9,7 @@
   }
 
   .form-title {
+    @include fluid("padding-top", 10, 10);
     padding-bottom: 16px;
   }
   a {
@@ -21,6 +22,7 @@
   }
 
   &-visage {
+    @include fluid("padding-top", 10, 10);
     #name-1,
     #email-1,
     #textarea-1,
