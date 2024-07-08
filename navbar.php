@@ -16,7 +16,7 @@ $logo_scrolled = $header['logo_scrolled']['url'];
                             <img src="<?php echo $logo_scrolled ?>" alt="Visage Logo">
                         </div>
                         <div class="info">
-                            <h1 class="versailles">VISAGE</h1>
+                            <h2 class="h1 versailles">VISAGE</h2>
                             <h2 class="notoserifdisplay pt-2">studio</h2>
                         </div>
                     </a>
