@@ -4,6 +4,16 @@ $title = $params['title'];
 $description = $params['description'];
 $button = $params['button'];
 
+
+$categories = $params['categories'];
+
+function compare_categories($a, $b) {
+    return strcasecmp($a['title'], $b['title']);
+}
+
+// Use usort to sort the categories array
+usort($categories, 'compare_categories');
+
 ?>
 
 <section class="price-list py-4">
@@ -44,7 +54,7 @@ $button = $params['button'];
                             <div class="accordion-body">
                                 <div class="row">
                                     <div class="col-12 mb-2">
-                                        <?php foreach($params['categories'] as $index => $category): ?>
+                                        <?php foreach($categories as $index => $category): ?>
                                             <?php 
                                                 $categoryTitle = htmlspecialchars($category['title']);
                                                 $categoryTags = htmlspecialchars($category['tags']);
