@@ -4,15 +4,29 @@ $title = $params['title'];
 $description = $params['description'];
 $button = $params['button'];
 
-
 $categories = $params['categories'];
+$konzultacije_category = null;
+
+// Loop through the categories to find 'Konzultacije'
+foreach ($categories as $key => $category) {
+    if (strcasecmp($category['title'], 'Konzultacije') === 0) {
+        $konzultacije_category = $category;
+        unset($categories[$key]); // Remove the category from the array
+        break;
+    }
+}
 
 function compare_categories($a, $b) {
     return strcasecmp($a['title'], $b['title']);
 }
 
-// Use usort to sort the categories array
+// Use usort to sort the remaining categories array
 usort($categories, 'compare_categories');
+
+// Place 'Konzultacije' at the beginning of the array if it was found
+if ($konzultacije_category !== null) {
+    array_unshift($categories, $konzultacije_category);
+}
 
 ?>
 
@@ -74,7 +88,7 @@ usort($categories, 'compare_categories');
 
             </div>
             <div class="col-12 col-md-9">
-                <?php foreach($params['categories'] as $index => $category): ?>
+                <?php foreach($categories as $index => $category): ?>
                     <?php 
                         $categoryId = 'category-' . $index; // Match this ID with the checkbox value
                         $categoryTags = htmlspecialchars($category['tags']); // Store tags as a space-delimited string
