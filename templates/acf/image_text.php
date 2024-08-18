@@ -71,6 +71,14 @@ $uniqueTags = array_unique($uniqueTags);
         <?php } ?>
 
         <?php foreach ($params['rows'] as $k => $v): ?>
+            <?php 
+
+// myerr($v);
+            if($v['hide']) {
+                continue;
+            }
+            ?>
+            
             <?php
             $image = $v['image']['url'];
             $alt = $v['image']['alt'];
