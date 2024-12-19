@@ -12,12 +12,11 @@ $logo_scrolled = $header['logo_scrolled']['url'];
             <div class="col-12 text-center p-0">
                 <div class="logo-wrapper">
                     <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-                        <div class="logo-img-wrapper pt-2 d-flex justify-content-center align-items-center">
-                            <img src="<?php echo $logo_scrolled ?>" alt="Visage Logo">
+                        <div class="logo-img-wrapper py-2 d-flex justify-content-center align-items-center">
+                            <img src="<?php echo $logo_scrolled ?>" alt="Camp Meteor Logo">
                         </div>
                         <div class="info">
-                            <h2 class="h1 versailles">VISAGE</h2>
-                            <h2 class="notoserifdisplay pt-2">studio</h2>
+                            <h2 class="h1 versailles">Camp Meteor</h2>
                         </div>
                     </a>
                 </div>

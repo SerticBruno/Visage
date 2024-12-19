@@ -1,13 +1,13 @@
 {
   "name": "wp_theme",
   "version": "1.2.0",
-  "description": "visage",
+  "description": "campMeteor",
   "main": "Gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Visage",
-  "homepage": "https://visagestudio.hr/",
+  "author": "campMeteor",
+  "homepage": "https://campMeteorstudio.hr/",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",

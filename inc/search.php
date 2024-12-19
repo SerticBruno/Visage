@@ -1,7 +1,7 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
-function visage_get_search_form($desktop = true) {
+function campMeteor_get_search_form($desktop = true) {
 
   if ($desktop === true) {
     get_search_form();
@@ -9,7 +9,7 @@ function visage_get_search_form($desktop = true) {
 ?>
 <form role="search" method="get" id="<?php echo $desktop; ?>searchform" action="<?php //echo home_url('/'); ?>">
   <label class="screen-reader-text" for="<?php echo $desktop; ?>sm"><i class="fa fa-search" aria-hidden="true"></i></label>
-  <input type="text" value="<?php echo get_search_query(); ?>" name="s" id="<?php echo $desktop; ?>sm" placeholder="<?php _e('What can we do for you?', 'visage'); ?>...">
+  <input type="text" value="<?php echo get_search_query(); ?>" name="s" id="<?php echo $desktop; ?>sm" placeholder="<?php _e('What can we do for you?', 'campMeteor'); ?>...">
 <?php if ($desktop == 'notFound') { ?>
   <button type="button" value="" id="<?php echo $desktop; ?>FormReset"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
 <?php } ?>
@@ -41,8 +41,8 @@ function list_searcheable_acf(){
  * credits to Vincent Zurczak for the base query structure/spliting tags section
  */
  
-// add_filter( 'posts_search', 'visage_advanced_custom_search', 500, 2 );
-function visage_advanced_custom_search( $where, $wp_query ) {
+// add_filter( 'posts_search', 'campMeteor_advanced_custom_search', 500, 2 );
+function campMeteor_advanced_custom_search( $where, $wp_query ) {
 
 // myErr($wp_query);
 
@@ -111,8 +111,8 @@ function visage_advanced_custom_search( $where, $wp_query ) {
 }
 
 
-//add_filter( 'pre_get_posts', 'visage_custom_post_type_search' );
-function visage_custom_post_type_search( $query ) {
+//add_filter( 'pre_get_posts', 'campMeteor_custom_post_type_search' );
+function campMeteor_custom_post_type_search( $query ) {
       if ( is_search() && $query->is_main_query() && $query->get( 's' ) ){
           $query->set('post_type', array( 'post', 'events', 'glossary', 'network'));
           $query->query_vars['posts_per_page'] = -1;

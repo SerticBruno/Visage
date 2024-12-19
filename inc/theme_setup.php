@@ -4,17 +4,17 @@ defined( 'ABSPATH' ) || exit;
 
 // This theme uses wp_nav_menu() in one location.
 register_nav_menus( array(
-	'primary' => __( 'Primary Menu', 'visage' ),
-	'lang' => __( 'Lang Menu', 'visage' ),
-	'footer' => __( 'Footer Menu', 'visage' ),
-	'gdpr' => __( 'GDPR Menu', 'visage' ),
+	'primary' => __( 'Primary Menu', 'campMeteor' ),
+	'lang' => __( 'Lang Menu', 'campMeteor' ),
+	'footer' => __( 'Footer Menu', 'campMeteor' ),
+	'gdpr' => __( 'GDPR Menu', 'campMeteor' ),
 ) );
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-add_action( 'wp_head', 'visage_pingback_header' );
-function visage_pingback_header() {
+add_action( 'wp_head', 'campMeteor_pingback_header' );
+function campMeteor_pingback_header() {
 	if ( is_singular() && pings_open() ) {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
@@ -23,16 +23,16 @@ function visage_pingback_header() {
 /**
  * Change the default text after an excerpt
  */
-add_filter( 'excerpt_more', 'visage_excerpt_more' );
-function visage_excerpt_more( $more ) {
+add_filter( 'excerpt_more', 'campMeteor_excerpt_more' );
+function campMeteor_excerpt_more( $more ) {
 	return '...';
 }
 
 /**
  * Limit the excerpt length
  */
-add_filter( 'excerpt_length', 'visage_excerpt_length' );
-function visage_excerpt_length( $length ) {
+add_filter( 'excerpt_length', 'campMeteor_excerpt_length' );
+function campMeteor_excerpt_length( $length ) {
 	return 25;
 }
 
@@ -42,11 +42,11 @@ function visage_excerpt_length( $length ) {
  *
  * @since v1.0
  */
-if ( ! function_exists( 'visage_new_theme_setup_theme' ) ) {
-	function visage_new_theme_setup_theme() {
+if ( ! function_exists( 'campMeteor_new_theme_setup_theme' ) ) {
+	function campMeteor_new_theme_setup_theme() {
 
 		// Make theme available for translation: Translations can be filed in the /languages/ directory
-		load_theme_textdomain( 'visage', THEME_DIR . '/languages' );
+		load_theme_textdomain( 'campMeteor', THEME_DIR . '/languages' );
 
 		add_post_type_support( 'post', 'post-formats' );
 
@@ -83,7 +83,7 @@ if ( ! function_exists( 'visage_new_theme_setup_theme' ) ) {
 		add_filter( 'use_default_gallery_style', '__return_false' );
 
 	}
-	add_action( 'after_setup_theme', 'visage_new_theme_setup_theme' );
+	add_action( 'after_setup_theme', 'campMeteor_new_theme_setup_theme' );
 }
 
 /**
@@ -111,14 +111,14 @@ if ( ! function_exists( 'wp_body_open' ) ) {
  *
  * @since v1.0
  */
-add_filter( 'edit_post_link', 'visage_new_theme_custom_edit_post_link' );
-function visage_new_theme_custom_edit_post_link( $output ) {
+add_filter( 'edit_post_link', 'campMeteor_new_theme_custom_edit_post_link' );
+function campMeteor_new_theme_custom_edit_post_link( $output ) {
 	$output = str_replace( 'class="post-edit-link"', 'class="post-edit-link badge badge-secondary"', $output );
 	return $output;
 }
 
-add_filter( 'edit_comment_link', 'visage_new_theme_custom_edit_comment_link' );
-function visage_new_theme_custom_edit_comment_link( $output ) {
+add_filter( 'edit_comment_link', 'campMeteor_new_theme_custom_edit_comment_link' );
+function campMeteor_new_theme_custom_edit_comment_link( $output ) {
 	$output = str_replace( 'class="comment-edit-link"', 'class="comment-edit-link badge badge-secondary"', $output );
 	return $output;
 }
@@ -129,27 +129,27 @@ function visage_new_theme_custom_edit_comment_link( $output ) {
  *
  * @since v1.0
  */
-add_filter( 'embed_oembed_html', 'visage_new_theme_oembed_filter', 10, 4 );
-function visage_new_theme_oembed_filter( $html ) {
+add_filter( 'embed_oembed_html', 'campMeteor_new_theme_oembed_filter', 10, 4 );
+function campMeteor_new_theme_oembed_filter( $html ) {
 	$return = '<div class="embed-responsive embed-responsive-16by9">' . $html . '</div>';
 	return $return;
 }
 
 
-if ( ! function_exists( 'visage_new_theme_content_nav' ) ) {
+if ( ! function_exists( 'campMeteor_new_theme_content_nav' ) ) {
 	/**
 	 * Display a navigation to next/previous pages when applicable
 	 *
 	 * @since v1.0
 	 */
-	function visage_new_theme_content_nav( $nav_id ) {
+	function campMeteor_new_theme_content_nav( $nav_id ) {
 		global $wp_query;
 
 		if ( $wp_query->max_num_pages > 1 ) :
 	?>
 			<div id="<?php echo $nav_id; ?>" class="d-flex mb-4 justify-content-between">
-				<div><?php next_posts_link( '<span aria-hidden="true">&larr;</span> ' . __( 'Older posts', 'visage' ) ); ?></div>
-				<div><?php previous_posts_link( __( 'Newer posts', 'visage' ) . ' <span aria-hidden="true">&rarr;</span>' ); ?></div>
+				<div><?php next_posts_link( '<span aria-hidden="true">&larr;</span> ' . __( 'Older posts', 'campMeteor' ) ); ?></div>
+				<div><?php previous_posts_link( __( 'Newer posts', 'campMeteor' ) . ' <span aria-hidden="true">&rarr;</span>' ); ?></div>
 			</div><!-- /.d-flex -->
 	<?php
 		else :
@@ -158,9 +158,9 @@ if ( ! function_exists( 'visage_new_theme_content_nav' ) ) {
 	}
 
 	// Add Class
-	add_filter( 'next_posts_link_attributes', 'visage_posts_link_attributes' );
-	add_filter( 'previous_posts_link_attributes', 'visage_posts_link_attributes' );
-	function visage_posts_link_attributes() {
+	add_filter( 'next_posts_link_attributes', 'campMeteor_posts_link_attributes' );
+	add_filter( 'previous_posts_link_attributes', 'campMeteor_posts_link_attributes' );
+	function campMeteor_posts_link_attributes() {
 		return 'class="btn btn-secondary btn-lg"';
 	}
 }
@@ -168,8 +168,8 @@ if ( ! function_exists( 'visage_new_theme_content_nav' ) ) {
 
 
 
-add_action( 'wp_footer', 'visagevisage_footer' );
-function visagevisage_footer() {
+add_action( 'wp_footer', 'campMeteorcampMeteor_footer' );
+function campMeteorcampMeteor_footer() {
 ?>
 	<script>
 	jQuery(document).ready(function($) {
@@ -212,14 +212,14 @@ function visagevisage_footer() {
 
 
 
-add_filter( 'document_title_separator', 'visage_document_title_separator' );
-function visage_document_title_separator( $sep ) {
+add_filter( 'document_title_separator', 'campMeteor_document_title_separator' );
+function campMeteor_document_title_separator( $sep ) {
 	$sep = '|';
 	return $sep;
 }
 
-add_filter( 'the_title', 'visage_title' );
-function visage_title( $title ) {
+add_filter( 'the_title', 'campMeteor_title' );
+function campMeteor_title( $title ) {
 	if ( $title == '' ) {
 		return '...';
 	} else {
@@ -227,7 +227,7 @@ function visage_title( $title ) {
 	}
 }
 
-function visage_schema_type() {
+function campMeteor_schema_type() {
 	$schema = 'https://schema.org/';
 	if ( is_single() ) {
 		$type = "Article";
@@ -243,51 +243,51 @@ function visage_schema_type() {
 
 
 
-add_filter( 'nav_menu_link_attributes', 'visage_schema_url', 10 );
-function visage_schema_url( $atts ) {
+add_filter( 'nav_menu_link_attributes', 'campMeteor_schema_url', 10 );
+function campMeteor_schema_url( $atts ) {
 	$atts['itemprop'] = 'url';
 	return $atts;
 }
 
-if ( !function_exists( 'visage_wp_body_open' ) ) {
-	function visage_wp_body_open() {
+if ( !function_exists( 'campMeteor_wp_body_open' ) ) {
+	function campMeteor_wp_body_open() {
 		do_action( 'wp_body_open' );
 	}
 }
 
-add_action( 'wp_body_open', 'visage_skip_link', 5 );
-function visage_skip_link() {
-	echo '<a href="#content" class="skip-link screen-reader-text">' . esc_html__( 'Skip to the content', 'visage' ) . '</a>';
+add_action( 'wp_body_open', 'campMeteor_skip_link', 5 );
+function campMeteor_skip_link() {
+	echo '<a href="#content" class="skip-link screen-reader-text">' . esc_html__( 'Skip to the content', 'campMeteor' ) . '</a>';
 }
 
-add_filter( 'the_content_more_link', 'visage_read_more_link' );
-function visage_read_more_link() {
+add_filter( 'the_content_more_link', 'campMeteor_read_more_link' );
+function campMeteor_read_more_link() {
 	if ( !is_admin() ) {
-		return ' <a href="' . esc_url( get_permalink() ) . '" class="more-link">' . sprintf( __( '...%s', 'visage' ), '<span class="screen-reader-text">  ' . esc_html( get_the_title() ) . '</span>' ) . '</a>';
+		return ' <a href="' . esc_url( get_permalink() ) . '" class="more-link">' . sprintf( __( '...%s', 'campMeteor' ), '<span class="screen-reader-text">  ' . esc_html( get_the_title() ) . '</span>' ) . '</a>';
 	}
 }
 
-add_filter( 'excerpt_more', 'visage_excerpt_read_more_link' );
-function visage_excerpt_read_more_link( $more ) {
+add_filter( 'excerpt_more', 'campMeteor_excerpt_read_more_link' );
+function campMeteor_excerpt_read_more_link( $more ) {
 	if ( !is_admin() ) {
 		global $post;
-		return ' <a href="' . esc_url( get_permalink( $post->ID ) ) . '" class="more-link">' . sprintf( __( '...%s', 'visage' ), '<span class="screen-reader-text">  ' . esc_html( get_the_title() ) . '</span>' ) . '</a>';
+		return ' <a href="' . esc_url( get_permalink( $post->ID ) ) . '" class="more-link">' . sprintf( __( '...%s', 'campMeteor' ), '<span class="screen-reader-text">  ' . esc_html( get_the_title() ) . '</span>' ) . '</a>';
 	}
 }
 
 add_filter( 'big_image_size_threshold', '__return_false' );
-add_filter( 'intermediate_image_sizes_advanced', 'visage_image_insert_override' );
-function visage_image_insert_override( $sizes ) {
+add_filter( 'intermediate_image_sizes_advanced', 'campMeteor_image_insert_override' );
+function campMeteor_image_insert_override( $sizes ) {
 	unset( $sizes['medium_large'] );
 	unset( $sizes['1536x1536'] );
 	unset( $sizes['2048x2048'] );
 	return $sizes;
 }
 
-add_action( 'widgets_init', 'visage_widgets_init' );
-function visage_widgets_init() {
+add_action( 'widgets_init', 'campMeteor_widgets_init' );
+function campMeteor_widgets_init() {
 	register_sidebar( array(
-		'name' => esc_html__( 'Sidebar Widget Area', 'visage' ),
+		'name' => esc_html__( 'Sidebar Widget Area', 'campMeteor' ),
 		'id' => 'primary-widget-area',
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
@@ -297,21 +297,21 @@ function visage_widgets_init() {
 }
 
 
-add_action( 'comment_form_before', 'visage_enqueue_comment_reply_script' );
-function visage_enqueue_comment_reply_script() {
+add_action( 'comment_form_before', 'campMeteor_enqueue_comment_reply_script' );
+function campMeteor_enqueue_comment_reply_script() {
 	if ( get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 
-function visage_custom_pings( $comment ) {
+function campMeteor_custom_pings( $comment ) {
 ?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo esc_url( comment_author_link() ); ?></li>
 <?php
 }
 
-add_filter( 'get_comments_number', 'visage_comment_count', 0 );
-function visage_comment_count( $count ) {
+add_filter( 'get_comments_number', 'campMeteor_comment_count', 0 );
+function campMeteor_comment_count( $count ) {
 	if ( !is_admin() ) {
 		global $id;
 		$get_comments = get_comments( 'status=approve&post_id=' . $id );
@@ -329,7 +329,7 @@ function visage_comment_count( $count ) {
  * @since v1.0
  */
 /*
-function visage_new_theme_widgets_init() {
+function campMeteor_new_theme_widgets_init() {
 	// Area 1
 	register_sidebar(
 		array(
@@ -366,6 +366,6 @@ function visage_new_theme_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'visage_new_theme_widgets_init' );
+add_action( 'widgets_init', 'campMeteor_new_theme_widgets_init' );
 */
 

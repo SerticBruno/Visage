@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<div id="copyright" class="text-center py-3">
-				<a href="<?php echo home_url()?>">&copy; <?php echo esc_html( date_i18n( __( 'Y', 'visage' ) ) ); ?> VISAGE Studio</a>
+				<a href="<?php echo home_url()?>">&copy; <?php echo esc_html( date_i18n( __( 'Y', 'campMeteor' ) ) ); ?> Camp Meteor</a>
 			</div>
 		</footer>
 		</div>

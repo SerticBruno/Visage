@@ -1,8 +1,8 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
-add_shortcode('youtube', 'visage_youtube_shortcode'); 
-function visage_youtube_shortcode($atts, $content = null) { 
+add_shortcode('youtube', 'campMeteor_youtube_shortcode'); 
+function campMeteor_youtube_shortcode($atts, $content = null) { 
  
 	if (!isset($atts['id']))
 		return '';
@@ -13,8 +13,8 @@ function visage_youtube_shortcode($atts, $content = null) {
 } 
 
 
-add_shortcode('vimeo', 'visage_vimeo_shortcode'); 
-function visage_vimeo_shortcode($atts, $content = null) { 
+add_shortcode('vimeo', 'campMeteor_vimeo_shortcode'); 
+function campMeteor_vimeo_shortcode($atts, $content = null) { 
  
 	if (!isset($atts['id']))
 		return '';

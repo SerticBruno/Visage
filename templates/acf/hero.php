@@ -60,7 +60,7 @@ $button = $post_info['button'];
 
                                 <div class="col-4 ms-auto d-none d-lg-block">
                                     <div class="scroll-down">
-                                        <p><?php _e('Scroll', 'visage')?></p>
+                                        <p><?php _e('Scroll', 'campMeteor')?></p>
                                             <div class="img-wrapper ">
                                                 <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link-white.png" alt="arrow-icon"/>
                                             </div>
@@ -76,7 +76,7 @@ $button = $post_info['button'];
                                 </div>
                                 <div class="col-3 ms-auto d-none d-lg-block">
                                     <div class="scroll-down">
-                                        <p><?php _e('Scroll', 'visage')?></p>
+                                        <p><?php _e('Scroll', 'campMeteor')?></p>
                                         <div class="img-wrapper ">
                                             <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link-white.png" alt="arrow-icon"/>
                                         </div>
@@ -143,7 +143,7 @@ $button = $post_info['button'];
                                 </div>
                                 <div class="col-4 ms-auto d-none d-lg-block">
                                     <div class="scroll-down">
-                                        <p><?php _e('Scroll', 'visage')?></p>
+                                        <p><?php _e('Scroll', 'campMeteor')?></p>
                                         <div class="img-wrapper ">
                                             <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link-white.png" alt="arrow-icon"/>
                                         </div>
@@ -168,7 +168,7 @@ $button = $post_info['button'];
                                 </div>
                                 <div class="col-3 ms-auto d-none d-lg-block pb-3">
                                     <div class="scroll-down">
-                                        <p class="strong"><?php _e('Scroll', 'visage')?></p>
+                                        <p class="strong"><?php _e('Scroll', 'campMeteor')?></p>
                                         <div class="img-wrapper ">
                                             <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link-white.png" alt="arrow-icon"/>
                                         </div>
@@ -223,7 +223,7 @@ $button = $post_info['button'];
                                     <?php } ?>
                                     <div class="col-4 ms-auto d-none d-lg-block">
                                         <div class="scroll-down">
-                                            <p><?php _e('Scroll', 'visage')?></p>
+                                            <p><?php _e('Scroll', 'campMeteor')?></p>
                                             <div class="img-wrapper ">
                                                 <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link-white.png" alt="arrow-icon"/>
                                             </div>
@@ -270,7 +270,7 @@ $button = $post_info['button'];
 
                                     <div class="col-4 ms-auto d-none d-lg-block">
                                         <div class="scroll-down">
-                                            <p><?php _e('Scroll', 'visage')?></p>
+                                            <p><?php _e('Scroll', 'campMeteor')?></p>
                                             <div class="img-wrapper ">
                                                 <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link-white.png" alt="arrow-icon"/>
                                             </div>
@@ -295,7 +295,7 @@ $button = $post_info['button'];
                                     </div>
                                     <div class="col-3 ms-auto d-none d-lg-block">
                                         <div class="scroll-down">
-                                            <p><?php _e('Scroll', 'visage')?></p>
+                                            <p><?php _e('Scroll', 'campMeteor')?></p>
                                             <div class="img-wrapper ">
                                                 <img src="<?php echo THEME_URL ?>/assets/img/png/arrow-link-white.png" alt="arrow-icon"/>
                                             </div>

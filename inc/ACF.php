@@ -2,8 +2,8 @@
 defined( 'ABSPATH' ) || exit;
 
 //Save
-add_filter('acf/settings/save_json', 'visage_acf_json_save_point');
-function visage_acf_json_save_point( $path ) {
+add_filter('acf/settings/save_json', 'campMeteor_acf_json_save_point');
+function campMeteor_acf_json_save_point( $path ) {
     
     // update path
     $path = THEME_DIR . '/acf-json';
@@ -13,8 +13,8 @@ function visage_acf_json_save_point( $path ) {
 }
  
 //Load
-add_filter('acf/settings/load_json', 'visage_acf_json_load_point');
-function visage_acf_json_load_point( $paths ) {
+add_filter('acf/settings/load_json', 'campMeteor_acf_json_load_point');
+function campMeteor_acf_json_load_point( $paths ) {
     
     // remove original path (optional)
     unset($paths[0]);

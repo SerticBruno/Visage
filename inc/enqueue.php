@@ -1,8 +1,8 @@
 <?php
 defined( 'ABSPATH' ) || exit;
 
-add_action( 'wp_enqueue_scripts', 'visage_theme_enqueue_styles' );
-function visage_theme_enqueue_styles() {
+add_action( 'wp_enqueue_scripts', 'campMeteor_theme_enqueue_styles' );
+function campMeteor_theme_enqueue_styles() {
     // Get the theme data
     $the_theme = wp_get_theme();
     wp_enqueue_style( 'theme-styles', THEME_URL . '/assets/css/style.min.css', array(), $the_theme->get( 'Version' ) );
@@ -16,8 +16,8 @@ function visage_theme_enqueue_styles() {
 
 
 //Disable emojis in WordPress
-add_action( 'init', 'visage_smartwp_disable_emojis' );
-function visage_smartwp_disable_emojis() {
+add_action( 'init', 'campMeteor_smartwp_disable_emojis' );
+function campMeteor_smartwp_disable_emojis() {
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 	remove_action( 'wp_print_styles', 'print_emoji_styles' );
@@ -25,7 +25,7 @@ function visage_smartwp_disable_emojis() {
 	remove_action( 'admin_print_styles', 'print_emoji_styles' );
 	remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
 	remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
-	add_filter( 'tiny_mce_plugins', 'visage_disable_emojis_tinymce' );
+	add_filter( 'tiny_mce_plugins', 'campMeteor_disable_emojis_tinymce' );
 	add_filter( 'emoji_svg_url', '__return_false' );
 
 //Disable the json api and remove the head link
@@ -34,7 +34,7 @@ function visage_smartwp_disable_emojis() {
 //remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
 }
 
-function visage_disable_emojis_tinymce( $plugins ) {
+function campMeteor_disable_emojis_tinymce( $plugins ) {
 	if ( is_array( $plugins ) ) {
 		return array_diff( $plugins, array( 'wpemoji' ) );
 	} else {

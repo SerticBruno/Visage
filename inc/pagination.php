@@ -7,8 +7,8 @@ defined( 'ABSPATH' ) || exit;
  * @param     string $distinct    The initial DISTINCT clause.
  * @return    string $distinct    The 'DISTINCT' keyword, if we're on the search template.
  */
-add_filter( 'posts_distinct', 'visage_select_distinct_search_records' );
-function visage_select_distinct_search_records( $distinct ) {
+add_filter( 'posts_distinct', 'campMeteor_select_distinct_search_records' );
+function campMeteor_select_distinct_search_records( $distinct ) {
 	if ( is_admin() || ! is_search() ) {
 		return $distinct;
 	}
@@ -23,7 +23,7 @@ function visage_select_distinct_search_records( $distinct ) {
  */
 
 
-function visage_pagination( $args = array(), $class = 'pagination' ) {
+function campMeteor_pagination( $args = array(), $class = 'pagination' ) {
 
 //myErr($GLOBALS['wp_query']);
 
@@ -38,9 +38,9 @@ function visage_pagination( $args = array(), $class = 'pagination' ) {
 //			'format'			 => '?page=%#%',
 			'mid_size'           => 2,
 			'prev_next'          => true,
-			'prev_text'          => __( '&laquo;', 'visage' ),
-			'next_text'          => __( '&raquo;', 'visage' ),
-			'screen_reader_text' => __( 'Posts navigation', 'visage' ),
+			'prev_text'          => __( '&laquo;', 'campMeteor' ),
+			'next_text'          => __( '&raquo;', 'campMeteor' ),
+			'screen_reader_text' => __( 'Posts navigation', 'campMeteor' ),
 			'type'               => 'array',
 			'current'            => max( 1, get_query_var( 'paged' ) ),
 //			'current'            => max( 1, (isset($_GET['paged']) ? $_GET['paged'] : 1) ),

@@ -7,13 +7,13 @@ function getLangSlug() {
 	return ($curr !== $def ? "{$curr}/" : '');
 }
 
-function visage_get_lang_items() {
+function campMeteor_get_lang_items() {
 	return pll_the_languages(array('raw'=>1));
 }
 
-function visage_get_lang_menu($css = '') {
+function campMeteor_get_lang_menu($css = '') {
 	$r = '';
-	$menuLang = visage_get_lang_items();
+	$menuLang = campMeteor_get_lang_items();
 // print_r(($menuLang));
 	if (is_array($menuLang) and count($menuLang) > 1) {
 		$r .= "<ul class='list-unstyled navbar-lang {$css}'>";
@@ -27,10 +27,10 @@ function visage_get_lang_menu($css = '') {
 	return $r;
 }
 
-function visage_get_lang_dropdown($css = '') {
+function campMeteor_get_lang_dropdown($css = '') {
 	$r = '';
 	$curr = pll_current_language();
-	$menuLang = visage_get_lang_items();
+	$menuLang = campMeteor_get_lang_items();
 //myErr($menuLang);
 	if (is_array($menuLang) && count($menuLang) > 0) {
 		$r .= '<div class="btn-group">';

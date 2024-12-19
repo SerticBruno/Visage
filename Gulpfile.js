@@ -62,14 +62,14 @@ gulp.task("install", function (done) {
       ],
       { base: "./" }
     )
-    .pipe(replace("'_visage'", "'" + theme_name + "'"))
-    .pipe(replace("_visage_", theme_name + "_"))
-    .pipe(replace(" _visage", " " + theme_name))
-    .pipe(replace("_visage-", theme_name + "-"))
+    .pipe(replace("'_campMeteor'", "'" + theme_name + "'"))
+    .pipe(replace("_campMeteor_", theme_name + "_"))
+    .pipe(replace(" _campMeteor", " " + theme_name))
+    .pipe(replace("_campMeteor-", theme_name + "-"))
     .pipe(gulp.dest("./"));
 
   gulp
-    .src("languages/_visage.pot", { allowEmpty: true })
+    .src("languages/_campMeteor.pot", { allowEmpty: true })
     .pipe(rename(theme_name + ".pot"))
     .pipe(gulp.dest("languages"));
 

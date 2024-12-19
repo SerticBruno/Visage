@@ -27,9 +27,9 @@
 	$ping_count = count( $comments_by_type['pings'] );
 	?>
 	<section id="trackbacks-list" class="comments">
-		<h2 class="comments-title"><?php echo '<span class="ping-count">' . esc_html( $ping_count ) . '</span> ' . esc_html( _nx( 'Trackback or Pingback', 'Trackbacks and Pingbacks', $ping_count, 'comments count', 'visage' ) ); ?></h2>
+		<h2 class="comments-title"><?php echo '<span class="ping-count">' . esc_html( $ping_count ) . '</span> ' . esc_html( _nx( 'Trackback or Pingback', 'Trackbacks and Pingbacks', $ping_count, 'comments count', 'campMeteor' ) ); ?></h2>
 		<ul>
-			<?php wp_list_comments( 'type=pings&callback=visage_custom_pings' ); ?>
+			<?php wp_list_comments( 'type=pings&callback=campMeteor_custom_pings' ); ?>
 		</ul>
 	</section>
 	<?php
