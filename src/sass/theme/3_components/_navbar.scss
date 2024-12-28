@@ -1,12 +1,22 @@
 .navbar {
-  background-color: $white;
+  background-color: $mainBase;
   box-shadow: 0 1px 10px 0px $black;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $mainAccent;
   position: fixed;
   width: 100%;
   z-index: 99;
   padding: 0;
   transition: $transition;
+
+  ul{
+    li{
+      a{
+        img{
+          margin: 0;
+        }
+      }
+    }
+  }
 
   h1 {
     transition: $transition;
@@ -18,8 +28,38 @@
   }
 
   .menu-primary-menu-container > ul > li > a{
-    color: $grayDark;
+    color: $black;
     font-weight: 700;
+  }
+
+  .menu-primary-menu-norway-container > ul > li > a{
+    color: $black;
+    font-weight: 700;
+  }
+
+  .menu-item-has-children > a {
+    position: relative; /* Allows positioning of the arrow */
+    padding-right: 20px; /* Add space for the arrow */
+  }
+
+  .menu-item-has-children > a::after {
+    content: ''; /* Adds a pseudo-element */
+    position: absolute;
+    right: 5px; /* Position arrow at the far-right of the menu item */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the arrow */
+    width: 0; 
+    height: 0;
+    border-left: 5px solid transparent; /* Left triangle edge */
+    border-right: 5px solid transparent; /* Right triangle edge */
+    border-top: 5px solid $black; /* Top triangle edge (color of the arrow) */
+    pointer-events: none; /* Makes sure the arrow doesn’t interfere with clicks */
+    transition: transform 0.3s ease, border-top-color 0.3s ease; /* Add smooth transition */
+  }
+
+  .menu-item-has-children:hover > a::after {
+    transform: translateY(-50%) rotate(180deg); /* Smooth rotation effect */
+    border-top-color: $grayCatalog; /* Optional: Change arrow color on hover */
   }
 
   .logo-img-wrapper{
@@ -39,12 +79,16 @@
     transition: $transition;
     width: 100%;
   }
+  .menu-primary-menu-norway-container {
+    transition: $transition;
+    width: 100%;
+  }
 
   .navbar-nav{
     li{
       a{
-        @include fluid("padding-left", 40, 60);
-        @include fluid("padding-right", 40, 60);
+        @include fluid("padding-left", 10, 25);
+        @include fluid("padding-right", 10, 25);
         @include fluid("padding-top", 14, 14);
         @include fluid("padding-bottom", 14, 14);
         
@@ -99,7 +143,6 @@
 
         padding: 5px 10px;
         font-weight: 500;
-        font-family: versailles;
         text-transform: uppercase;
 
         &:hover {
@@ -139,52 +182,63 @@
         }
       }
 
-      .sub-menu {
-        position: absolute;
-        visibility: hidden;
-        opacity: 0;
-        background-color: $white;
-        left: 0;
-        padding-left: 0;
-        transition: all 0.2s ease;
-        margin-right: 0px;
-
-        @include media-breakpoint-down(lg) {
-          position: unset;
-          visibility: unset;
-          opacity: unset;
-        }
-
-        li {
-          width: 100%;
-          background-color: $white;
-          color: $black;
-
-          a {
-            color: $black;
-            transition: all 0.2s ease;
-            padding: 5px 20px;
-
-            @include media-breakpoint-down(md) {
-              padding-left: 25px;
-            }
-
-            &:hover {
-              transition: all 0.2s ease;
-              color: gray;
-            }
-          }
-
-          &.current-menu-item {
-            a {
-              font-weight: 600;
-              color: $black;
-            }
-          }
-        }
-      }
+      
     }
   }
+  
+  /* Hide the submenu by default */
+  #menu-item-349 .sub-menu, #menu-item-339 .sub-menu {
+    display: none;
+    position: absolute; /* Ensures submenu doesn't disrupt the layout */
+    background-color: $mainBase; /* Optional: Set a background color */
+    padding: 0; /* Adjust padding as needed */
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    z-index: 1000; /* Ensures submenu is above other content */
+    min-width: 150px; /* Ensure enough width for the submenu */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visibility */
+  }
+
+  /* Show submenu on hover */
+  #menu-item-349:hover .sub-menu, #menu-item-339:hover .sub-menu {
+    display: block;
+  }
+
+  /* Style individual submenu items */
+  #menu-item-349 .sub-menu li, #menu-item-339 .sub-menu li {
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Ensure content doesn't spill outside */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  }
+
+  /* Adjust submenu links */
+  #menu-item-349 .sub-menu li a, #menu-item-339 .sub-menu li a {
+    display: block;
+    color: #000000; /* Submenu text color */
+    text-decoration: none;
+  }
+
+  /* Hover effect for submenu links */
+  #menu-item-349 .sub-menu li a:hover, #menu-item-339 .sub-menu li a:hover {
+    background-color: #316142; /* Highlight background */
+  }
+
+  /* Hide the submenu by default */
+  #menu-item-348 .sub-menu, #menu-item-346 .sub-menu {
+    display: none;
+    position: absolute; /* Ensures submenu doesn't disrupt the layout */
+    background-color: $mainBase; /* Optional: Set a background color */
+    padding: 0; /* Adjust padding as needed */
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    z-index: 1000; /* Ensures submenu is above other content */
+  }
+
+  /* Show submenu on hover */
+  #menu-item-348:hover .sub-menu, #menu-item-346:hover .sub-menu {
+    display: block;
+  }
+
 
   .logo-wrapper {
     display: flex;
@@ -195,7 +249,7 @@
     // @include fluid("padding-top", 8, 18);
     @include fluid("padding-top", 4, 10);
     @include fluid("padding-bottom", 8, 18);
-    border-bottom: 1px solid $primary;
+    border-bottom: 2px solid $mainAccent;
   }
 
   &-brand {
@@ -208,7 +262,7 @@
       transition: $transition;
       font-weight: 500;
       @include fluid("margin-left", 30, 100);
-      @include fluid("letter-spacing", 30, 100);
+      @include fluid("letter-spacing", 20, 60);
     }
 
     h2 {
@@ -216,7 +270,7 @@
       transition: $transition;
       font-weight: 400;
       @include fluid("margin-left", 6, 16);
-      @include fluid("letter-spacing", 6, 16);
+      @include fluid("letter-spacing", 2, 8);
     }
 
     img {
@@ -264,7 +318,7 @@
         img {
           padding: 0;
           transition: all 0.3s ease;
-          @include fluid("height", 36, 48);
+          @include fluid("height", 54, 82);
         }
       }
     }
@@ -279,6 +333,9 @@
         a {
           transition: all 0.3s ease;
           font-size: 18px;
+            
+          @include fluid("padding-top", 7, 7);
+          @include fluid("padding-bottom", 7, 7);
         }
       }
     }

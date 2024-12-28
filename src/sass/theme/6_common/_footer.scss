@@ -1,5 +1,5 @@
 .footer {
-  background-color: $white;
+  background-color: $mainBase;
   // padding: 0 0 30px 0;
 
   // @include fluid("margin-top", 10, 30);
@@ -9,7 +9,7 @@
   color: $black;
 
   &-border{
-    border-top: 1.5px solid $black;
+    border-top: 1.5px solid rgb(36, 100, 36);
   }
 
   ul {

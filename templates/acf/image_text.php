@@ -31,7 +31,7 @@ $uniqueTags = array_unique($uniqueTags);
 <section class="image-text" id="<?php echo $anchor ?>">
     <div class="container-fluid">
         <?php if ($params['is_search']) { ?>
-            <div class="row justify-content-center dark-gray py-3">
+            <div class="row justify-content-center main-base-color py-3">
                 <div class="col-10 col-lg-8">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-5">
@@ -94,7 +94,7 @@ $uniqueTags = array_unique($uniqueTags);
             };
             ?>
 
-            <div class="row py-5 justify-content-center anchor-target <?php echo $k % 2 == 0 ? 'dark-gray' : 'gray'; ?>" id="<?php echo $anchor ?>" data-title="<?php echo htmlspecialchars($title); ?>" data-tags="<?php echo htmlspecialchars($v['category']); ?>">
+            <div class="row py-5 justify-content-center anchor-target <?php echo $k % 2 == 0 ? 'main-base-color' : 'gray'; ?>" id="<?php echo $anchor ?>" data-title="<?php echo htmlspecialchars($title); ?>" data-tags="<?php echo htmlspecialchars($v['category']); ?>">
                 <div class="col-11 col-md-10 col-lg-8 d-flex">
                     <div class="row <?php echo $k % 2 == 1 ? 'flex-row-reverse' : ''; ?>" data-id="<?php echo htmlspecialchars($productTags); ?>">
                         <div class="col-md-8 col-12">

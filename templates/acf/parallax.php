@@ -9,9 +9,9 @@ $title = $params['title'];
 
             <?php if(!empty($title)) { ?>
                 <div class="row py-4">
-                    <div class="div d-flex versailles">
-                        <span class="h2">----------</span>
-                        <h2 class="line"><?php echo $title ?></h2>
+                    <div class="div d-flex align-items-center px-md-0">
+                        <span class="span-line"></span>
+                        <h2><?php echo $title ?></h2>
                     </div>
                 </div>
             <?php } ?>

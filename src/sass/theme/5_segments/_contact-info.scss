@@ -1,8 +1,6 @@
 .contact-info {
-  @include fluid("margin-top", 30, 40);
-  @include fluid("margin-bottom", 40, 80);
-  background-color: $grayCatalog;
-  color: $white;
+  background-color: $mainBase;
+  color: $black;
 
   .container-fluid{
     max-width: 1320px;
@@ -11,11 +9,11 @@
   .form-title {
     @include fluid("padding-top", 26, 36);
     @include fluid("padding-bottom", 26, 36);
-    color: $white;
+    color: $black;
 
   }
   a {
-    color: $white;
+    color: $black;
     text-decoration: underline !important;
     &:hover {
       color: $gray;
@@ -27,19 +25,19 @@
     a{
       text-decoration: none !important;
       // outline: 2px solid $white !important;
-      outline: 2px solid $white !important;
+      outline: 1px solid $black !important;
       // background-color: $black !important;
-      background-color: $grayCatalog !important;
-      color: $white !important;
+      background-color: $mainBase;
+      color: $black !important;
       font-weight: 700 !important;
   
       &:hover,
       &:active,
       &:focus {
-        outline-color: $grayCatalog !important;
+        outline-color: $white !important;
         border: 0 !important;
-        background-color: $white !important;
-        color: $grayCatalog !important;
+        background-color: $black !important;
+        color: $white !important;
         // box-shadow: 9px 8px 0 white !important;
       }
     }
@@ -97,7 +95,6 @@
       background-color: white !important;
       color: black !important;
       font-size: 20px !important;
-      font-family: versailles;
       font-weight: 700 !important;
       padding: 15px 40px !important;
       // transform: rotate(3deg) !important;

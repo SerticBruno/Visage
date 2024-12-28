@@ -8,7 +8,7 @@ $features = $params['feature'];
     <div class="container">
         <div class="row">
             <div class="col-12 pb-5">
-                <h2 class="versailles">USLUGE</h2>
+                <h2>USLUGE</h2>
             </div>
         </div>
         <div class="row justify-content-around">

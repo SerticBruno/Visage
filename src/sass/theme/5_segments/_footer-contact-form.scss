@@ -1,15 +1,15 @@
 .footer-contact-form {
-  background-color: $grayCatalog;
+  background-color: $mainBase;
   @include fluid("padding-top", 20, 40);
   @include fluid("padding-bottom", 20, 25);
 
-  color: $white;
+  color: $black;
 
   .form-title {
     padding-bottom: 16px;
   }
   a {
-    color: $white;
+    color: $black;
     text-decoration: underline !important;
     &:hover {
       color: $gray;
@@ -43,12 +43,12 @@
       .forminator-field {
         label {
           font-size: 16px !important;
-          color: $white !important;
+          color: $black !important;
           font-weight: 500 !important;
         }
         input,
         textarea {
-          background-color: $white !important;
+          background-color: rgb(195, 231, 195) !important;
           border: 1px solid black !important;
           border-radius: 0 !important;
           resize: none !important;
@@ -56,18 +56,6 @@
         padding-bottom: 1rem;
       }
     }
-    // #name-1{
-    //     transform: rotate(-1deg) !important;
-    // }
-    // #email-1{
-    //     transform: rotate(2deg) !important;
-    // }
-    // #phone-1{
-    //     transform: rotate(-1deg) !important;
-    // }
-    // #textarea-1{
-    //     transform: rotate(-1deg) !important;
-    // }
 
     .forminator-row {
       margin-bottom: 15px !important;
@@ -104,10 +92,9 @@
 
     .forminator-button-submit {
       outline: 1px solid black !important;
-      background-color: white !important;
+      background-color: #c3e7c3 !important;
       color: black !important;
       font-size: 20px !important;
-      font-family: versailles;
       font-weight: 700 !important;
       padding: 15px 40px !important;
       // transform: rotate(3deg) !important;
@@ -116,49 +103,12 @@
 
       &:hover {
         // transform: rotate(-1deg) !important;
-        outline-color: white !important;
-        background-color: black !important;
-        color: white !important;
+        outline-color: black !important;
+        background-color: #91cb91 !important;
+        color: black !important;
         // box-shadow: 10px 9px 0 rgb(0, 0, 0) !important;
       }
     }
-    // #wpforms-418-field_0-container, #wpforms-418-field_1-container, #wpforms-418-field_2-container{
-    //     input, textarea{
-    //         border: 5px solid black;
-    //         border-radius: 0;
-    //         padding: 16px 8px;
-    //         font-weight: 700;
-    //     }
-    // }
-
-    // #wpforms-submit-418{
-    //     outline: 5px solid black;
-    //     transform: rotate(3deg);
-    //     font-weight: 700;
-    //     padding: 10px 45px;
-    //     background-color: white;
-    //     transition: $transition;
-
-    //     &:hover{
-    //         color: $white;
-    //         background-color: black;
-    //         transform: rotate(-3deg);
-    //         outline-color: white;
-    //     }
-    // }
-
-    // .wpforms-error{
-    //     font-weight: 700;
-    // }
-
-    // #wpforms-confirmation-418{
-    //     background-color: white !important;
-    //     outline: 5px solid black;
-    //     p{
-    //         color: black;
-    //         font-weight: 700;
-    //     }
-    // }
   }
 
   .ol-attribution.ol-unselectable.ol-control.ol-uncollapsible,

@@ -1,0 +1,103 @@
+.pricing {
+  .img-wrapper {
+    img {
+      height: 149px;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+  }
+
+  .category-column {
+    @include media-breakpoint-up(md){
+      position: -webkit-sticky; /* For Safari */
+      position: sticky;
+      top: 200px; /* Adjust the top offset to your preference */
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+
+  .button-row{
+    justify-content: end;
+
+    @include media-breakpoint-down(md){
+      justify-content: start;
+    }
+  }
+  
+  #categorySearch{
+    font-family: montserrat;
+  }
+
+  .category-title {
+    padding: 15px 10px;
+    font-size: 1.5rem;
+
+    a{
+      transition: $transition;
+      &:hover{
+        transition: $transition;
+      }
+    }
+  }
+
+  .category-description-text{
+    p {
+      margin: 0;
+    }
+  }
+
+  .span-line {
+    @include fluid("width", 40, 80);
+    background: black; /* Line color */
+    height: 2px; /* Line thickness */
+    margin-right: 10px; /* Spacing between the line and the title */
+  }
+  
+  .category-row {
+    background-color: $gray;
+  }
+
+  .product-row {
+    padding: 10px 10px;
+  }
+
+  .col-lg-9 .row {
+    border-bottom: 1px solid $grayBorder;
+  }
+  .col-6:last-child {
+    text-align: right;
+  }
+  .col-lg-9 .row:nth-child(even) {
+    background-color: $grayLight;
+  }
+  .product-title {
+    font-size: 1.3rem;
+  }
+  .product-description {
+    font-size: 1rem;
+  }
+}
+
+.accordion-item{
+  border-radius: 0 !important;
+}
+
+.accordion-button{
+  border-radius: 0 !important;
+  color: $black !important;
+  background-color: $gray !important;
+  &::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+ }
+}
+.accordion-button:focus,
+.accordion-button:active {
+  outline: none; /* Remove the default outline */
+  box-shadow: none; /* Remove any additional focus shadow */
+}
+
+/* Optional: Customize the default state to look consistent without focus */
+.accordion-button {
+  border: none; /* Remove border if present */
+}

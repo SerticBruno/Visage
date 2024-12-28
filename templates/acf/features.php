@@ -9,9 +9,9 @@ $button = $params['button'];
     <div class="container">
         <?php if(!empty($title)) { ?>
             <div class="row">
-                <div class="col-12 pb-4 versailles d-flex align-items-center">
+                <div class="col-12 pb-4 d-flex align-items-center">
                     <span class="span-line"></span>
-                    <h2 class="versailles"><?php echo $title ?></h2>
+                    <h2><?php echo $title ?></h2>
 
                     <?php if(!empty($button['label'])){ ?>
                         <div class="button-wrapper ms-auto">

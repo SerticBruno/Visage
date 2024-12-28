@@ -31,7 +31,7 @@ if ($konzultacije_category !== null) {
 ?>
 
 <section class="price-list py-4">
-    <div class="container py-3 versailles">
+    <div class="container py-3">
         <?php if(!empty($title)) { ?>
             <div class="row">
                 <div class="col-12 pb-4 d-flex align-items-center px-md-0">

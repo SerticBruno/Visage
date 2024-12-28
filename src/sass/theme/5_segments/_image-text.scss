@@ -1,6 +1,4 @@
 .image-text {
-  
-
   .category-column {
     @include media-breakpoint-up(md){
       position: -webkit-sticky; /* For Safari */
@@ -60,20 +58,8 @@
     }
   }
 
-  .dark-gray {
-    background-color: $gray;
-    // color: white;
-    // h2{
-    //   color: white;
-    // }
-  }
-
-  .gray {
-    // background-color: $gray;
-    // color: white;
-    h2 {
-      // color: white;
-    }
+  .main-base-color {
+    background-color: $mainBase;
   }
 
   .img-wrapper {

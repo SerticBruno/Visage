@@ -6,7 +6,7 @@ $logo_scrolled = $header['logo_scrolled']['url'];
 
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-expand-lg">
     <div class="container d-flex justify-content-center">
         <div class="row w-100">
             <div class="col-12 text-center p-0">
@@ -16,13 +16,13 @@ $logo_scrolled = $header['logo_scrolled']['url'];
                             <img src="<?php echo $logo_scrolled ?>" alt="Camp Meteor Logo">
                         </div>
                         <div class="info">
-                            <h2 class="h1 versailles">Camp Meteor</h2>
+                            <h2 class="h1">CAMP METEOR</h2>
                         </div>
                     </a>
                 </div>
             </div>
                 
-            <div class="col-12 d-flex justify-content-end">
+            <div class="col-12 d-flex justify-content-end pt-2">
                 <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
                     <?php wp_nav_menu( array( 
                         'theme_location' => 'primary', 

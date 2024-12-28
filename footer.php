@@ -4,7 +4,7 @@
 		<footer class="footer" role="contentinfo">
 
 			<?php
-				if(!is_page('kontakt'))
+				if(!is_page('contact'))
 					include THEME_DIR . '/templates/acf/footer_contact_form.php';  
 			?>
 
